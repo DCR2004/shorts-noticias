@@ -1,0 +1,10 @@
+edge-tts>=7.2
+gTTS>=2.5
+feedparser>=6.0
+requests>=2.31
+trafilatura>=1.12
+Pillow>=10.0
+PyYAML>=6.0
+google-api-python-client>=2.100
+google-auth>=2.20
+google-auth-oauthlib>=1.0

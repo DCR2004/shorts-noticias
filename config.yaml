@@ -1,0 +1,61 @@
+# ============================================================
+#  Configuração do canal de Shorts de notícias
+#  Podes editar este ficheiro diretamente no GitHub (ícone do lápis).
+# ============================================================
+
+canal:
+  nome: "Notícias em 1 Minuto"          # aparece no topo do vídeo
+  chamada_final: "Siga o canal para mais notícias."
+
+voz:
+  # Vozes brasileiras do Microsoft Edge (gratuitas):
+  #   pt-BR-AntonioNeural (masculina)  |  pt-BR-FranciscaNeural (feminina)
+  #   pt-BR-ThalitaMultilingualNeural (feminina)
+  nome: "pt-BR-AntonioNeural"
+  velocidade: "+10%"                     # ex.: "+0%", "+10%", "-5%"
+
+ia:
+  # Modelos Gemini tentados por ordem (se um falhar ou esgotar a quota, passa ao seguinte)
+  modelos:
+    - "gemini-3.8-flash"
+    - "gemini-3.5-flash-lite"
+    - "gemini-3.1-flash-lite"
+  palavras_min: 110
+  palavras_max: 140
+
+noticias:
+  horas_max: 14                 # só considera notícias publicadas nas últimas X horas
+  dias_sem_repetir: 3           # não volta a um tema já coberto nestes dias
+  # Temas a evitar (o canal fica mais "seguro" para monetização)
+  evitar: "fofoca de celebridades, crimes violentos com detalhes, suicídio, conteúdo envolvendo menores, publicidade disfarçada"
+  fontes:
+    - { nome: "g1",                 url: "https://g1.globo.com/rss/g1/" }
+    - { nome: "Folha de S.Paulo",   url: "https://feeds.folha.uol.com.br/emcimadahora/rss091.xml" }
+    - { nome: "CNN Brasil",         url: "https://www.cnnbrasil.com.br/feed/" }
+    - { nome: "Agência Brasil",     url: "https://agenciabrasil.ebc.com.br/rss/ultimasnoticias/feed.xml" }
+    - { nome: "BBC News Brasil",    url: "https://feeds.bbci.co.uk/portuguese/rss.xml" }
+    - { nome: "Poder360",           url: "https://www.poder360.com.br/feed/" }
+    - { nome: "Revista Oeste",      url: "https://revistaoeste.com/feed/" }
+    - { nome: "UOL",                url: "https://rss.uol.com.br/feed/noticias.xml" }
+    - { nome: "Metrópoles",         url: "https://www.metropoles.com/feed" }
+    - { nome: "CartaCapital",       url: "https://www.cartacapital.com.br/feed/" }
+    - { nome: "Gazeta do Povo",     url: "https://www.gazetadopovo.com.br/feed/rss/ultimas-noticias.xml" }
+    - { nome: "InfoMoney",          url: "https://www.infomoney.com.br/feed/" }
+
+imagens:
+  quantidade: 4                 # nº de imagens por vídeo (vêm do Pexels; sem chave usa fundos gerados)
+
+youtube:
+  # modo:
+  #   "agendado" -> envia como privado e publica sozinho depois de X horas
+  #                 (dá-te tempo para apagar no YouTube Studio se algo estiver errado)
+  #   "publico"  -> publica de imediato
+  #   "privado"  -> fica privado; publicas tu com um clique no YouTube Studio
+  modo: "agendado"
+  horas_revisao: 1
+  categoria: "25"               # 25 = Notícias e política
+  idioma: "pt-BR"
+  # Marca o vídeo como "conteúdo alterado ou sintético" realista.
+  # A narração é por IA e as imagens são ilustrativas (isto é dito no vídeo e na descrição).
+  marcar_conteudo_sintetico: false
+  notificar_inscritos: true
