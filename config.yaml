@@ -68,4 +68,4 @@ youtube:
   # Marca o vídeo como "conteúdo alterado ou sintético" realista.
   # A narração é por IA e as imagens são ilustrativas (isto é dito no vídeo e na descrição).
   marcar_conteudo_sintetico: false
-  notificar_inscritos: true
+  notificar_inscritos: false        # com 25 vídeos por dia, não notificar os inscritos a cada vídeo

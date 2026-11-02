@@ -1,6 +1,6 @@
 # Shorts de notícias automáticos (Brasil)
 
-Este sistema corre sozinho no GitHub, **5 vezes por dia**, e em cada execução:
+Este sistema corre sozinho no GitHub, **25 vezes por dia**, e em cada execução:
 
 1. Lê as últimas notícias de 12 jornais brasileiros (g1, Folha, CNN Brasil, Agência Brasil, BBC Brasil, Poder360, Revista Oeste, UOL, Metrópoles, CartaCapital, Gazeta do Povo, InfoMoney).
 2. Junta as notícias que falam do mesmo assunto e dá prioridade às que aparecem em vários jornais.
@@ -91,7 +91,7 @@ Configuras tudo **uma vez** (cerca de 30 a 40 minutos). Tudo o que é usado tem 
    - Em **Artifacts** descarregas o vídeo ("short-N") para o veres.
 3. Se estiver tudo bem, corre outra vez com **Publicar** marcado. O vídeo aparece no YouTube Studio como **agendado** e fica público 1 hora depois.
 
-**Pronto.** A partir daqui o sistema corre sozinho todos os dias, por volta das **08h, 11h30, 14h30, 18h e 21h de Brasília**.
+**Pronto.** A partir daqui o sistema corre sozinho todos os dias, a cada 45 minutos, **entre as 06h e a meia-noite de Brasília** (cada vídeo fica público 1 hora depois de ser criado).
 
 ---
 

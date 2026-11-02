@@ -364,7 +364,7 @@ def escolher(grupos: list, historico: list, cfg: dict, preferir_pessoas: bool = 
         linhas.append(
             f"[{i}] (veículos: {len(g['fontes'])} — {', '.join(g['fontes'][:5])}; há {g['idade_h']:.0f}h) "
             f"{it['titulo']} — {it['resumo'][:220]}")
-    ultimos = [f"- {h.get('categoria', '')}: {h.get('manchete', '')}" for h in historico[-12:]]
+    ultimos = [f"- {h.get('categoria', '')}: {h.get('manchete', '')}" for h in historico[-30:]]
     extra = ("5. Este vídeo vai incluir um trecho de entrevista ou discurso de arquivo: prefira notícias centradas "
              "numa figura pública brasileira conhecida (presidente, ministros, governadores, STF, Congresso).\n"
              if preferir_pessoas else "")
@@ -830,7 +830,7 @@ def obter_imagens(roteiro: dict, cfg: dict, pasta, historico: list, excluir=None
     n = int(cfg["imagens"].get("quantidade", 4))
     max_clips = int(cfg["imagens"].get("cortes_video", 2))
     usados = set(excluir or [])
-    for h in historico[-80:]:
+    for h in historico[-250:]:
         usados.update(h.get("fotos", []))
         usados.update(f"pexels:{x}" for x in h.get("fotos_pexels", []))
     buscas = roteiro.get("buscas_commons", [])
