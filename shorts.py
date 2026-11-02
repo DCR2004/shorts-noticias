@@ -168,7 +168,7 @@ def _data(entry):
 def recolher(fontes: list, horas_max: int) -> list:
     agora = datetime.now(timezone.utc)
     limite = agora - timedelta(hours=horas_max)
-    itens = []
+    itens, vistos = [], set()
     for fonte in fontes:
         nome, url = fonte["nome"], fonte["url"]
         try:
@@ -182,8 +182,9 @@ def recolher(fontes: list, horas_max: int) -> list:
         for e in feed.entries[:50]:
             titulo = limpar_html(e.get("title", ""))
             link = e.get("link", "")
-            if not titulo or not link:
-                continue
+            if not titulo or not link or link in vistos:
+                continue                 # o mesmo artigo pode vir em dois feeds do mesmo jornal
+            vistos.add(link)
             data = _data(e) or agora
             if data < limite or data > agora + timedelta(hours=2):
                 continue
@@ -367,6 +368,18 @@ ESQ_ESCOLHA = {
 }
 
 
+TERMOS_POLITICA_BR = tokens(
+    "Lula Bolsonaro STF Supremo Congresso Câmara Senado senador senadora deputado deputada ministro ministra "
+    "Planalto Alvorada Esplanada TSE eleição eleições eleitoral eleitor urna votação partido governador governadora "
+    "prefeito prefeita CPI CPMI PEC impeachment Haddad Moraes Alckmin Tarcísio Motta Alcolumbre Gleisi Flávio "
+    "Michelle Caiado Zema Ratinho Boulos Nikolas Dino Fachin Barroso Mendonça Zanin Gonet AGU PGR Itamaraty")
+
+
+def politica_br(grupo: dict) -> int:
+    """Quantos termos típicos de política brasileira aparecem no assunto (0 = provavelmente outro tema)."""
+    return len(grupo["tokens"] & TERMOS_POLITICA_BR)
+
+
 def escolher(grupos: list, historico: list, cfg: dict, preferir_pessoas: bool = False) -> dict:
     linhas = []
     for i, g in enumerate(grupos):
@@ -375,16 +388,17 @@ def escolher(grupos: list, historico: list, cfg: dict, preferir_pessoas: bool = 
             f"[{i}] (veículos: {len(g['fontes'])} — {', '.join(g['fontes'][:5])}; há {g['idade_h']:.0f}h) "
             f"{it['titulo']} — {it['resumo'][:220]}")
     ultimos = [f"- {h.get('categoria', '')}: {h.get('manchete', '')}" for h in historico[-30:]]
-    extra = ("5. Este vídeo vai incluir um trecho de entrevista ou discurso de arquivo: prefira notícias centradas "
+    extra = ("6. Este vídeo vai incluir um trecho de entrevista ou discurso de arquivo: prefira notícias centradas "
              "numa figura pública brasileira conhecida (presidente, ministros, governadores, STF, Congresso).\n"
              if preferir_pessoas else "")
     prompt = f"""Escolha UMA notícia para o próximo Short do canal.
 
 Critérios, por ordem:
-1. Interesse público e impacto na vida dos brasileiros (política, economia, serviços, saúde, clima, ciência, Brasil no mundo, grandes acontecimentos internacionais).
-2. Fato confirmado: prefira assuntos cobertos por vários veículos.
-3. Variedade: evite repetir a mesma categoria dos últimos vídeos e NUNCA repita um assunto já coberto.
-4. Evitar: {cfg['noticias']['evitar']}.
+1. PRIORIDADE: POLÍTICA BRASILEIRA (Presidência e governo federal, Congresso, STF e TSE, partidos, eleições, governadores e grandes prefeituras). Se houver na lista uma notícia de política brasileira nova e relevante, escolha-a. Só escolha outro assunto (economia, Brasil, mundo, saúde, ciência...) se não houver nenhuma notícia de política brasileira nova e relevante.
+2. Interesse público e impacto na vida dos brasileiros.
+3. Fato confirmado: prefira assuntos cobertos por vários veículos.
+4. NUNCA repita um assunto já coberto. Dentro da política, varie os temas e os protagonistas e mantenha o equilíbrio entre os vários lados.
+5. Evitar: {cfg['noticias']['evitar']}.
 {extra}
 Últimos vídeos publicados (não repetir):
 {chr(10).join(ultimos) or '- (nenhum)'}
@@ -1623,7 +1637,12 @@ def escolher_e_escrever(cfg: dict, historico: list, pasta):
     usar_excerto = bool(exc_cfg.get("ativo", True))
     exigir = usar_excerto and (os.environ.get("EXIGIR_EXCERTO") == "true"
                                or bool(exc_cfg.get("so_noticias_com_excerto", False)))
-    candidatos = grupos[:60] if exigir else grupos[:25]   # com trecho obrigatório, olha para mais notícias
+    limite = 60 if exigir else 25          # com trecho obrigatório, olha para mais notícias
+    politica = [g for g in grupos if politica_br(g) >= 1]
+    outros = [g for g in grupos if politica_br(g) < 1]
+    candidatos = politica[:max(15, limite - 8)]   # prioridade: política brasileira
+    candidatos += outros[:limite - len(candidatos)]
+    log(f"   Candidatas: {len(candidatos)} ({min(len(politica), len(candidatos))} de política brasileira)")
     if exigir:
         log("   A ver que notícias têm vídeos de arquivo (entrevistas/discursos) sobre o tema...")
         try:

@@ -1,6 +1,6 @@
 # Shorts de notícias automáticos (Brasil)
 
-Este sistema corre sozinho no GitHub, **um vídeo a cada 30 minutos** (entre as 06h e a meia-noite de Brasília), e em cada execução:
+Este sistema corre sozinho no GitHub, **um vídeo a cada 30 minutos** (entre as 06h e a meia-noite de Brasília), com **prioridade para a política brasileira**, e em cada execução:
 
 1. Lê as últimas notícias de 12 jornais brasileiros (g1, Folha, CNN Brasil, Agência Brasil, BBC Brasil, Poder360, Revista Oeste, UOL, Metrópoles, CartaCapital, Gazeta do Povo, InfoMoney).
 2. Junta as notícias que falam do mesmo assunto e dá prioridade às que aparecem em vários jornais.
@@ -91,7 +91,7 @@ Configuras tudo **uma vez** (cerca de 30 a 40 minutos). Tudo o que é usado tem 
    - Em **Artifacts** descarregas o vídeo ("short-N") para o veres.
 3. Se estiver tudo bem, corre outra vez com **Publicar** marcado. O vídeo aparece no YouTube Studio como **agendado** e fica público 1 hora depois.
 
-**Pronto.** A partir daqui o sistema corre sozinho todos os dias, a cada 30 minutos, **entre as 06h e a meia-noite de Brasília** (cada vídeo fica público 1 hora depois de ser criado).
+**Pronto.** A partir daqui o sistema corre sozinho todos os dias, a cada 30 minutos, **entre as 06h e a meia-noite de Brasília** (cada vídeo é publicado logo que fica pronto).
 
 > **Publicação automática:** cada execução "Short automático", ao terminar, espera pelo próximo horário e lança a seguinte (não depende dos horários do GitHub). Para **parar**, cancela em **Actions** a execução "Short automático" que estiver a correr. Para **ligar de novo**, usa **Run workflow** com **Publicar** e **Ligar a publicação automática** marcados. O intervalo e as horas mudam-se na secção `agenda` do `config.yaml`.
 

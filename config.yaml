@@ -41,6 +41,13 @@ noticias:
     - { nome: "CartaCapital",       url: "https://www.cartacapital.com.br/feed/" }
     - { nome: "Gazeta do Povo",     url: "https://www.gazetadopovo.com.br/feed/rss/ultimas-noticias.xml" }
     - { nome: "InfoMoney",          url: "https://www.infomoney.com.br/feed/" }
+    # Secções de política (prioridade do canal). Usam o mesmo nome do jornal para não contar a dobrar.
+    - { nome: "g1",                 url: "https://g1.globo.com/rss/g1/politica/" }
+    - { nome: "Folha de S.Paulo",   url: "https://feeds.folha.uol.com.br/poder/rss091.xml" }
+    - { nome: "Metrópoles",         url: "https://www.metropoles.com/brasil/politica-brasil/feed" }
+    - { nome: "Gazeta do Povo",     url: "https://www.gazetadopovo.com.br/feed/rss/republica.xml" }
+    - { nome: "Revista Oeste",      url: "https://revistaoeste.com/politica/feed/" }
+    - { nome: "CartaCapital",       url: "https://www.cartacapital.com.br/politica/feed/" }
 
 imagens:
   quantidade: 4                 # nº de fotos do tema por vídeo (Wikimedia Commons; depois Pexels; senão fundos gerados)
@@ -49,10 +56,10 @@ imagens:
 
 agenda:
   # Publicação automática: um vídeo a cada X minutos, dentro da janela abaixo (hora de Brasília).
-  # Cada vídeo fica público 1 hora depois de ser criado (youtube.horas_revisao).
+  # Cada vídeo é publicado logo que fica pronto (youtube.modo: "publico").
   intervalo_minutos: 30
-  inicio_brasilia: "05:07"      # criação do primeiro vídeo do dia (público às 06:07)
-  fim_brasilia: "23:07"         # criação do último vídeo do dia (público às 00:07)
+  inicio_brasilia: "06:07"      # primeiro vídeo do dia
+  fim_brasilia: "23:37"         # último vídeo do dia
 
 excerto:
   # Trecho REAL de entrevista ou discurso (vídeo e som originais), de vídeos com licença livre
@@ -68,7 +75,7 @@ youtube:
   #                 (dá-te tempo para apagar no YouTube Studio se algo estiver errado)
   #   "publico"  -> publica de imediato
   #   "privado"  -> fica privado; publicas tu com um clique no YouTube Studio
-  modo: "agendado"
+  modo: "publico"
   horas_revisao: 1
   categoria: "25"               # 25 = Notícias e política
   idioma: "pt-BR"
