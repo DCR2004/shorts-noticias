@@ -43,7 +43,9 @@ noticias:
     - { nome: "InfoMoney",          url: "https://www.infomoney.com.br/feed/" }
 
 imagens:
-  quantidade: 4                 # nº de imagens por vídeo (vêm do Pexels; sem chave usa fundos gerados)
+  quantidade: 4                 # nº de fotos do tema por vídeo (Wikimedia Commons; depois Pexels; senão fundos gerados)
+  cortes_video: 2               # nº de cortes de vídeo reais do tema (Wikimedia Commons: Planalto, TV Senado, STF...)
+  formato: "faixas"             # "faixas" (manchete em cima, vídeo/foto ao meio, legendas em baixo) ou "ecra_inteiro"
 
 youtube:
   # modo:

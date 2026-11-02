@@ -50,6 +50,11 @@ def garantir_fontes() -> None:
         r = requests.get(FONTES_URL.format(peso), timeout=60)
         r.raise_for_status()
         destino.write_bytes(r.content)
+    anton = FONTES_DIR / "Anton-Regular.ttf"
+    if not anton.exists() or anton.stat().st_size < 10000:
+        r = requests.get("https://raw.githubusercontent.com/google/fonts/main/ofl/anton/Anton-Regular.ttf", timeout=60)
+        r.raise_for_status()
+        anton.write_bytes(r.content)
 
 
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -546,7 +551,7 @@ ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Leg,Montserrat Black,88,&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,1,7,4,5,70,150,0,1
+Style: Leg,Anton,118,&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,0,0,0,0,100,100,1,0,1,7,3,5,70,150,0,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -632,60 +637,114 @@ def _meta(meta: dict, campo: str) -> str:
     return limpar_html((meta.get(campo) or {}).get("value", ""))[:90]
 
 
+def _commons_procurar(q: str, tipo: str) -> list:
+    prop = "videoinfo" if tipo == "video" else "imageinfo"
+    params = {"action": "query", "format": "json", "generator": "search", "gsrnamespace": 6, "gsrlimit": 15,
+              "gsrsearch": f"{q} filetype:{'video' if tipo == 'video' else 'bitmap'}", "prop": prop}
+    if tipo == "video":
+        params["viprop"] = "url|size|mime|extmetadata|derivatives"
+    else:
+        params.update({"iiprop": "url|size|mime|extmetadata", "iiurlwidth": 1600})
+    r = requests.get(COMMONS_API, params=params, headers={"User-Agent": UA_WIKI}, timeout=25)
+    r.raise_for_status()
+    paginas = sorted(r.json().get("query", {}).get("pages", {}).values(), key=lambda p: p.get("index", 99))
+    out = []
+    for p in paginas:
+        info = (p.get(prop) or [{}])[0]
+        meta = info.get("extmetadata", {})
+        lic = _meta(meta, "LicenseShortName").strip()
+        if not LICENCAS_LIVRES.match(lic) or re.search(r"\b(NC|ND)\b", lic):
+            continue
+        texto = p.get("title", "") + " " + _meta(meta, "ImageDescription") + " " + _meta(meta, "ObjectName")
+        if not (tokens(q) & tokens(texto)):
+            continue   # o ficheiro tem de mencionar o termo pesquisado
+        ano = re.search(r"(19|20)\d\d", _meta(meta, "DateTimeOriginal") or _meta(meta, "DateTime"))
+        out.append({"titulo": p.get("title", ""), "info": info, "lic": lic, "index": p.get("index", 99),
+                    "autor": _meta(meta, "Artist") or "autor desconhecido", "ano": int(ano.group(0)) if ano else 0})
+    return out
+
+
 def commons(buscas: list, quantidade: int, pasta, usados: set) -> list:
     """Fotos reais do tema (pessoas, instituições, locais) no Wikimedia Commons, só com licenças livres."""
     fotos = []
     for q in buscas or []:
         if len(fotos) >= quantidade:
             break
-        chave = tokens(q)
         try:
-            r = requests.get(COMMONS_API, params={
-                "action": "query", "format": "json", "generator": "search", "gsrnamespace": 6,
-                "gsrlimit": 15, "gsrsearch": f"{q} filetype:bitmap", "prop": "imageinfo",
-                "iiprop": "url|size|mime|extmetadata", "iiurlwidth": 1600},
-                headers={"User-Agent": UA_WIKI}, timeout=25)
-            r.raise_for_status()
-            paginas = sorted(r.json().get("query", {}).get("pages", {}).values(), key=lambda p: p.get("index", 99))
+            cand = _commons_procurar(q, "foto")
         except Exception as e:
             log(f"  Commons '{q}': {type(e).__name__}")
             continue
-        candidatos = []
-        for p in paginas:
-            ii = (p.get("imageinfo") or [{}])[0]
-            meta = ii.get("extmetadata", {})
-            titulo = p.get("title", "")
-            lic = _meta(meta, "LicenseShortName").strip()
-            if titulo in usados or any(f["id"] == titulo for f in fotos):
-                continue
-            if ii.get("mime") not in ("image/jpeg", "image/png") or ii.get("width", 0) < 900:
-                continue
-            if not LICENCAS_LIVRES.match(lic) or re.search(r"\b(NC|ND)\b", lic):
-                continue
-            # o ficheiro tem de mencionar o termo pesquisado (no nome ou na descrição)
-            if chave and not (chave & tokens(titulo + " " + _meta(meta, "ImageDescription"))):
-                continue
-            paisagem = ii.get("width", 0) >= ii.get("height", 1)
-            candidatos.append((0 if paisagem else 1, p.get("index", 99), titulo, ii, meta, lic))
-        candidatos.sort(key=lambda c: (c[0], c[1]))
+        cand = [c for c in cand if c["titulo"] not in usados and all(f["id"] != c["titulo"] for f in fotos)
+                and c["info"].get("mime") in ("image/jpeg", "image/png") and c["info"].get("width", 0) >= 900]
+        cand.sort(key=lambda c: (0 if c["info"].get("width", 0) >= c["info"].get("height", 1) else 1, c["index"]))
         por_busca = 0
-        for _, _, titulo, ii, meta, lic in candidatos:
+        for c in cand:
             if por_busca >= 2 or len(fotos) >= quantidade:
                 break
             try:
-                img = requests.get(ii.get("thumburl") or ii["url"], headers={"User-Agent": UA_WIKI}, timeout=40)
+                img = requests.get(c["info"].get("thumburl") or c["info"]["url"], headers={"User-Agent": UA_WIKI}, timeout=40)
                 img.raise_for_status()
                 destino = pasta / f"commons_{len(fotos)}.jpg"
                 destino.write_bytes(img.content)
                 Image.open(destino).verify()
             except Exception:
                 continue
-            autor = _meta(meta, "Artist") or "autor desconhecido"
-            fotos.append({"caminho": destino, "id": titulo, "autor": autor, "licenca": lic,
-                          "fonte": "Wikimedia Commons", "url": ii.get("descriptionurl", "")})
+            fotos.append({"tipo": "foto", "caminho": destino, "id": c["titulo"], "autor": c["autor"], "licenca": c["lic"],
+                          "fonte": "Wikimedia Commons", "url": c["info"].get("descriptionurl", "")})
             por_busca += 1
     log(f"  Fotos do tema (Wikimedia Commons): {len(fotos)}")
     return fotos
+
+
+def _melhor_versao(info: dict) -> str:
+    """Escolhe a versão do vídeo mais próxima de 720p (as cópias do Commons são mais leves que o original)."""
+    opcoes = []
+    for d in info.get("derivatives") or []:
+        h = int(d.get("height") or 0)
+        if 360 <= h <= 1080 and d.get("src"):
+            opcoes.append((abs(h - 720), d["src"]))
+    if opcoes:
+        return sorted(opcoes)[0][1]
+    return info.get("url", "")
+
+
+def commons_videos(buscas: list, maximo: int, pasta, usados: set) -> list:
+    """Cortes de vídeo reais do tema (Planalto, TV Senado, STF...) com licenças livres no Wikimedia Commons."""
+    clips = []
+    for q in buscas or []:
+        if len(clips) >= maximo:
+            break
+        try:
+            cand = _commons_procurar(q, "video")
+        except Exception as e:
+            log(f"  Commons vídeo '{q}': {type(e).__name__}")
+            continue
+        cand = [c for c in cand if c["titulo"] not in usados and all(x["id"] != c["titulo"] for x in clips)
+                and float(c["info"].get("duration") or 0) >= 12 and int(c["info"].get("width") or 0) >= 640]
+        # mais recentes e em HD primeiro
+        cand.sort(key=lambda c: (-(c["ano"] >= 2018), -(int(c["info"].get("height") or 0) >= 720), -c["ano"], c["index"]))
+        for c in cand[:2]:
+            dur_total = float(c["info"]["duration"])
+            inicio = max(2.0, min(dur_total * 0.25, dur_total - 14))
+            destino = pasta / f"clip_{len(clips)}.mp4"
+            try:
+                subprocess.run(["ffmpeg", "-y", "-v", "error", "-user_agent", UA_WIKI, "-ss", f"{inicio:.1f}",
+                                "-i", _melhor_versao(c["info"]), "-t", "11", "-an", "-vf", "scale=-2:720",
+                                "-c:v", "libx264", "-preset", "ultrafast", "-crf", "20", str(destino)],
+                               check=True, capture_output=True, timeout=150)
+                d = duracao_media(destino)
+            except Exception as e:
+                log(f"  Não consegui cortar '{c['titulo'][:50]}': {type(e).__name__}")
+                continue
+            if d < 4:
+                continue
+            clips.append({"tipo": "video", "caminho": destino, "dur": d, "id": c["titulo"], "autor": c["autor"],
+                          "licenca": c["lic"], "fonte": "Wikimedia Commons", "ano": c["ano"],
+                          "url": c["info"].get("descriptionurl", "")})
+            break  # um corte por pesquisa, para variar
+    log(f"  Cortes de vídeo do tema (Wikimedia Commons): {len(clips)}")
+    return clips
 
 
 def pexels(buscas: list, quantidade: int, pasta, usados: set) -> list:
@@ -710,8 +769,9 @@ def pexels(buscas: list, quantidade: int, pasta, usados: set) -> list:
             destino = pasta / f"pexels_{len(fotos)}.jpg"
             destino.write_bytes(img.content)
             Image.open(destino).verify()
-            fotos.append({"caminho": destino, "id": f"pexels:{foto['id']}", "autor": foto.get("photographer", "Pexels"),
-                          "licenca": "Licença Pexels", "fonte": "Pexels", "url": foto.get("url", "")})
+            fotos.append({"tipo": "foto", "caminho": destino, "id": f"pexels:{foto['id']}",
+                          "autor": foto.get("photographer", "Pexels"), "licenca": "Licença Pexels",
+                          "fonte": "Pexels", "url": foto.get("url", "")})
         except Exception as e:
             log(f"  Pexels '{q}': {type(e).__name__} {str(e)[:80]}")
         if len(fotos) >= quantidade:
@@ -751,23 +811,35 @@ def fundos_gerados(quantidade: int, pasta) -> list:
         img = Image.alpha_composite(img.convert("RGBA"), camada).convert("RGB")
         destino = pasta / f"fundo_{i}.jpg"
         img.save(destino, quality=92)
-        out.append({"caminho": destino, "id": None, "autor": None})
+        out.append({"tipo": "foto", "caminho": destino, "id": None, "autor": None})
     return out
 
 
 def obter_imagens(roteiro: dict, cfg: dict, pasta, historico: list) -> list:
+    """Devolve a sequência de cortes de vídeo e fotos do tema (alternados)."""
     n = int(cfg["imagens"].get("quantidade", 4))
+    max_clips = int(cfg["imagens"].get("cortes_video", 2))
     usados = set()
     for h in historico[-80:]:
         usados.update(h.get("fotos", []))
         usados.update(f"pexels:{x}" for x in h.get("fotos_pexels", []))
-    fotos = commons(roteiro.get("buscas_commons", []), n, pasta, usados)
+    buscas = roteiro.get("buscas_commons", [])
+    clips = commons_videos(buscas, max_clips, pasta, usados) if max_clips > 0 else []
+    fotos = commons(buscas, n, pasta, usados)
     if len(fotos) < n:
         fotos += pexels(roteiro.get("buscas_imagens", []), n - len(fotos), pasta, usados)
-    if not fotos:
-        log("  Sem fotos: a usar fundos gerados")
+    if not clips and not fotos:
+        log("  Sem fotos nem vídeos: a usar fundos gerados")
         return fundos_gerados(n, pasta)
-    return fotos
+    # alterna: vídeo, foto, vídeo, foto, foto...
+    seq, fi = [], 0
+    for c in clips:
+        seq.append(c)
+        if fi < len(fotos):
+            seq.append(fotos[fi])
+            fi += 1
+    seq += fotos[fi:]
+    return seq
 
 
 # ======================================================================
@@ -811,13 +883,17 @@ def _texto_com_sombra(img, xy, texto, fonte, cor):
     ImageDraw.Draw(img).text(xy, texto, font=fonte, fill=cor)
 
 
-def camada_grafica(caminho, titulo_topo: str, titulo_destaque: str, etiqueta: str, canal: str, fontes: list) -> None:
-    """Faixa de cima: etiqueta, canal, manchete em duas cores, fontes. Linhas amarelas à volta da faixa central."""
+def camada_grafica(caminho, titulo_topo: str, titulo_destaque: str, etiqueta: str, canal: str, fontes: list,
+                   formato: str = "faixas") -> None:
+    """Parte de cima: etiqueta, canal, manchete em duas cores e fontes."""
     img = Image.new("RGBA", (L, A), (0, 0, 0, 0))
     sombra = Image.new("L", (L, A), 0)
     ds = ImageDraw.Draw(sombra)
     for y in range(FAIXA_Y):
-        ds.line([(0, y), (L, y)], fill=int(150 - 60 * y / FAIXA_Y))
+        ds.line([(0, y), (L, y)], fill=int((200 if formato == "ecra_inteiro" else 150) * (1 - 0.55 * y / FAIXA_Y)))
+    if formato == "ecra_inteiro":   # escurece também a zona das legendas
+        for y in range(1300, A):
+            ds.line([(0, y), (L, y)], fill=int(170 * (y - 1300) / (A - 1300)))
     escuro = Image.new("RGBA", (L, A), (0, 0, 0, 255))
     escuro.putalpha(sombra)
     img.alpha_composite(escuro)
@@ -832,7 +908,7 @@ def camada_grafica(caminho, titulo_topo: str, titulo_destaque: str, etiqueta: st
     d.text((x0 + 17, y0 + 27), etiqueta, font=f_tag, fill="white", anchor="lm")
     d.text((x0 + tw + 56, y0 + 27), canal, font=_fonte("SemiBold", 32), fill=(255, 255, 255, 235), anchor="lm")
 
-    # manchete: parte branca + parte amarela (maior); encolhe até caber na faixa de cima
+    # manchete: parte branca + parte amarela (maior); encolhe até caber
     data_br = (datetime.now(timezone.utc) - timedelta(hours=3)).strftime("%d/%m/%Y")
     txt_fontes = ("Fonte: " + ", ".join(fontes) if fontes else "Resumo de notícias") + f" · {data_br}"
     larg = L - 120
@@ -857,25 +933,33 @@ def camada_grafica(caminho, titulo_topo: str, titulo_destaque: str, etiqueta: st
     d.text((62, y + 52), "Narração gerada por IA · Imagens de arquivo",
            font=_fonte("SemiBold", 22), fill=(200, 200, 200, 255))
 
-    # linhas amarelas a enquadrar a faixa central
-    d.rectangle([0, FAIXA_Y - 6, L, FAIXA_Y - 1], fill=AMARELO)
-    d.rectangle([0, FAIXA_Y + FAIXA_H, L, FAIXA_Y + FAIXA_H + 5], fill=AMARELO)
+    if formato != "ecra_inteiro":   # linhas amarelas a enquadrar a faixa central
+        d.rectangle([0, FAIXA_Y - 6, L, FAIXA_Y - 1], fill=AMARELO)
+        d.rectangle([0, FAIXA_Y + FAIXA_H, L, FAIXA_Y + FAIXA_H + 5], fill=AMARELO)
     img.save(caminho)
 
 
-def _base_segmento(foto: dict, destino) -> None:
-    """Fundo do segmento: a própria foto desfocada e escura + crédito por baixo da faixa."""
-    im = Image.open(foto["caminho"]).convert("RGB")
-    bg = ImageOps.fit(im, (L, A), centering=(0.5, 0.35)).filter(ImageFilter.GaussianBlur(38))
-    bg = ImageEnhance.Brightness(bg).enhance(0.42).convert("RGBA")
-    if foto.get("autor"):
-        d = ImageDraw.Draw(bg)
-        credito = f"Foto: {foto['autor']} · {foto.get('licenca', '')} · {foto.get('fonte', '')}"
+def _png_credito(item: dict, destino, formato: str) -> None:
+    """Camada transparente com o crédito da foto/vídeo."""
+    img = Image.new("RGBA", (L, A), (0, 0, 0, 0))
+    if item.get("autor"):
+        d = ImageDraw.Draw(img)
+        quem = "Vídeo" if item.get("tipo") == "video" else "Foto"
+        ano = f" ({item['ano']})" if item.get("ano") else ""
+        credito = f"{quem}: {item['autor']}{ano} · {item.get('licenca', '')} · {item.get('fonte', '')}"
         f = _fonte("SemiBold", 22)
         while d.textlength(credito, font=f) > L - 80 and len(credito) > 20:
             credito = credito[:-4] + "…"
-        d.text((L - 40, FAIXA_Y + FAIXA_H + 16), credito, font=f, fill=(220, 220, 220, 255), anchor="ra")
-    bg.convert("RGB").save(destino, quality=93)
+        y = FAIXA_Y + FAIXA_H + 16 if formato != "ecra_inteiro" else 1290
+        d.text((L - 38, y + 2), credito, font=f, fill=(0, 0, 0, 200), anchor="ra")
+        d.text((L - 40, y), credito, font=f, fill=(225, 225, 225, 255), anchor="ra")
+    img.save(destino)
+
+
+def _fundo_desfocado(caminho_img, destino) -> None:
+    im = Image.open(caminho_img).convert("RGB")
+    bg = ImageOps.fit(im, (L, A), centering=(0.5, 0.35)).filter(ImageFilter.GaussianBlur(38))
+    ImageEnhance.Brightness(bg).enhance(0.42).save(destino, quality=93)
 
 
 _MOVIMENTOS = [
@@ -884,54 +968,92 @@ _MOVIMENTOS = [
     ("1.08", "(iw-iw/zoom)*on/{n}", "ih/2-(ih/zoom/2)"),                  # esquerda -> direita
     ("1.08", "(iw-iw/zoom)*(1-on/{n})", "ih/2-(ih/zoom/2)"),              # direita -> esquerda
 ]
+_ENC = ["-c:v", "libx264", "-preset", "ultrafast", "-crf", "17", "-pix_fmt", "yuv420p", "-r", str(FPS)]
 
 
-def _segmento(foto: dict, saida, dur: float, mov: int, pasta, i: int) -> None:
+def _segmento(item: dict, saida, dur: float, mov: int, pasta, i: int, formato: str) -> None:
     n = max(2, int(round(dur * FPS)))
+    cred = pasta / f"cred_{i}.png"
+    _png_credito(item, cred, formato)
+    w, h, ytop = (L, A, 0) if formato == "ecra_inteiro" else (L, FAIXA_H, FAIXA_Y)
+
+    if item.get("tipo") == "video":
+        # vídeo real: no centro (ou ecrã inteiro) + o mesmo vídeo desfocado por trás
+        filtro = (f"[0:v]fps={FPS},setsar=1,tpad=stop_mode=clone:stop_duration=6,split[a][b];"
+                  f"[a]scale={w}:{h}:force_original_aspect_ratio=increase,crop={w}:{h}[fg];"
+                  f"[b]scale=270:480:force_original_aspect_ratio=increase,crop=270:480,gblur=sigma=6,"
+                  f"scale={L}:{A},eq=brightness=-0.28:saturation=0.85[bg];"
+                  f"[bg][fg]overlay=0:{ytop}[v0];[v0][1:v]overlay=0:0,format=yuv420p[v]")
+        correr(["ffmpeg", "-y", "-v", "error", "-i", str(item["caminho"]), "-loop", "1", "-i", str(cred),
+                "-filter_complex", filtro, "-map", "[v]", "-frames:v", str(n), *_ENC, str(saida)])
+        return
+
+    # foto: zoom lento + foto desfocada por trás
     base = pasta / f"base_{i}.jpg"
-    _base_segmento(foto, base)
+    _fundo_desfocado(item["caminho"], base)
     z, x, y = (s.format(n=n) for s in _MOVIMENTOS[mov % len(_MOVIMENTOS)])
-    filtro = (f"[1:v]scale=2160:1216:force_original_aspect_ratio=increase,"
-              f"crop=2160:1216:(iw-2160)/2:(ih-1216)*0.3,setsar=1,"
-              f"zoompan=z='{z}':x='{x}':y='{y}':d={n}:s={L}x{FAIXA_H}:fps={FPS}[fg];"
-              f"[0:v][fg]overlay=0:{FAIXA_Y}:shortest=1,format=yuv420p[v]")
+    filtro = (f"[1:v]scale={w * 2}:{h * 2}:force_original_aspect_ratio=increase,"
+              f"crop={w * 2}:{h * 2}:(iw-{w * 2})/2:(ih-{h * 2})*0.3,setsar=1,"
+              f"zoompan=z='{z}':x='{x}':y='{y}':d={n}:s={w}x{h}:fps={FPS}[fg];"
+              f"[0:v][fg]overlay=0:{ytop}:shortest=1[v0];[v0][2:v]overlay=0:0,format=yuv420p[v]")
     correr(["ffmpeg", "-y", "-v", "error", "-loop", "1", "-framerate", str(FPS), "-i", str(base),
-            "-i", str(foto["caminho"]), "-filter_complex", filtro, "-map", "[v]", "-frames:v", str(n),
-            "-c:v", "libx264", "-preset", "ultrafast", "-crf", "17", "-r", str(FPS), str(saida)])
+            "-i", str(item["caminho"]), "-loop", "1", "-i", str(cred), "-filter_complex", filtro,
+            "-map", "[v]", "-frames:v", str(n), *_ENC, str(saida)])
 
 
-def fundo(fotos: list, duracao: float, pasta) -> object:
+def _duracoes(itens: list, total: float) -> list:
+    """Tempo de ecrã de cada item: vídeos até 8 s (no máximo 60% do total); fotos dividem o resto."""
+    videos = [i for i, it in enumerate(itens) if it.get("tipo") == "video"]
+    fotos = [i for i in range(len(itens)) if i not in videos]
+    dur = [0.0] * len(itens)
+    t_videos = 0.0
+    for i in videos:
+        dur[i] = min(8.0, itens[i]["dur"] - 0.6)
+        t_videos += dur[i]
+    if fotos:
+        limite = total * 0.6
+        if t_videos > limite:
+            for i in videos:
+                dur[i] *= limite / t_videos
+            t_videos = limite
+        for i in fotos:
+            dur[i] = (total - t_videos) / len(fotos)
+    else:   # só vídeos: esticam proporcionalmente (o último fotograma fica parado se faltar)
+        for i in videos:
+            dur[i] = dur[i] * total / max(t_videos, 0.1)
+    return dur
+
+
+def fundo(itens: list, duracao: float, pasta, formato: str = "faixas") -> object:
     T = 0.45  # duração da transição
-    k = len(fotos)
-    dur_seg = (duracao + T * (k - 1)) / k
+    durs = _duracoes(itens, duracao)
     segs = []
     inicio = random.randint(0, 3)
-    for i, foto in enumerate(fotos):
+    for i, (item, d) in enumerate(zip(itens, durs)):
         s = pasta / f"seg_{i}.mp4"
-        _segmento(foto, s, dur_seg, inicio + i, pasta, i)
+        _segmento(item, s, d + T, inicio + i, pasta, i, formato)
         segs.append(s)
     saida = pasta / "fundo.mp4"
-    if k == 1:
+    if len(segs) == 1:
         shutil.copy(segs[0], saida)
         return saida
     entradas, filtros, ant, off = [], [], "[0:v]", 0.0
     for s in segs:
         entradas += ["-i", str(s)]
-    for i in range(1, k):
-        off += dur_seg - T
+    for i in range(1, len(segs)):
+        off += durs[i - 1]
         rot = f"[x{i}]"
         filtros.append(f"{ant}[{i}:v]xfade=transition=fade:duration={T}:offset={off:.3f}{rot}")
         ant = rot
     correr(["ffmpeg", "-y", "-v", "error", *entradas, "-filter_complex", ";".join(filtros),
-            "-map", ant, "-c:v", "libx264", "-preset", "ultrafast", "-crf", "17",
-            "-pix_fmt", "yuv420p", "-r", str(FPS), str(saida)])
+            "-map", ant, *_ENC, str(saida)])
     return saida
 
 
-def montar(fotos: list, audio, ass, grafico, duracao_audio: float, pasta, saida) -> None:
+def montar(itens: list, audio, ass, grafico, duracao_audio: float, pasta, saida, formato: str = "faixas") -> None:
     total = duracao_audio + 0.9
-    log(f"  A montar vídeo de {total:.1f}s com {len(fotos)} imagens")
-    bg = fundo(fotos, total, pasta)
+    log(f"  A montar vídeo de {total:.1f}s com {len(itens)} cortes/imagens ({formato})")
+    bg = fundo(itens, total, pasta, formato)
     fontes_local = pasta / "fonts"
     fontes_local.mkdir(exist_ok=True)
     for f in FONTES_DIR.glob("*.ttf"):
@@ -971,7 +1093,9 @@ def enviar(video, titulo: str, descricao: str, tags: list, cfg: dict) -> dict:
     from googleapiclient.http import MediaFileUpload
 
     yt_cfg = cfg["youtube"]
-    modo = yt_cfg.get("modo", "agendado")
+    modo = os.environ.get("MODO_YT") or yt_cfg.get("modo", "agendado")
+    if modo == "config":
+        modo = yt_cfg.get("modo", "agendado")
     status = {
         "selfDeclaredMadeForKids": False,
         "embeddable": True,
@@ -1037,7 +1161,8 @@ def descricao_completa(roteiro: dict, artigos: list, creditos: list) -> str:
     if creditos:
         partes += ["", "Imagens de arquivo:"]
         for c in creditos:
-            partes.append(f"• Foto: {c['autor']} ({c.get('licenca', '')}), via {c.get('fonte', '')}: {c.get('url', '')}")
+            quem = "Vídeo" if c.get("tipo") == "video" else "Foto"
+            partes.append(f"• {quem}: {c['autor']} ({c.get('licenca', '')}), via {c.get('fonte', '')}: {c.get('url', '')}")
     tags = ["Shorts", "Notícias", "Brasil"] + [h.lstrip("#").replace(" ", "") for h in roteiro.get("hashtags", [])]
     vistos, hashtags = set(), []
     for t in tags:
@@ -1148,18 +1273,19 @@ def main():
         else:
             fotos = obter_imagens(roteiro, cfg, pasta, historico)
         nomes_fontes = list(dict.fromkeys(a["fonte"] for a in artigos))
+        formato = cfg["imagens"].get("formato", "faixas")
         topo, destaque = roteiro.get("titulo_topo", ""), roteiro.get("titulo_destaque", "")
         if not topo or not destaque:
             topo, destaque = dividir_manchete(roteiro["manchete"])
         grafico = pasta / "grafico.png"
-        camada_grafica(grafico, topo, destaque, roteiro["etiqueta"], cfg["canal"]["nome"], nomes_fontes)
+        camada_grafica(grafico, topo, destaque, roteiro["etiqueta"], cfg["canal"]["nome"], nomes_fontes, formato)
         ass = pasta / "legendas.ass"
-        gerar_ass(palavras, ass, dur + 0.9)
+        gerar_ass(palavras, ass, dur + 0.9, y=1150 if formato == "ecra_inteiro" else 1440)
 
         log("6) A montar o vídeo...")
         carimbo = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M")
         video = saida_dir / f"short_{carimbo}.mp4"
-        montar(fotos, audio, ass, grafico, dur, pasta, video)
+        montar(fotos, audio, ass, grafico, dur, pasta, video, formato)
         log(f"   Vídeo: {video} ({video.stat().st_size / 1e6:.1f} MB)")
 
     descricao = descricao_completa(roteiro, artigos, fotos)
