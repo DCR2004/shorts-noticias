@@ -299,12 +299,17 @@ def _extrair_json(texto: str):
         raise
 
 
+_MODELOS_EM_FALHA = set()   # modelos sobrecarregados nesta execução: os pedidos seguintes saltam-nos
+
+
 def chamar_gemini(prompt: str, modelos: list, esquema: dict | None = None, anexos: list | None = None) -> dict:
     chave = os.environ.get("GEMINI_API_KEY")
     if not chave:
         raise RuntimeError("Falta o segredo GEMINI_API_KEY.")
     ultimo_erro = ""
     for modelo in modelos:
+        if modelo in _MODELOS_EM_FALHA and modelo != modelos[-1]:
+            continue
         usar_esquema = esquema is not None
         for tentativa in range(4):
             corpo = {
@@ -321,6 +326,7 @@ def chamar_gemini(prompt: str, modelos: list, esquema: dict | None = None, anexo
                 ultimo_erro = f"{modelo}: {type(e).__name__}"
                 log(f"  {ultimo_erro} (sem resposta)")
                 if tentativa >= 1:
+                    _MODELOS_EM_FALHA.add(modelo)
                     break                 # demasiado lento -> próximo modelo
                 time.sleep(5)
                 continue
@@ -341,9 +347,10 @@ def chamar_gemini(prompt: str, modelos: list, esquema: dict | None = None, anexo
                 usar_esquema = False       # tenta de novo sem esquema
                 continue
             if r.status_code in (429, 500, 502, 503, 504):
-                if r.status_code == 429 and tentativa >= 1:
-                    break                 # quota esgotada -> próximo modelo
-                time.sleep(15 * (tentativa + 1))
+                if tentativa >= 1:
+                    _MODELOS_EM_FALHA.add(modelo)
+                    break                 # quota esgotada ou sobrecarregado -> próximo modelo
+                time.sleep(10)
                 continue
             break                         # 403/404/etc -> próximo modelo
     raise RuntimeError(f"Gemini falhou em todos os modelos. Último erro: {ultimo_erro}")
