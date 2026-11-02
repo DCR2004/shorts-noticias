@@ -406,6 +406,7 @@ ESQ_ROTEIRO = {
         "buscas_commons": {"type": "ARRAY", "items": {"type": "STRING"}},
         "buscas_imagens": {"type": "ARRAY", "items": {"type": "STRING"}},
         "pessoas": {"type": "ARRAY", "items": {"type": "STRING"}},
+        "buscas_trecho": {"type": "ARRAY", "items": {"type": "STRING"}},
     },
     "required": ["suficiente", "titulo_youtube", "manchete", "titulo_topo", "titulo_destaque", "etiqueta",
                  "roteiro", "descricao", "hashtags", "tags", "buscas_commons", "buscas_imagens"],
@@ -444,6 +445,7 @@ OUTROS CAMPOS:
 - "buscas_commons": 3 a 5 pesquisas para encontrar FOTOS REAIS do tema no Wikimedia Commons, só com NOMES PRÓPRIOS centrais da notícia, do mais importante para o menos: pessoas públicas (nome como são conhecidas, ex.: "Flávio Bolsonaro"), instituições (ex.: "Polícia Federal", "Supremo Tribunal Federal", "Anvisa", "Banco Central do Brasil"), locais ou edifícios (ex.: "Palácio do Planalto", "Congresso Nacional", nome da cidade). Sem frases nem verbos.
 - "buscas_imagens": 3 pesquisas EM INGLÊS para fotos genéricas de banco de imagens que ilustrem o assunto (ex.: "police car brazil", "medicine injection pen", "stock market screen"). Sem pessoas específicas nem marcas.
 - "pessoas": até 3 figuras públicas centrais na notícia, com o nome como são conhecidas (ex.: "Lula", "Fernando Haddad", "Alexandre de Moraes"), que possam aparecer a falar sobre este assunto em vídeos de arquivo. Lista vazia se não houver.
+- "buscas_trecho": 2 a 4 pesquisas curtas para encontrar vídeos de arquivo em que uma dessas figuras fala sobre ESTE assunto: nome + tema em uma ou duas palavras (ex.: "Lula reforma tributária", "Haddad arcabouço fiscal", "Marina Silva desmatamento"). Lista vazia se não houver.
 
 TEXTOS DAS FONTES:
 {textos}"""
@@ -943,7 +945,7 @@ def transcrever(audio, cfg: dict) -> list:
         return []
 
 
-def _candidatos_excerto(buscas: list, usados: set) -> list:
+def _candidatos_excerto(buscas: list, usados: set, tema: set) -> list:
     vistos, out = set(), []
     for q in buscas:
         try:
@@ -957,13 +959,15 @@ def _candidatos_excerto(buscas: list, usados: set) -> list:
             descricao = limpar_html((meta.get("ImageDescription") or {}).get("value", ""))[:700]
             if c["titulo"] in usados or c["titulo"] in vistos or not 15 <= dur <= 3600:
                 continue
-            if not tokens(q) <= tokens(c["titulo"] + " " + descricao):
-                continue   # o nome completo tem de aparecer no título ou na descrição
+            tk = tokens(c["titulo"] + " " + descricao)
+            if len(tokens(q) & tk) < max(1, (len(tokens(q)) + 1) // 2):
+                continue   # a pesquisa (nome e tema) tem de aparecer no título ou na descrição
             vistos.add(c["titulo"])
-            c.update({"dur": dur, "busca": q, "data": _data_video(meta), "descricao": descricao})
+            c.update({"dur": dur, "busca": q, "data": _data_video(meta), "descricao": descricao,
+                      "afinidade": len(tema & tk)})
             out.append(c)
-    # recentes, curtos (mais focados) e relevantes primeiro
-    out.sort(key=lambda c: (-(c["ano"] >= 2019), -(c["dur"] <= 900), -c["ano"], c["index"]))
+    # primeiro os que falam do mesmo tema; depois recentes, curtos (mais focados) e mais relevantes na pesquisa
+    out.sort(key=lambda c: (-min(c["afinidade"], 4), -(c["ano"] >= 2019), -(c["dur"] <= 900), -c["ano"], c["index"]))
     return out
 
 
@@ -1007,10 +1011,13 @@ def procurar_excerto(roteiro: dict, cfg: dict, pasta, historico: list):
     for h in historico[-300:]:
         usados.update(h.get("fotos", []))
     pessoas = [p.strip() for p in roteiro.get("pessoas", []) if p and p.strip()][:3]
-    buscas = pessoas or roteiro.get("buscas_commons", [])[:2]
-    cands = _candidatos_excerto(buscas, usados)
-    log(f"  Vídeos de arquivo candidatos ({', '.join(buscas) or '-'}): {len(cands)}")
-    for n, c in enumerate(cands[:3]):
+    tematicas = [b.strip() for b in roteiro.get("buscas_trecho", []) if b and b.strip()][:4]
+    buscas = list(dict.fromkeys(tematicas + (pessoas or roteiro.get("buscas_commons", [])[:2])))
+    tema = tokens(roteiro.get("manchete", "") + " " + roteiro.get("roteiro", "")) - set().union(*(tokens(p) for p in pessoas))
+    cands = _candidatos_excerto(buscas, usados, tema)
+    bons = [c for c in cands if c["afinidade"] >= 2]
+    log(f"  Vídeos de arquivo ({'; '.join(buscas) or '-'}): {len(cands)}, sobre o tema: {len(bons)}")
+    for n, c in enumerate(bons[:3]):
         janela = min(c["dur"], 240.0)
         ini_j = 0.0 if c["dur"] <= 270 else max(0.0, min(c["dur"] * 0.12, c["dur"] - janela))
         audio = pasta / f"trecho_audio_{n}.mp3"
