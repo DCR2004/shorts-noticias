@@ -15,6 +15,11 @@ on:
         description: "Publicar no YouTube? (deixa desmarcado para só criar um vídeo de teste)"
         type: boolean
         default: false
+      modo_publicacao:
+        description: "Como publicar (se marcado acima): config = o que está no config.yaml"
+        type: choice
+        options: [config, privado, agendado, publico]
+        default: config
 
 permissions:
   contents: write
@@ -48,6 +53,7 @@ jobs:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          MODO_YT: ${{ inputs.modo_publicacao || 'config' }}
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.publicar }}" != "true" ]; then
             python shorts.py --sem-upload
