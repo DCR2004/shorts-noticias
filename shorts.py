@@ -971,6 +971,37 @@ def _candidatos_excerto(buscas: list, usados: set, tema: set) -> list:
     return out
 
 
+ESQ_PRESEL = {"type": "OBJECT", "properties": {"indices": {"type": "ARRAY", "items": {"type": "INTEGER"}}},
+              "required": ["indices"]}
+
+
+def _preselecionar(cands: list, roteiro: dict, cfg: dict) -> list:
+    """Pede à IA os vídeos (pelo título/descrição) com mais probabilidade de falarem do mesmo assunto."""
+    lista = cands[:25]
+    linhas = [f"[{i}] {c['titulo'][5:110]} ({c['data'] or 's/ data'}; {c['dur'] / 60:.0f} min) — {c['descricao'][:220]}"
+              for i, c in enumerate(lista)]
+    prompt = f"""NOTÍCIA: {roteiro['manchete']}
+RESUMO: {roteiro['roteiro'][:700]}
+
+VÍDEOS DE ARQUIVO DISPONÍVEIS (título, data, duração, descrição):
+{chr(10).join(linhas)}
+
+Quais destes vídeos têm boa probabilidade de mostrar uma figura pública a FALAR sobre o MESMO assunto da notícia?
+Não basta aparecer a mesma pessoa: o tema tem de ser o mesmo ou diretamente ligado. Prefira entrevistas, discursos e declarações.
+Devolva até 3 índices, do mais provável para o menos provável, ou uma lista vazia se nenhum servir.
+Responda em JSON: {{"indices": [ ... ]}}"""
+    res = chamar_gemini(prompt, cfg["ia"]["modelos"], ESQ_PRESEL)
+    out = []
+    for i in res.get("indices", []):
+        try:
+            i = int(i)
+        except (TypeError, ValueError):
+            continue
+        if 0 <= i < len(lista) and lista[i] not in out:
+            out.append(lista[i])
+    return out[:3]
+
+
 def _escolher_trecho(segs: list, cand: dict, roteiro: dict, cfg: dict) -> dict:
     dmax = float(cfg.get("excerto", {}).get("duracao_max", 15))
     linhas = [f"[{i}] ({s['ini']:.1f}s a {s['fim']:.1f}s) {s['texto']}" for i, s in enumerate(segs)]
@@ -1012,12 +1043,22 @@ def procurar_excerto(roteiro: dict, cfg: dict, pasta, historico: list):
         usados.update(h.get("fotos", []))
     pessoas = [p.strip() for p in roteiro.get("pessoas", []) if p and p.strip()][:3]
     tematicas = [b.strip() for b in roteiro.get("buscas_trecho", []) if b and b.strip()][:4]
+    if not tematicas:   # pessoa + palavra-chave da notícia
+        chaves = [t for t in roteiro.get("tags", []) if t and not any(tokens(p) & tokens(t) for p in pessoas)]
+        tematicas = [f"{p} {t}" for p in pessoas[:2] for t in chaves[:2]]
     buscas = list(dict.fromkeys(tematicas + (pessoas or roteiro.get("buscas_commons", [])[:2])))
     tema = tokens(roteiro.get("manchete", "") + " " + roteiro.get("roteiro", "")) - set().union(*(tokens(p) for p in pessoas))
     cands = _candidatos_excerto(buscas, usados, tema)
-    bons = [c for c in cands if c["afinidade"] >= 2]
-    log(f"  Vídeos de arquivo ({'; '.join(buscas) or '-'}): {len(cands)}, sobre o tema: {len(bons)}")
-    for n, c in enumerate(bons[:3]):
+    log(f"  Vídeos de arquivo ({'; '.join(buscas) or '-'}): {len(cands)}")
+    if not cands:
+        return None
+    try:
+        bons = _preselecionar(cands, roteiro, cfg)
+    except Exception as e:
+        log(f"  Pré-seleção falhou ({type(e).__name__}); a usar a afinidade de palavras")
+        bons = [c for c in cands if c["afinidade"] >= 2][:2]
+    log(f"  Com probabilidade de falar do tema: {len(bons)}" + "".join(f"\n    - {c['titulo'][5:90]}" for c in bons))
+    for n, c in enumerate(bons):
         janela = min(c["dur"], 240.0)
         ini_j = 0.0 if c["dur"] <= 270 else max(0.0, min(c["dur"] * 0.12, c["dur"] - janela))
         audio = pasta / f"trecho_audio_{n}.mp3"
