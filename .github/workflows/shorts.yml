@@ -24,6 +24,10 @@ on:
         description: "Só criar o vídeo se encontrar um trecho real de entrevista/discurso"
         type: boolean
         default: false
+      trecho_demo:
+        description: "(Teste) Vídeo de demonstração com o trecho de um vídeo do Wikimedia Commons, ex.: File:Nome.webm"
+        type: string
+        default: ""
 
 permissions:
   contents: write
@@ -65,6 +69,7 @@ jobs:
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
           MODO_YT: ${{ inputs.modo_publicacao || 'config' }}
           EXIGIR_EXCERTO: ${{ inputs.exigir_excerto && 'true' || '' }}
+          DEMO_TRECHO: ${{ inputs.trecho_demo || '' }}
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.publicar }}" != "true" ]; then
             python shorts.py --sem-upload
