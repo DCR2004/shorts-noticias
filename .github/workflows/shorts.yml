@@ -1,14 +1,16 @@
 name: Shorts de notícias
+run-name: ${{ github.event_name == 'schedule' && 'Vigia da publicação automática' || (inputs.apenas_esperar && 'Short automático (à espera da manhã)') || (inputs.cadeia && 'Short automático') || 'Shorts de notícias (manual)' }}
+
+# Publicação automática: cada vídeo "Short automático", ao terminar, espera pelo próximo
+# horário (secção "agenda" do config.yaml) e lança o seguinte. Não depende dos horários
+# do GitHub, que nesta conta não estão a disparar.
+# Para PARAR: em Actions, cancela a execução "Short automático" que estiver a correr.
+# Para LIGAR de novo: "Run workflow" com "Ligar a publicação automática" marcado.
 
 on:
   schedule:
-    # 25 vídeos por dia, um a cada 45 minutos, criados entre as 05:07 e as 23:07 de Brasília.
-    # Horários em UTC (Brasília = UTC-3). Com "agendado" + 1h de revisão, ficam públicos
-    # entre as 06:07 e as 00:07 de Brasília. (O GitHub pode atrasar alguns minutos.)
-    - cron: "7 2,8,11,14,17,20,23 * * *"    # Brasília: 05:07 08:07 11:07 14:07 17:07 20:07 23:07
-    - cron: "52 8,11,14,17,20,23 * * *"     # Brasília: 05:52 08:52 11:52 14:52 17:52 20:52
-    - cron: "37 0,9,12,15,18,21 * * *"      # Brasília: 06:37 09:37 12:37 15:37 18:37 21:37
-    - cron: "22 1,10,13,16,19,22 * * *"     # Brasília: 07:22 10:22 13:22 16:22 19:22 22:22
+    # Vigia: se a cadeia automática parar, volta a ligá-la (só funciona quando o GitHub disparar horários).
+    - cron: "47 * * * *"
   workflow_dispatch:
     inputs:
       publicar:
@@ -28,18 +30,27 @@ on:
         description: "(Teste) Vídeo de demonstração com o trecho de um vídeo do Wikimedia Commons, ex.: File:Nome.webm"
         type: string
         default: ""
+      cadeia:
+        description: "Ligar a publicação automática (um vídeo a cada 30 min, conforme o config.yaml)"
+        type: boolean
+        default: false
+      apenas_esperar:
+        description: "(Interno) Só esperar pelo próximo horário, sem criar vídeo"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
-
-concurrency:
-  group: shorts-noticias
-  cancel-in-progress: false
+  actions: write
 
 jobs:
   short:
+    if: github.event_name == 'workflow_dispatch' && !inputs.apenas_esperar
     runs-on: ubuntu-latest
     timeout-minutes: 50
+    concurrency:
+      group: shorts-noticias
+      cancel-in-progress: false
     steps:
       - uses: actions/checkout@v7
 
@@ -71,7 +82,7 @@ jobs:
           EXIGIR_EXCERTO: ${{ inputs.exigir_excerto && 'true' || '' }}
           DEMO_TRECHO: ${{ inputs.trecho_demo || '' }}
         run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.publicar }}" != "true" ]; then
+          if [ "${{ inputs.publicar }}" != "true" ]; then
             python shorts.py --sem-upload
           else
             python shorts.py
@@ -102,4 +113,55 @@ jobs:
             git commit -m "Histórico: novo Short publicado"
             git pull --rebase --quiet || true
             git push
+          fi
+
+  proximo:
+    needs: short
+    if: ${{ !cancelled() && github.event_name == 'workflow_dispatch' && inputs.cadeia }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Esperar pelo próximo horário e lançar o vídeo seguinte
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          S=$(python3 agenda.py)
+          LIMITE=18000   # um trabalho do GitHub dura no máximo 6 h: esperas maiores passam a outra execução
+          if [ "$S" -gt "$LIMITE" ]; then
+            echo "Próximo vídeo daqui a $((S / 60)) min: espero $((LIMITE / 60)) min e passo a vez."
+            sleep "$LIMITE"
+            EXTRA="-f apenas_esperar=true"
+          else
+            echo "Próximo vídeo daqui a $((S / 60)) min."
+            sleep "$S"
+            EXTRA=""
+          fi
+          # se entretanto foi ligada outra cadeia mais recente, esta termina (evita vídeos a dobrar)
+          OUTRAS=$(gh run list --workflow shorts.yml --limit 30 --json databaseId,status,displayTitle \
+            --jq "[.[] | select(.displayTitle | test(\"automático\")) | select(.status != \"completed\") | select(.databaseId > ${{ github.run_id }})] | length")
+          if [ "$OUTRAS" != "0" ]; then
+            echo "Já há outra execução automática mais recente; esta termina aqui."
+            exit 0
+          fi
+          gh workflow run shorts.yml --ref "${{ github.ref_name }}" -f publicar=true -f cadeia=true $EXTRA
+          echo "Lançado o próximo Short automático."
+
+  vigia:
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Voltar a ligar a publicação automática se tiver parado
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          ATIVAS=$(gh run list -R "${{ github.repository }}" --workflow shorts.yml --limit 40 --json status,displayTitle,createdAt \
+            --jq '[.[] | select(.displayTitle | test("automático")) | select(.status != "completed" or (now - (.createdAt | fromdateiso8601)) < 3600)] | length')
+          if [ "$ATIVAS" = "0" ]; then
+            echo "A publicação automática estava parada: a ligar de novo."
+            gh workflow run shorts.yml -R "${{ github.repository }}" --ref "${{ github.event.repository.default_branch }}" -f publicar=true -f cadeia=true
+          else
+            echo "A publicação automática está a funcionar."
           fi
