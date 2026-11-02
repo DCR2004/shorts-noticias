@@ -4,7 +4,7 @@ on:
   schedule:
     # 25 vídeos por dia, um a cada 45 minutos, criados entre as 05:07 e as 23:07 de Brasília.
     # Horários em UTC (Brasília = UTC-3). Com "agendado" + 1h de revisão, ficam públicos
-    # entre as 06:07 e as 00:07 de Brasília.
+    # entre as 06:07 e as 00:07 de Brasília. (O GitHub pode atrasar alguns minutos.)
     - cron: "7 2,8,11,14,17,20,23 * * *"    # Brasília: 05:07 08:07 11:07 14:07 17:07 20:07 23:07
     - cron: "52 8,11,14,17,20,23 * * *"     # Brasília: 05:52 08:52 11:52 14:52 17:52 20:52
     - cron: "37 0,9,12,15,18,21 * * *"      # Brasília: 06:37 09:37 12:37 15:37 18:37 21:37
