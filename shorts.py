@@ -1632,7 +1632,7 @@ def escolher_e_escrever(cfg: dict, historico: list, pasta):
                     log(f"   Com vídeo provável: {it['titulo'][:90]} -> {pre[0]['titulo'][5:80]}")
                     if len(prontos) >= 2:
                         break
-            candidatos = prontos or com_arquivo or candidatos
+            candidatos = (prontos + [g for g in com_arquivo if g not in prontos]) or candidatos
         except Exception as e:
             log(f"   Verificação falhou ({type(e).__name__}); a seguir com todas as notícias")
     for tentativa in range(4 if exigir else 3):
@@ -1667,6 +1667,46 @@ def escolher_e_escrever(cfg: dict, historico: list, pasta):
         if excerto or not exigir:
             return grupo, artigos, roteiro, excerto
     return None
+
+
+def roteiro_demo_trecho(titulo: str, cfg: dict, pasta, historico: list):
+    """Vídeo de demonstração do formato com trecho original, a partir de um vídeo do Wikimedia Commons."""
+    titulo = titulo if titulo.startswith("File:") else "File:" + titulo
+    r = requests.get(COMMONS_API, params={"action": "query", "format": "json", "titles": titulo, "prop": "videoinfo",
+                                          "viprop": "url|size|mime|extmetadata|derivatives"},
+                     headers={"User-Agent": UA_WIKI}, timeout=25)
+    r.raise_for_status()
+    pag = next(iter(r.json()["query"]["pages"].values()))
+    info = (pag.get("videoinfo") or [{}])[0]
+    meta = info.get("extmetadata", {})
+    lic = _meta(meta, "LicenseShortName").strip()
+    if not info or not LICENCAS_LIVRES.match(lic) or re.search(r"\b(NC|ND)\b", lic):
+        raise RuntimeError(f"'{titulo}' não existe ou não tem licença livre ({lic or 'sem licença'}).")
+    descricao = limpar_html((meta.get("ImageDescription") or {}).get("value", ""))[:700]
+    ano = re.search(r"(19|20)\d\d", _meta(meta, "DateTimeOriginal") or _meta(meta, "DateTime"))
+    cand = {"titulo": pag.get("title", titulo), "info": info, "lic": lic, "index": 0,
+            "autor": _meta(meta, "Artist") or "autor desconhecido", "ano": int(ano.group(0)) if ano else 0,
+            "dur": float(info.get("duration") or 0), "data": _data_video(meta), "descricao": descricao, "afinidade": 9}
+    assunto = re.sub(r"\s+", " ", descricao or pag.get("title", "")[5:]).strip()[:300]
+    texto = ("Este é um vídeo de teste do novo formato do canal. Quando houver uma entrevista ou um discurso "
+             "sobre o tema da notícia, o Short mostra um trecho original, com a imagem e o som de quem fala, "
+             "a data e o crédito do vídeo. Depois do trecho, a narração continua com o resto da notícia. "
+             "Os trechos vêm de vídeos com licença livre publicados no Wikimedia Commons. "
+             + cfg["canal"]["chamada_final"])
+    roteiro = {"suficiente": True, "titulo_youtube": "Teste: novo formato com trecho original de entrevista",
+               "manchete": f"Demonstração com vídeo de arquivo: {assunto[:120]}", "titulo_topo": "NOVO FORMATO",
+               "titulo_destaque": "TRECHO ORIGINAL", "etiqueta": "TESTE", "roteiro": texto,
+               "descricao": "Vídeo de teste do formato com um trecho original de entrevista ou discurso.",
+               "hashtags": ["Teste"], "tags": ["teste"], "buscas_commons": [], "buscas_imagens": [],
+               "pessoas": [], "_presel": [cand], "categoria": "TESTE"}
+    excerto = procurar_excerto({**roteiro, "roteiro": f"{texto} Assunto do vídeo de arquivo: {assunto}"},
+                               cfg, pasta, historico)
+    if not excerto:
+        raise RuntimeError("Não foi possível tirar um trecho desse vídeo.")
+    roteiro["buscas_commons"] = [excerto["orador"].split(",")[0].strip()]   # fotos de quem fala
+    artigos = [{"fonte": "Teste do sistema", "titulo": "Demonstração", "link": cand["info"].get("descriptionurl", ""),
+                "texto": ""}]
+    return None, artigos, roteiro, excerto
 
 
 TESTE_OFFLINE = {
@@ -1724,6 +1764,9 @@ def main():
             grupo, artigos, roteiro = None, TESTE_OFFLINE["artigos"], TESTE_OFFLINE["roteiro"]
             excerto = _excerto_teste(pasta) if os.environ.get("TESTE_EXCERTO") else None
             args.sem_upload = True
+        elif os.environ.get("DEMO_TRECHO"):
+            log("Demonstração do formato com trecho original...")
+            grupo, artigos, roteiro, excerto = roteiro_demo_trecho(os.environ["DEMO_TRECHO"], cfg, pasta, historico)
         else:
             r = escolher_e_escrever(cfg, historico, pasta)
             if r is None:
@@ -1788,6 +1831,8 @@ def main():
     resumo.append(f"\n**YouTube:** https://youtube.com/shorts/{res['id']} ({res['privacidade']})")
     resumo_github("\n".join(resumo))
 
+    if os.environ.get("DEMO_TRECHO"):
+        return 0                      # a demonstração não entra no histórico
     historico.append({
         "data": datetime.now(timezone.utc).isoformat(),
         "manchete": roteiro["manchete"], "titulo": roteiro["titulo_youtube"],
