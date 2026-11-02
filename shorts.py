@@ -893,7 +893,10 @@ def _transcrever_whisper(audio, cfg: dict) -> list:
     nome = cfg.get("excerto", {}).get("modelo_transcricao", "small")
     if nome not in _WHISPER:
         _WHISPER[nome] = WhisperModel(nome, device="cpu", compute_type="int8")
-    segs, _ = _WHISPER[nome].transcribe(str(audio), language="pt", word_timestamps=True,
+    import numpy as np   # descodifica com o ffmpeg (evita incompatibilidades do PyAV)
+    pcm = subprocess.run(["ffmpeg", "-v", "error", "-i", str(audio), "-f", "f32le", "-ac", "1", "-ar", "16000", "-"],
+                         capture_output=True, check=True).stdout
+    segs, _ = _WHISPER[nome].transcribe(np.frombuffer(pcm, np.float32), language="pt", word_timestamps=True,
                                         vad_filter=True, beam_size=2)
     out = []
     for s in segs:
