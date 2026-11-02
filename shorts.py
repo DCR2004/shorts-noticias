@@ -1609,17 +1609,17 @@ def escolher_e_escrever(cfg: dict, historico: list, pasta):
     log(f"   {len(itens)} notícias, {len(grupos)} assuntos novos")
     if not grupos:
         return None
-    candidatos = grupos[:25]
     exc_cfg = cfg.get("excerto", {})
     usar_excerto = bool(exc_cfg.get("ativo", True))
     exigir = usar_excerto and (os.environ.get("EXIGIR_EXCERTO") == "true"
                                or bool(exc_cfg.get("so_noticias_com_excerto", False)))
+    candidatos = grupos[:60] if exigir else grupos[:25]   # com trecho obrigatório, olha para mais notícias
     if exigir:
         log("   A ver que notícias têm vídeos de arquivo (entrevistas/discursos) sobre o tema...")
         try:
             com_arquivo = noticias_com_arquivo(candidatos, cfg, historico)
             prontos = []
-            for g in com_arquivo[:6]:          # a IA confirma, pelos títulos, que há um vídeo provável
+            for g in com_arquivo[:8]:          # a IA confirma, pelos títulos, que há um vídeo provável
                 it = g["itens"][0]
                 try:
                     pre = _preselecionar(g["_cands"], {"manchete": it["titulo"], "roteiro": it.get("resumo", "")}, cfg)
