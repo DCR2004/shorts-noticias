@@ -1035,6 +1035,47 @@ Não invente nada que não esteja na transcrição ou nos dados do vídeo."""
     return chamar_gemini(prompt, cfg["ia"]["modelos"], ESQ_TRECHO)
 
 
+ESQ_BUSCAS_NOTICIAS = {"type": "OBJECT", "properties": {"noticias": {"type": "ARRAY", "items": {
+    "type": "OBJECT", "properties": {"id": {"type": "INTEGER"}, "pessoas": {"type": "ARRAY", "items": {"type": "STRING"}},
+                                     "buscas": {"type": "ARRAY", "items": {"type": "STRING"}}},
+    "required": ["id", "pessoas", "buscas"]}}}, "required": ["noticias"]}
+
+
+def noticias_com_arquivo(grupos: list, cfg: dict, historico: list) -> list:
+    """Deixa só as notícias para as quais há, no Wikimedia Commons, vídeos de figuras públicas sobre o mesmo tema."""
+    linhas = [f"[{i}] {g['itens'][0]['titulo']}" for i, g in enumerate(grupos)]
+    res = chamar_gemini(f"""Para cada notícia abaixo, indique as figuras públicas centrais (nome como são conhecidas) e
+1 ou 2 pesquisas curtas (nome + tema em uma ou duas palavras, ex.: "Lula reforma tributária", "Haddad imposto de renda")
+para encontrar vídeos de arquivo em que essas pessoas falam sobre esse assunto. Se não houver figura pública central, use listas vazias.
+
+{chr(10).join(linhas)}
+
+Responda em JSON: {{"noticias": [{{"id": 0, "pessoas": ["..."], "buscas": ["..."]}}]}}""",
+                        cfg["ia"]["modelos"], ESQ_BUSCAS_NOTICIAS)
+    usados = set()
+    for h in historico[-300:]:
+        usados.update(h.get("fotos", []))
+    com_arquivo = []
+    for n in res.get("noticias", []):
+        try:
+            g = grupos[int(n["id"])]
+        except (KeyError, ValueError, TypeError, IndexError):
+            continue
+        pessoas = [p for p in n.get("pessoas", []) if p][:2]
+        buscas = [b for b in n.get("buscas", []) if b][:2]
+        if not pessoas or not buscas:
+            continue
+        it = g["itens"][0]
+        tema = tokens(it["titulo"] + " " + it.get("resumo", "")) - set().union(*(tokens(p) for p in pessoas))
+        cands = [c for c in _candidatos_excerto(buscas, usados, tema) if c["afinidade"] >= 1]
+        if cands:
+            g["_buscas_trecho"], g["_pessoas"], g["_afinidade"] = buscas, pessoas, cands[0]["afinidade"]
+            com_arquivo.append(g)
+    com_arquivo.sort(key=lambda g: -g["_afinidade"])
+    log(f"   Notícias com vídeos de arquivo sobre o tema: {len(com_arquivo)} de {len(grupos)}")
+    return com_arquivo
+
+
 def procurar_excerto(roteiro: dict, cfg: dict, pasta, historico: list):
     """Procura no Wikimedia Commons um trecho de entrevista/discurso sobre o tema e corta-o (vídeo + som)."""
     dmax = float(cfg.get("excerto", {}).get("duracao_max", 15))
@@ -1560,6 +1601,12 @@ def escolher_e_escrever(cfg: dict, historico: list, pasta):
     usar_excerto = bool(exc_cfg.get("ativo", True))
     exigir = usar_excerto and (os.environ.get("EXIGIR_EXCERTO") == "true"
                                or bool(exc_cfg.get("so_noticias_com_excerto", False)))
+    if exigir:
+        log("   A ver que notícias têm vídeos de arquivo (entrevistas/discursos) sobre o tema...")
+        try:
+            candidatos = noticias_com_arquivo(candidatos, cfg, historico) or candidatos
+        except Exception as e:
+            log(f"   Verificação falhou ({type(e).__name__}); a seguir com todas as notícias")
     for tentativa in range(4 if exigir else 3):
         if not candidatos:
             break
@@ -1575,6 +1622,9 @@ def escolher_e_escrever(cfg: dict, historico: list, pasta):
             log("   Informação insuficiente; a tentar outra notícia.")
             continue
         roteiro["categoria"] = escolha["categoria"]
+        if grupo.get("_buscas_trecho"):   # pesquisas que já deram vídeos de arquivo
+            roteiro["buscas_trecho"] = list(dict.fromkeys(grupo["_buscas_trecho"] + roteiro.get("buscas_trecho", [])))
+            roteiro["pessoas"] = list(dict.fromkeys(grupo["_pessoas"] + roteiro.get("pessoas", [])))
         excerto = None
         if usar_excerto:
             log("3b) A procurar um trecho de entrevista ou discurso (vídeo + som originais)...")
