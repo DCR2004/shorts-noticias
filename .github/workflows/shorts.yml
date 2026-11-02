@@ -2,13 +2,13 @@ name: Shorts de notícias
 
 on:
   schedule:
-    # Horários em UTC (Brasília = UTC-3). Com "agendado" + 1h de revisão, os vídeos
-    # ficam públicos por volta das 08h, 11h30, 14h30, 18h e 21h de Brasília.
-    - cron: "7 10 * * *"    # 07:07 Brasília
-    - cron: "37 13 * * *"   # 10:37 Brasília
-    - cron: "37 16 * * *"   # 13:37 Brasília
-    - cron: "7 20 * * *"    # 17:07 Brasília
-    - cron: "7 23 * * *"    # 20:07 Brasília
+    # 25 vídeos por dia, um a cada 45 minutos, criados entre as 05:07 e as 23:07 de Brasília.
+    # Horários em UTC (Brasília = UTC-3). Com "agendado" + 1h de revisão, ficam públicos
+    # entre as 06:07 e as 00:07 de Brasília.
+    - cron: "7 2,8,11,14,17,20,23 * * *"    # Brasília: 05:07 08:07 11:07 14:07 17:07 20:07 23:07
+    - cron: "52 8,11,14,17,20,23 * * *"     # Brasília: 05:52 08:52 11:52 14:52 17:52 20:52
+    - cron: "37 0,9,12,15,18,21 * * *"      # Brasília: 06:37 09:37 12:37 15:37 18:37 21:37
+    - cron: "22 1,10,13,16,19,22 * * *"     # Brasília: 07:22 10:22 13:22 16:22 19:22 22:22
   workflow_dispatch:
     inputs:
       publicar:
