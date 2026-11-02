@@ -47,6 +47,14 @@ imagens:
   cortes_video: 2               # nº de cortes de vídeo reais do tema (Wikimedia Commons: Planalto, TV Senado, STF...)
   formato: "faixas"             # "faixas" (manchete em cima, vídeo/foto ao meio, legendas em baixo) ou "ecra_inteiro"
 
+excerto:
+  # Trecho REAL de entrevista ou discurso (vídeo e som originais), de vídeos com licença livre
+  # no Wikimedia Commons (Planalto, Agência Brasil, Senado...). Aparece com a data e o crédito.
+  ativo: true                   # true = inclui um trecho sempre que houver um relevante para a notícia
+  duracao_max: 15               # duração máxima do trecho, em segundos
+  so_noticias_com_excerto: false  # true = só faz vídeos de notícias para as quais encontra um trecho
+  modelo_transcricao: "small"   # transcrição (faster-whisper): "base" (mais rápido) ou "small" (mais preciso)
+
 youtube:
   # modo:
   #   "agendado" -> envia como privado e publica sozinho depois de X horas

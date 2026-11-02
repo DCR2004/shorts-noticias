@@ -8,6 +8,7 @@ Uso:
 """
 import argparse
 import asyncio
+import base64
 import calendar
 import html
 import json
@@ -136,8 +137,8 @@ def duracao_media(caminho) -> float:
     return float(out.stdout.strip())
 
 
-def correr(cmd: list, cwd=None) -> None:
-    r = subprocess.run(cmd, cwd=cwd, capture_output=True, text=True)
+def correr(cmd: list, cwd=None, timeout=None) -> None:
+    r = subprocess.run(cmd, cwd=cwd, capture_output=True, text=True, timeout=timeout)
     if r.returncode != 0:
         raise RuntimeError(f"Comando falhou: {' '.join(map(str, cmd[:6]))}...\n{r.stderr[-2500:]}")
 
@@ -298,7 +299,7 @@ def _extrair_json(texto: str):
         raise
 
 
-def chamar_gemini(prompt: str, modelos: list, esquema: dict | None = None) -> dict:
+def chamar_gemini(prompt: str, modelos: list, esquema: dict | None = None, anexos: list | None = None) -> dict:
     chave = os.environ.get("GEMINI_API_KEY")
     if not chave:
         raise RuntimeError("Falta o segredo GEMINI_API_KEY.")
@@ -308,7 +309,7 @@ def chamar_gemini(prompt: str, modelos: list, esquema: dict | None = None) -> di
         for tentativa in range(4):
             corpo = {
                 "systemInstruction": {"parts": [{"text": SISTEMA}]},
-                "contents": [{"role": "user", "parts": [{"text": prompt}]}],
+                "contents": [{"role": "user", "parts": (anexos or []) + [{"text": prompt}]}],
                 "generationConfig": {"responseMimeType": "application/json"},
             }
             if usar_esquema:
@@ -356,7 +357,7 @@ ESQ_ESCOLHA = {
 }
 
 
-def escolher(grupos: list, historico: list, cfg: dict) -> dict:
+def escolher(grupos: list, historico: list, cfg: dict, preferir_pessoas: bool = False) -> dict:
     linhas = []
     for i, g in enumerate(grupos):
         it = g["itens"][0]
@@ -364,6 +365,9 @@ def escolher(grupos: list, historico: list, cfg: dict) -> dict:
             f"[{i}] (veículos: {len(g['fontes'])} — {', '.join(g['fontes'][:5])}; há {g['idade_h']:.0f}h) "
             f"{it['titulo']} — {it['resumo'][:220]}")
     ultimos = [f"- {h.get('categoria', '')}: {h.get('manchete', '')}" for h in historico[-12:]]
+    extra = ("5. Este vídeo vai incluir um trecho de entrevista ou discurso de arquivo: prefira notícias centradas "
+             "numa figura pública brasileira conhecida (presidente, ministros, governadores, STF, Congresso).\n"
+             if preferir_pessoas else "")
     prompt = f"""Escolha UMA notícia para o próximo Short do canal.
 
 Critérios, por ordem:
@@ -371,7 +375,7 @@ Critérios, por ordem:
 2. Fato confirmado: prefira assuntos cobertos por vários veículos.
 3. Variedade: evite repetir a mesma categoria dos últimos vídeos e NUNCA repita um assunto já coberto.
 4. Evitar: {cfg['noticias']['evitar']}.
-
+{extra}
 Últimos vídeos publicados (não repetir):
 {chr(10).join(ultimos) or '- (nenhum)'}
 
@@ -401,6 +405,7 @@ ESQ_ROTEIRO = {
         "tags": {"type": "ARRAY", "items": {"type": "STRING"}},
         "buscas_commons": {"type": "ARRAY", "items": {"type": "STRING"}},
         "buscas_imagens": {"type": "ARRAY", "items": {"type": "STRING"}},
+        "pessoas": {"type": "ARRAY", "items": {"type": "STRING"}},
     },
     "required": ["suficiente", "titulo_youtube", "manchete", "titulo_topo", "titulo_destaque", "etiqueta",
                  "roteiro", "descricao", "hashtags", "tags", "buscas_commons", "buscas_imagens"],
@@ -438,6 +443,7 @@ OUTROS CAMPOS:
 - "tags": 6 a 10 palavras-chave.
 - "buscas_commons": 3 a 5 pesquisas para encontrar FOTOS REAIS do tema no Wikimedia Commons, só com NOMES PRÓPRIOS centrais da notícia, do mais importante para o menos: pessoas públicas (nome como são conhecidas, ex.: "Flávio Bolsonaro"), instituições (ex.: "Polícia Federal", "Supremo Tribunal Federal", "Anvisa", "Banco Central do Brasil"), locais ou edifícios (ex.: "Palácio do Planalto", "Congresso Nacional", nome da cidade). Sem frases nem verbos.
 - "buscas_imagens": 3 pesquisas EM INGLÊS para fotos genéricas de banco de imagens que ilustrem o assunto (ex.: "police car brazil", "medicine injection pen", "stock market screen"). Sem pessoas específicas nem marcas.
+- "pessoas": até 3 figuras públicas centrais na notícia, com o nome como são conhecidas (ex.: "Lula", "Fernando Haddad", "Alexandre de Moraes"), que possam aparecer a falar sobre este assunto em vídeos de arquivo. Lista vazia se não houver.
 
 TEXTOS DAS FONTES:
 {textos}"""
@@ -490,8 +496,8 @@ def _estimar_tempos(texto: str, duracao: float) -> list:
     return out
 
 
-def sintetizar(texto: str, cfg: dict, pasta) -> tuple:
-    mp3 = pasta / "narracao.mp3"
+def sintetizar(texto: str, cfg: dict, pasta, nome: str = "narracao") -> tuple:
+    mp3 = pasta / f"{nome}.mp3"
     voz = cfg["voz"]["nome"]
     vel = cfg["voz"].get("velocidade", "+0%")
 
@@ -512,7 +518,7 @@ def sintetizar(texto: str, cfg: dict, pasta) -> tuple:
     try:
         from gtts import gTTS
         gTTS(texto, lang="pt", tld="com.br").save(str(mp3))
-        acelerado = pasta / "narracao_rapida.mp3"
+        acelerado = pasta / f"{nome}_rapida.mp3"
         subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(mp3), "-filter:a", "atempo=1.15",
                         str(acelerado)], check=True)
         dur = duracao_media(acelerado)
@@ -523,7 +529,7 @@ def sintetizar(texto: str, cfg: dict, pasta) -> tuple:
 
     # 3) espeak-ng local (só para testes sem internet)
     if shutil.which("espeak-ng"):
-        wav = pasta / "narracao.wav"
+        wav = pasta / f"{nome}.wav"
         voz_local = "mb-br4" if shutil.which("mbrola") else "pt-br"
         r = subprocess.run(["espeak-ng", "-v", voz_local, "-s", "165", "-w", str(wav), texto],
                            capture_output=True)
@@ -817,11 +823,11 @@ def fundos_gerados(quantidade: int, pasta) -> list:
     return out
 
 
-def obter_imagens(roteiro: dict, cfg: dict, pasta, historico: list) -> list:
+def obter_imagens(roteiro: dict, cfg: dict, pasta, historico: list, excluir=None) -> list:
     """Devolve a sequência de cortes de vídeo e fotos do tema (alternados)."""
     n = int(cfg["imagens"].get("quantidade", 4))
     max_clips = int(cfg["imagens"].get("cortes_video", 2))
-    usados = set()
+    usados = set(excluir or [])
     for h in historico[-80:]:
         usados.update(h.get("fotos", []))
         usados.update(f"pexels:{x}" for x in h.get("fotos_pexels", []))
@@ -842,6 +848,298 @@ def obter_imagens(roteiro: dict, cfg: dict, pasta, historico: list) -> list:
             fi += 1
     seq += fotos[fi:]
     return seq
+
+
+# ======================================================================
+# EXCERTO (trecho real de entrevista/discurso, com o vídeo e o som originais)
+# ======================================================================
+PAUSA_EXCERTO = 0.3   # pequeno silêncio antes e depois do trecho
+_WHISPER = {}
+
+ESQ_TRANSCRICAO = {
+    "type": "OBJECT",
+    "properties": {"segmentos": {"type": "ARRAY", "items": {
+        "type": "OBJECT",
+        "properties": {"ini": {"type": "NUMBER"}, "fim": {"type": "NUMBER"}, "texto": {"type": "STRING"}},
+        "required": ["ini", "fim", "texto"]}}},
+    "required": ["segmentos"],
+}
+
+ESQ_TRECHO = {
+    "type": "OBJECT",
+    "properties": {
+        "usar": {"type": "BOOLEAN"},
+        "motivo": {"type": "STRING"},
+        "primeira": {"type": "INTEGER"},
+        "ultima": {"type": "INTEGER"},
+        "orador": {"type": "STRING"},
+        "ponte": {"type": "STRING"},
+    },
+    "required": ["usar", "motivo", "primeira", "ultima", "orador", "ponte"],
+}
+
+
+def _data_video(meta: dict) -> str:
+    bruto = _meta(meta, "DateTimeOriginal") or _meta(meta, "DateTime")
+    m = re.search(r"((?:19|20)\d\d)-(\d\d)-(\d\d)", bruto)
+    if m:
+        return f"{m.group(3)}/{m.group(2)}/{m.group(1)}"
+    m = re.search(r"(?:19|20)\d\d", bruto)
+    return m.group(0) if m else ""
+
+
+def _transcrever_whisper(audio, cfg: dict) -> list:
+    from faster_whisper import WhisperModel
+    nome = cfg.get("excerto", {}).get("modelo_transcricao", "small")
+    if nome not in _WHISPER:
+        _WHISPER[nome] = WhisperModel(nome, device="cpu", compute_type="int8")
+    segs, _ = _WHISPER[nome].transcribe(str(audio), language="pt", word_timestamps=True,
+                                        vad_filter=True, beam_size=2)
+    out = []
+    for s in segs:
+        palavras = [{"texto": w.word.strip(), "ini": float(w.start), "fim": float(w.end)}
+                    for w in (s.words or []) if w.word.strip()]
+        if palavras:
+            out.append({"ini": palavras[0]["ini"], "fim": palavras[-1]["fim"],
+                        "texto": s.text.strip(), "palavras": palavras})
+    return out
+
+
+def _transcrever_gemini(audio, cfg: dict) -> list:
+    dados = base64.b64encode(Path(audio).read_bytes()).decode()
+    res = chamar_gemini(
+        "Transcreva este áudio em português, palavra por palavra, sem resumir nem corrigir. "
+        "Divida-o em frases e indique o início e o fim de cada uma, em segundos desde o começo do áudio. "
+        'Responda em JSON: {"segmentos": [{"ini": 0.0, "fim": 4.2, "texto": "..."}]}',
+        cfg["ia"]["modelos"], ESQ_TRANSCRICAO,
+        anexos=[{"inline_data": {"mime_type": "audio/mp3", "data": dados}}])
+    out = []
+    for s in res.get("segmentos", []):
+        ini, fim, txt = float(s["ini"]), float(s["fim"]), str(s["texto"]).strip()
+        if txt and fim > ini:
+            ws = _estimar_tempos(txt, fim - ini)
+            out.append({"ini": ini, "fim": fim, "texto": txt,
+                        "palavras": [{**w, "ini": w["ini"] + ini, "fim": w["fim"] + ini} for w in ws]})
+    return out
+
+
+def transcrever(audio, cfg: dict) -> list:
+    """Transcrição com tempos por palavra (Whisper local; se falhar, Gemini)."""
+    try:
+        segs = _transcrever_whisper(audio, cfg)
+        log(f"  Transcrição (Whisper): {len(segs)} frases")
+        return segs
+    except Exception as e:
+        log(f"  Whisper indisponível ({type(e).__name__}: {str(e)[:100]}); a transcrever com o Gemini")
+    try:
+        segs = _transcrever_gemini(audio, cfg)
+        log(f"  Transcrição (Gemini): {len(segs)} frases")
+        return segs
+    except Exception as e:
+        log(f"  Transcrição falhou: {type(e).__name__}: {str(e)[:100]}")
+        return []
+
+
+def _candidatos_excerto(buscas: list, usados: set) -> list:
+    vistos, out = set(), []
+    for q in buscas:
+        try:
+            cand = _commons_procurar(q, "video")
+        except Exception as e:
+            log(f"  Commons trecho '{q}': {type(e).__name__}")
+            continue
+        for c in cand:
+            dur = float(c["info"].get("duration") or 0)
+            meta = c["info"].get("extmetadata", {})
+            descricao = limpar_html((meta.get("ImageDescription") or {}).get("value", ""))[:700]
+            if c["titulo"] in usados or c["titulo"] in vistos or not 15 <= dur <= 3600:
+                continue
+            if not tokens(q) <= tokens(c["titulo"] + " " + descricao):
+                continue   # o nome completo tem de aparecer no título ou na descrição
+            vistos.add(c["titulo"])
+            c.update({"dur": dur, "busca": q, "data": _data_video(meta), "descricao": descricao})
+            out.append(c)
+    # recentes, curtos (mais focados) e relevantes primeiro
+    out.sort(key=lambda c: (-(c["ano"] >= 2019), -(c["dur"] <= 900), -c["ano"], c["index"]))
+    return out
+
+
+def _escolher_trecho(segs: list, cand: dict, roteiro: dict, cfg: dict) -> dict:
+    dmax = float(cfg.get("excerto", {}).get("duracao_max", 15))
+    linhas = [f"[{i}] ({s['ini']:.1f}s a {s['fim']:.1f}s) {s['texto']}" for i, s in enumerate(segs)]
+    prompt = f"""Vamos inserir num Short de notícia um TRECHO REAL (vídeo e som originais) de um vídeo de arquivo.
+
+NOTÍCIA DO SHORT
+Manchete: {roteiro['manchete']}
+Roteiro: {roteiro['roteiro']}
+
+VÍDEO DE ARQUIVO (Wikimedia Commons)
+Título: {cand['titulo']}
+Descrição: {cand['descricao'] or '(sem descrição)'}
+Data: {cand['data'] or 'desconhecida'}
+Autor/canal: {cand['autor']}
+
+TRANSCRIÇÃO AUTOMÁTICA (frases numeradas, com tempos; pode ter pequenos erros)
+{chr(10).join(linhas)}
+
+Escolha frases CONSECUTIVAS (da "primeira" à "ultima") que formem um trecho que cumpra TODAS estas regras:
+- entre {max(5.0, dmax - 9):.0f} e {dmax:.0f} segundos no total;
+- dito por UMA figura pública identificável (não por repórter, apresentador ou locutor; sem perguntas de jornalistas);
+- ideia completa, que começa e termina em fim de frase e se entende sozinha;
+- sobre o MESMO ASSUNTO da notícia (não basta ser a mesma pessoa a falar de outro tema);
+- não pode enganar quem vê: nada que pareça uma reação à notícia de hoje se o vídeo for de outra data.
+Se nenhum trecho cumprir todas as regras, ou se o vídeo for de outro assunto, responda "usar": false.
+
+"orador": nome e cargo da pessoa na data do vídeo (ex.: "Lula, presidente da República").
+"ponte": UMA frase curta para a narração dizer ANTES do trecho: quem fala, QUANDO (mês e ano, ou só o ano) e em que contexto. Ex.: "Em maio de 2023, numa entrevista, o presidente Lula falou sobre o tema:". Termine com dois pontos.
+"motivo": uma frase a explicar a escolha ou a recusa.
+Não invente nada que não esteja na transcrição ou nos dados do vídeo."""
+    return chamar_gemini(prompt, cfg["ia"]["modelos"], ESQ_TRECHO)
+
+
+def procurar_excerto(roteiro: dict, cfg: dict, pasta, historico: list):
+    """Procura no Wikimedia Commons um trecho de entrevista/discurso sobre o tema e corta-o (vídeo + som)."""
+    dmax = float(cfg.get("excerto", {}).get("duracao_max", 15))
+    usados = set()
+    for h in historico[-300:]:
+        usados.update(h.get("fotos", []))
+    pessoas = [p.strip() for p in roteiro.get("pessoas", []) if p and p.strip()][:3]
+    buscas = pessoas or roteiro.get("buscas_commons", [])[:2]
+    cands = _candidatos_excerto(buscas, usados)
+    log(f"  Vídeos de arquivo candidatos ({', '.join(buscas) or '-'}): {len(cands)}")
+    for n, c in enumerate(cands[:3]):
+        janela = min(c["dur"], 240.0)
+        ini_j = 0.0 if c["dur"] <= 270 else max(0.0, min(c["dur"] * 0.12, c["dur"] - janela))
+        audio = pasta / f"trecho_audio_{n}.mp3"
+        url = None
+        for u in dict.fromkeys([_melhor_versao(c["info"]), c["info"].get("url", "")]):   # cópia leve; senão o original
+            try:
+                correr(["ffmpeg", "-y", "-v", "error", "-user_agent", UA_WIKI, "-ss", f"{ini_j:.1f}", "-i", u,
+                        "-t", f"{janela:.1f}", "-vn", "-ac", "1", "-ar", "16000", "-b:a", "48k", str(audio)],
+                       timeout=240)
+                if duracao_media(audio) >= 10:
+                    url = u
+                    break
+            except Exception:
+                pass
+        if not url:
+            log(f"  Sem som utilizável em '{c['titulo'][5:65]}'")
+            continue
+        segs = transcrever(audio, cfg)
+        if sum(len(s["texto"].split()) for s in segs) < 15:
+            log(f"  '{c['titulo'][5:65]}': quase sem fala")
+            continue
+        try:
+            esc = _escolher_trecho(segs, c, roteiro, cfg)
+        except Exception as e:
+            log(f"  Escolha do trecho falhou: {type(e).__name__}: {str(e)[:100]}")
+            continue
+        log(f"  '{c['titulo'][5:65]}' ({c['data'] or 's/ data'}): "
+            f"{'USAR' if esc.get('usar') else 'não serve'} — {str(esc.get('motivo', ''))[:160]}")
+        if not esc.get("usar"):
+            continue
+        a, b = int(esc.get("primeira", -1)), int(esc.get("ultima", -1))
+        if not 0 <= a <= b < len(segs):
+            continue
+        falas = [w for s in segs[a:b + 1] for w in s["palavras"]]
+        t0 = max(0.0, falas[0]["ini"] - 0.12)
+        dur = falas[-1]["fim"] + 0.3 - t0
+        if not 4.0 <= dur <= dmax + 4:
+            log(f"  Trecho com {dur:.1f}s: fora dos limites")
+            continue
+        clip, som = pasta / "trecho.mp4", pasta / "trecho_som.wav"
+        try:
+            correr(["ffmpeg", "-y", "-v", "error", "-user_agent", UA_WIKI, "-ss", f"{ini_j + t0:.2f}", "-i", url,
+                    "-t", f"{dur + 1.2:.2f}", "-vf", "scale=-2:720", "-c:v", "libx264", "-preset", "ultrafast",
+                    "-crf", "20", "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-ac", "2", str(clip)], timeout=240)
+            correr(["ffmpeg", "-y", "-v", "error", "-i", str(clip), "-t", f"{dur:.2f}", "-vn",
+                    "-af", f"afade=t=in:d=0.08,afade=t=out:st={dur - 0.25:.2f}:d=0.25,"
+                           f"loudnorm=I=-16:TP=-1.5:LRA=11", "-ar", "48000", "-ac", "2", str(som)])
+        except Exception as e:
+            log(f"  Não consegui cortar o trecho: {type(e).__name__}: {str(e)[:160]}")
+            continue
+        log(f"  ✓ Trecho de {dur:.1f}s: {esc['orador']} ({c['data'] or 's/ data'})")
+        return {"tipo": "excerto", "caminho": clip, "som": som, "dur": dur,
+                "palavras": [{"texto": w["texto"], "ini": w["ini"] - t0, "fim": w["fim"] - t0} for w in falas],
+                "texto": " ".join(s["texto"] for s in segs[a:b + 1]), "orador": str(esc["orador"]).strip(),
+                "ponte": str(esc["ponte"]).strip(), "data": c["data"], "ano": c["ano"], "id": c["titulo"],
+                "autor": c["autor"], "licenca": c["lic"], "fonte": "Wikimedia Commons",
+                "url": c["info"].get("descriptionurl", "")}
+    return None
+
+
+def dividir_roteiro(texto: str, ponte: str) -> tuple:
+    """Parte o roteiro em duas (por volta de 1/3, num fim de frase) e acrescenta a ponte à 1.ª parte."""
+    frases = [f for f in re.split(r"(?<=[.!?])\s+", texto.strip()) if f]
+    total, acum, corte = len(texto.split()), 0, 1
+    for i, f in enumerate(frases[:-1]):          # a chamada final fica sempre na 2.ª parte
+        acum += len(f.split())
+        corte = i + 1
+        if i >= 1 and acum >= total * 0.33:
+            break
+    ponte = ponte.strip()
+    if ponte and not ponte.endswith(":"):
+        ponte = ponte.rstrip(".") + ":"
+    return " ".join(frases[:corte] + [ponte]).strip(), " ".join(frases[corte:]).strip()
+
+
+def narracao_com_excerto(texto: str, excerto: dict, cfg: dict, pasta) -> tuple:
+    """Narração 1.ª parte + som original do trecho + narração 2.ª parte, com os tempos das palavras."""
+    p1, p2 = dividir_roteiro(texto, excerto["ponte"])
+    a1, w1, _ = sintetizar(p1, cfg, pasta, "narracao1")
+    a2, w2, _ = sintetizar(p2, cfg, pasta, "narracao2")
+    wavs = []
+    for i, a in enumerate([a1, excerto["som"], a2]):
+        w = pasta / f"parte_{i}.wav"
+        correr(["ffmpeg", "-y", "-v", "error", "-i", str(a), "-ar", "48000", "-ac", "2", str(w)])
+        wavs.append(w)
+    d1, dex, d2 = (duracao_media(w) for w in wavs)
+    t_ex = d1 + PAUSA_EXCERTO
+    t_pos = t_ex + dex + PAUSA_EXCERTO
+    audio = pasta / "narracao_total.wav"
+    correr(["ffmpeg", "-y", "-v", "error", "-i", str(wavs[0]), "-i", str(wavs[1]), "-i", str(wavs[2]),
+            "-filter_complex", f"[0:a]apad=pad_dur={PAUSA_EXCERTO}[a];[1:a]apad=pad_dur={PAUSA_EXCERTO}[b];"
+                               f"[a][b][2:a]concat=n=3:v=0:a=1[o]", "-map", "[o]", str(audio)])
+    falas = [dict(w) for w in excerto["palavras"] if w["ini"] < dex]
+    if falas:   # aspas no trecho original
+        falas[0]["texto"] = '"' + falas[0]["texto"]
+        falas[-1]["texto"] = re.sub(r"[.,;:!?]+$", "", falas[-1]["texto"]) + '"'
+    palavras = (w1 + [{**w, "ini": w["ini"] + t_ex, "fim": min(w["fim"], dex) + t_ex} for w in falas]
+                + [{**w, "ini": w["ini"] + t_pos, "fim": w["fim"] + t_pos} for w in w2])
+    excerto["dur"] = dex
+    log(f"  Narração {d1:.1f}s + trecho original {dex:.1f}s + narração {d2:.1f}s")
+    return audio, palavras, duracao_media(audio), t_ex
+
+
+def inserir_excerto(itens: list, excerto: dict, t_ex: float, total: float) -> tuple:
+    """Põe o trecho na sequência de imagens, exatamente no momento em que o som dele começa."""
+    n = len(itens)
+    d_ex = excerto["dur"]
+    if n <= 1:
+        antes, depois = list(itens), list(itens)
+    else:
+        k = min(n - 1, max(1, round(n * t_ex / max(total - d_ex, 1.0))))
+        antes, depois = list(itens[:k]), list(itens[k:])
+        if all(it.get("tipo") == "video" for it in antes) and len(depois) > 1:
+            j = next((i for i, it in enumerate(depois) if it.get("tipo") != "video"), None)
+            if j is not None:          # pelo menos uma foto antes do trecho (os cortes têm duração limitada)
+                antes.append(depois.pop(j))
+    durs = _duracoes(antes, t_ex) + [d_ex] + _duracoes(depois, max(total - t_ex - d_ex, 1.0))
+    return antes + [excerto] + depois, durs
+
+
+def _excerto_teste(pasta) -> dict:
+    """Trecho sintético para o teste offline."""
+    clip, som = pasta / "trecho.mp4", pasta / "trecho_som.wav"
+    correr(["ffmpeg", "-y", "-v", "error", "-f", "lavfi", "-i", "testsrc2=size=1280x720:rate=30", "-t", "9.5",
+            "-c:v", "libx264", "-preset", "ultrafast", str(clip)])
+    correr(["ffmpeg", "-y", "-v", "error", "-f", "lavfi", "-i", "sine=frequency=220:sample_rate=48000",
+            "-t", "8", "-ac", "2", str(som)])
+    frase = "Esta é uma frase de teste dita por uma figura pública num vídeo de arquivo."
+    return {"tipo": "excerto", "caminho": clip, "som": som, "dur": 8.0, "palavras": _estimar_tempos(frase, 8.0),
+            "texto": frase, "orador": "Pessoa de teste, cargo de teste", "data": "22/05/2023", "ano": 2023,
+            "ponte": "Num vídeo de arquivo de 2023, uma pessoa de teste falou sobre o tema:",
+            "id": None, "autor": "Teste", "licenca": "CC0", "fonte": "teste", "url": ""}
 
 
 # ======================================================================
@@ -944,9 +1242,11 @@ def camada_grafica(caminho, titulo_topo: str, titulo_destaque: str, etiqueta: st
 def _png_credito(item: dict, destino, formato: str) -> None:
     """Camada transparente com o crédito da foto/vídeo."""
     img = Image.new("RGBA", (L, A), (0, 0, 0, 0))
+    if item.get("tipo") == "excerto":
+        _rotulo_excerto(img, item, formato)
     if item.get("autor"):
         d = ImageDraw.Draw(img)
-        quem = "Vídeo" if item.get("tipo") == "video" else "Foto"
+        quem = "Vídeo" if item.get("tipo") in ("video", "excerto") else "Foto"
         ano = f" ({item['ano']})" if item.get("ano") else ""
         credito = f"{quem}: {item['autor']}{ano} · {item.get('licenca', '')} · {item.get('fonte', '')}"
         f = _fonte("SemiBold", 22)
@@ -956,6 +1256,24 @@ def _png_credito(item: dict, destino, formato: str) -> None:
         d.text((L - 38, y + 2), credito, font=f, fill=(0, 0, 0, 200), anchor="ra")
         d.text((L - 40, y), credito, font=f, fill=(225, 225, 225, 255), anchor="ra")
     img.save(destino)
+
+
+def _rotulo_excerto(img, item: dict, formato: str) -> None:
+    """Rótulo do trecho original: "TRECHO ORIGINAL · data" + nome e cargo de quem fala."""
+    d = ImageDraw.Draw(img)
+    base = FAIXA_Y + FAIXA_H - 128 if formato != "ecra_inteiro" else 1120
+    f_tag, f_nome = _fonte("ExtraBold", 26), _fonte("ExtraBold", 34)
+    tag = "TRECHO ORIGINAL" + (f" · {item['data']}" if item.get("data") else "")
+    tw = d.textlength(tag, font=f_tag)
+    d.rounded_rectangle([36, base, 36 + tw + 28, base + 44], radius=8, fill=VERMELHO)
+    d.text((50, base + 22), tag, font=f_tag, fill="white", anchor="lm")
+    nome = (item.get("orador") or "").upper()
+    if nome:
+        while d.textlength(nome, font=f_nome) > L - 110 and len(nome) > 12:
+            nome = nome[:-3].rstrip() + "…"
+        nw = d.textlength(nome, font=f_nome)
+        d.rectangle([36, base + 52, 36 + nw + 32, base + 108], fill=(0, 0, 0, 200))
+        d.text((52, base + 80), nome, font=f_nome, fill="white", anchor="lm")
 
 
 def _fundo_desfocado(caminho_img, destino) -> None:
@@ -979,9 +1297,9 @@ def _segmento(item: dict, saida, dur: float, mov: int, pasta, i: int, formato: s
     _png_credito(item, cred, formato)
     w, h, ytop = (L, A, 0) if formato == "ecra_inteiro" else (L, FAIXA_H, FAIXA_Y)
 
-    if item.get("tipo") == "video":
+    if item.get("tipo") in ("video", "excerto"):
         # vídeo real: no centro (ou ecrã inteiro) + o mesmo vídeo desfocado por trás
-        filtro = (f"[0:v]fps={FPS},setsar=1,tpad=stop_mode=clone:stop_duration=6,split[a][b];"
+        filtro = (f"[0:v]fps={FPS},setsar=1,tpad=stop_mode=clone:stop_duration=15,split[a][b];"
                   f"[a]scale={w}:{h}:force_original_aspect_ratio=increase,crop={w}:{h}[fg];"
                   f"[b]scale=270:480:force_original_aspect_ratio=increase,crop=270:480,gblur=sigma=6,"
                   f"scale={L}:{A},eq=brightness=-0.28:saturation=0.85[bg];"
@@ -1026,9 +1344,9 @@ def _duracoes(itens: list, total: float) -> list:
     return dur
 
 
-def fundo(itens: list, duracao: float, pasta, formato: str = "faixas") -> object:
+def fundo(itens: list, duracao: float, pasta, formato: str = "faixas", durs: list | None = None) -> object:
     T = 0.45  # duração da transição
-    durs = _duracoes(itens, duracao)
+    durs = durs or _duracoes(itens, duracao)
     segs = []
     inicio = random.randint(0, 3)
     for i, (item, d) in enumerate(zip(itens, durs)):
@@ -1052,10 +1370,11 @@ def fundo(itens: list, duracao: float, pasta, formato: str = "faixas") -> object
     return saida
 
 
-def montar(itens: list, audio, ass, grafico, duracao_audio: float, pasta, saida, formato: str = "faixas") -> None:
+def montar(itens: list, audio, ass, grafico, duracao_audio: float, pasta, saida, formato: str = "faixas",
+           durs: list | None = None) -> None:
     total = duracao_audio + 0.9
     log(f"  A montar vídeo de {total:.1f}s com {len(itens)} cortes/imagens ({formato})")
-    bg = fundo(itens, total, pasta, formato)
+    bg = fundo(itens, total, pasta, formato, durs)
     fontes_local = pasta / "fonts"
     fontes_local.mkdir(exist_ok=True)
     for f in FONTES_DIR.glob("*.ttf"):
@@ -1163,7 +1482,7 @@ def descricao_completa(roteiro: dict, artigos: list, creditos: list) -> str:
     if creditos:
         partes += ["", "Imagens de arquivo:"]
         for c in creditos:
-            quem = "Vídeo" if c.get("tipo") == "video" else "Foto"
+            quem = {"video": "Vídeo", "excerto": "Trecho de vídeo (som original)"}.get(c.get("tipo"), "Foto")
             partes.append(f"• {quem}: {c['autor']} ({c.get('licenca', '')}), via {c.get('fonte', '')}: {c.get('url', '')}")
     tags = ["Shorts", "Notícias", "Brasil"] + [h.lstrip("#").replace(" ", "") for h in roteiro.get("hashtags", [])]
     vistos, hashtags = set(), []
@@ -1175,7 +1494,7 @@ def descricao_completa(roteiro: dict, artigos: list, creditos: list) -> str:
     return "\n".join(partes)
 
 
-def escolher_e_escrever(cfg: dict, historico: list):
+def escolher_e_escrever(cfg: dict, historico: list, pasta):
     log("1) A recolher notícias...")
     itens = recolher(cfg["noticias"]["fontes"], int(cfg["noticias"]["horas_max"]))
     if not itens:
@@ -1186,21 +1505,36 @@ def escolher_e_escrever(cfg: dict, historico: list):
     if not grupos:
         return None
     candidatos = grupos[:25]
-    for tentativa in range(3):
+    exc_cfg = cfg.get("excerto", {})
+    usar_excerto = bool(exc_cfg.get("ativo", True))
+    exigir = usar_excerto and (os.environ.get("EXIGIR_EXCERTO") == "true"
+                               or bool(exc_cfg.get("so_noticias_com_excerto", False)))
+    for tentativa in range(4 if exigir else 3):
         if not candidatos:
             break
         log("2) A escolher a notícia...")
-        escolha = escolher(candidatos, historico, cfg)
+        escolha = escolher(candidatos, historico, cfg, preferir_pessoas=exigir)
         grupo = candidatos.pop(escolha["id"])
         log(f"   Escolhida: {grupo['itens'][0]['titulo']}  [{escolha['categoria']}] ({', '.join(grupo['fontes'])})")
         log(f"   Motivo: {escolha['motivo']}")
         artigos = artigos_do_grupo(grupo)
         log("3) A escrever o roteiro...")
         roteiro = escrever(artigos, escolha["categoria"], cfg)
-        if roteiro.get("suficiente", True):
-            roteiro["categoria"] = escolha["categoria"]
-            return grupo, artigos, roteiro
-        log("   Informação insuficiente; a tentar outra notícia.")
+        if not roteiro.get("suficiente", True):
+            log("   Informação insuficiente; a tentar outra notícia.")
+            continue
+        roteiro["categoria"] = escolha["categoria"]
+        excerto = None
+        if usar_excerto:
+            log("3b) A procurar um trecho de entrevista ou discurso (vídeo + som originais)...")
+            try:
+                excerto = procurar_excerto(roteiro, cfg, pasta, historico)
+            except Exception as e:
+                log(f"  Procura de trecho falhou: {type(e).__name__}: {str(e)[:150]}")
+            if not excerto:
+                log("  Sem trecho adequado" + ("; a tentar outra notícia." if exigir else "; o vídeo segue sem trecho."))
+        if excerto or not exigir:
+            return grupo, artigos, roteiro, excerto
     return None
 
 
@@ -1253,27 +1587,32 @@ def main():
     saida_dir = RAIZ / "saida"
     saida_dir.mkdir(exist_ok=True)
 
-    if args.teste_offline:
-        grupo, artigos, roteiro = None, TESTE_OFFLINE["artigos"], TESTE_OFFLINE["roteiro"]
-        args.sem_upload = True
-    else:
-        r = escolher_e_escrever(cfg, historico)
-        if r is None:
-            log("Sem notícias novas para publicar agora. Até à próxima execução!")
-            resumo_github("Sem notícias novas nesta execução.")
-            return 0
-        grupo, artigos, roteiro = r
-
     with tempfile.TemporaryDirectory() as tmp:
         pasta = Path(tmp)
+        if args.teste_offline:
+            grupo, artigos, roteiro = None, TESTE_OFFLINE["artigos"], TESTE_OFFLINE["roteiro"]
+            excerto = _excerto_teste(pasta) if os.environ.get("TESTE_EXCERTO") else None
+            args.sem_upload = True
+        else:
+            r = escolher_e_escrever(cfg, historico, pasta)
+            if r is None:
+                log("Nada para publicar agora (sem notícias novas, ou sem trecho adequado). Até à próxima execução!")
+                resumo_github("Nada publicado nesta execução: sem notícias novas, ou sem trecho de entrevista adequado.")
+                return 0
+            grupo, artigos, roteiro, excerto = r
+
         log("4) A gerar a narração...")
-        audio, palavras, dur = sintetizar(roteiro["roteiro"], cfg, pasta)
+        t_ex = None
+        if excerto:
+            audio, palavras, dur, t_ex = narracao_com_excerto(roteiro["roteiro"], excerto, cfg, pasta)
+        else:
+            audio, palavras, dur = sintetizar(roteiro["roteiro"], cfg, pasta)
 
         log("5) A preparar imagens e grafismo...")
         if args.teste_offline:
             fotos = fundos_gerados(int(cfg["imagens"]["quantidade"]), pasta)
         else:
-            fotos = obter_imagens(roteiro, cfg, pasta, historico)
+            fotos = obter_imagens(roteiro, cfg, pasta, historico, excluir={excerto["id"]} if excerto else None)
         nomes_fontes = list(dict.fromkeys(a["fonte"] for a in artigos))
         formato = cfg["imagens"].get("formato", "faixas")
         topo, destaque = roteiro.get("titulo_topo", ""), roteiro.get("titulo_destaque", "")
@@ -1287,10 +1626,14 @@ def main():
         log("6) A montar o vídeo...")
         carimbo = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M")
         video = saida_dir / f"short_{carimbo}.mp4"
-        montar(fotos, audio, ass, grafico, dur, pasta, video, formato)
+        itens, durs = fotos, None
+        if excerto:
+            itens, durs = inserir_excerto(fotos, excerto, t_ex, dur + 0.9)
+        montar(itens, audio, ass, grafico, dur, pasta, video, formato, durs)
         log(f"   Vídeo: {video} ({video.stat().st_size / 1e6:.1f} MB)")
 
-    descricao = descricao_completa(roteiro, artigos, fotos)
+    creditos = fotos + ([excerto] if excerto else [])
+    descricao = descricao_completa(roteiro, artigos, creditos)
     meta = {"titulo": roteiro["titulo_youtube"], "descricao": descricao, "tags": roteiro["tags"],
             "roteiro": roteiro["roteiro"], "video": video.name}
     (saida_dir / "ultimo.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -1299,6 +1642,9 @@ def main():
               ", ".join(f"[{a['fonte']}]({a['link']})" for a in artigos)]
     resumo.append("\n**Imagens:** " + ("; ".join(f"[{f['id']}]({f.get('url', '')}) — {f['autor']} ({f.get('licenca', '')})"
                                                   for f in fotos if f.get("autor")) or "fundos gerados"))
+    if excerto:
+        resumo.append(f"\n**Trecho original:** {excerto['orador']} ({excerto.get('data') or 's/ data'}) — "
+                      f"\"{excerto['texto']}\" — [{excerto.get('id')}]({excerto.get('url', '')}) ({excerto.get('licenca', '')})")
 
     if args.sem_upload:
         log("Modo sem upload: vídeo criado mas não enviado.")
@@ -1317,7 +1663,7 @@ def main():
         "categoria": roteiro.get("categoria", ""),
         "links": [i["link"] for i in grupo["itens"]] if grupo else [],
         "tokens": sorted(grupo["tokens"] if grupo else tokens(roteiro["manchete"])),
-        "video_id": res["id"], "fotos": [f["id"] for f in fotos if f.get("id")],
+        "video_id": res["id"], "fotos": [f["id"] for f in creditos if f.get("id")],
     })
     guardar_historico(historico)
     return 0
