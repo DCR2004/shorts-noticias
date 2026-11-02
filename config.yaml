@@ -47,6 +47,13 @@ imagens:
   cortes_video: 2               # nº de cortes de vídeo reais do tema (Wikimedia Commons: Planalto, TV Senado, STF...)
   formato: "faixas"             # "faixas" (manchete em cima, vídeo/foto ao meio, legendas em baixo) ou "ecra_inteiro"
 
+agenda:
+  # Publicação automática: um vídeo a cada X minutos, dentro da janela abaixo (hora de Brasília).
+  # Cada vídeo fica público 1 hora depois de ser criado (youtube.horas_revisao).
+  intervalo_minutos: 30
+  inicio_brasilia: "05:07"      # criação do primeiro vídeo do dia (público às 06:07)
+  fim_brasilia: "23:07"         # criação do último vídeo do dia (público às 00:07)
+
 excerto:
   # Trecho REAL de entrevista ou discurso (vídeo e som originais), de vídeos com licença livre
   # no Wikimedia Commons (Planalto, Agência Brasil, Senado...). Aparece com a data e o crédito.
