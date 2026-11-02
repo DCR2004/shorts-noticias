@@ -315,11 +315,14 @@ def chamar_gemini(prompt: str, modelos: list, esquema: dict | None = None, anexo
             if usar_esquema:
                 corpo["generationConfig"]["responseSchema"] = esquema
             try:
-                r = requests.post(URL.format(modelo=modelo), json=corpo, timeout=180,
+                r = requests.post(URL.format(modelo=modelo), json=corpo, timeout=(15, 120),
                                   headers={"x-goog-api-key": chave, "Content-Type": "application/json"})
             except requests.RequestException as e:
-                ultimo_erro = str(e)
-                time.sleep(5 * (tentativa + 1))
+                ultimo_erro = f"{modelo}: {type(e).__name__}"
+                log(f"  {ultimo_erro} (sem resposta)")
+                if tentativa >= 1:
+                    break                 # demasiado lento -> próximo modelo
+                time.sleep(5)
                 continue
             if r.status_code == 200:
                 dados = r.json()
