@@ -20,6 +20,10 @@ on:
         type: choice
         options: [config, privado, agendado, publico]
         default: config
+      exigir_excerto:
+        description: "Só criar o vídeo se encontrar um trecho real de entrevista/discurso"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -31,7 +35,7 @@ concurrency:
 jobs:
   short:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 50
     steps:
       - uses: actions/checkout@v7
 
@@ -46,6 +50,12 @@ jobs:
       - name: Instalar dependências
         run: pip install -r requirements.txt
 
+      - name: Modelo de transcrição (cache)
+        uses: actions/cache@v6
+        with:
+          path: ~/.cache/huggingface
+          key: whisper-modelos-v1
+
       - name: Criar (e publicar) o Short
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -54,6 +64,7 @@ jobs:
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
           MODO_YT: ${{ inputs.modo_publicacao || 'config' }}
+          EXIGIR_EXCERTO: ${{ inputs.exigir_excerto && 'true' || '' }}
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.publicar }}" != "true" ]; then
             python shorts.py --sem-upload
