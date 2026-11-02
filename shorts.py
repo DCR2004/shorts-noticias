@@ -876,6 +876,7 @@ ESQ_TRECHO = {
         "ultima": {"type": "INTEGER"},
         "orador": {"type": "STRING"},
         "ponte": {"type": "STRING"},
+        "traducao": {"type": "STRING"},
     },
     "required": ["usar", "motivo", "primeira", "ultima", "orador", "ponte"],
 }
@@ -898,15 +899,16 @@ def _transcrever_whisper(audio, cfg: dict) -> list:
     import numpy as np   # descodifica com o ffmpeg (evita incompatibilidades do PyAV)
     pcm = subprocess.run(["ffmpeg", "-v", "error", "-i", str(audio), "-f", "f32le", "-ac", "1", "-ar", "16000", "-"],
                          capture_output=True, check=True).stdout
-    segs, _ = _WHISPER[nome].transcribe(np.frombuffer(pcm, np.float32), language="pt", word_timestamps=True,
-                                        vad_filter=True, beam_size=2)
+    segs, info = _WHISPER[nome].transcribe(np.frombuffer(pcm, np.float32), word_timestamps=True,
+                                           vad_filter=True, beam_size=2)
+    lingua = getattr(info, "language", "pt") or "pt"
     out = []
     for s in segs:
         palavras = [{"texto": w.word.strip(), "ini": float(w.start), "fim": float(w.end)}
                     for w in (s.words or []) if w.word.strip()]
         if palavras:
             out.append({"ini": palavras[0]["ini"], "fim": palavras[-1]["fim"],
-                        "texto": s.text.strip(), "palavras": palavras})
+                        "texto": s.text.strip(), "palavras": palavras, "lingua": lingua})
     return out
 
 
@@ -1031,6 +1033,7 @@ Se nenhum trecho cumprir todas as regras, ou se o vídeo for de outro assunto, r
 "orador": nome e cargo da pessoa na data do vídeo (ex.: "Lula, presidente da República").
 "ponte": UMA frase curta para a narração dizer ANTES do trecho: quem fala, QUANDO (mês e ano, ou só o ano) e em que contexto. Ex.: "Em maio de 2023, numa entrevista, o presidente Lula falou sobre o tema:". Termine com dois pontos.
 "motivo": uma frase a explicar a escolha ou a recusa.
+"traducao": se o trecho NÃO estiver em português, a tradução fiel para português do Brasil (vai para as legendas); se estiver em português, deixe vazio.
 Não invente nada que não esteja na transcrição ou nos dados do vídeo."""
     return chamar_gemini(prompt, cfg["ia"]["modelos"], ESQ_TRECHO)
 
@@ -1070,6 +1073,7 @@ Responda em JSON: {{"noticias": [{{"id": 0, "pessoas": ["..."], "buscas": ["..."
         cands = [c for c in _candidatos_excerto(buscas, usados, tema) if c["afinidade"] >= 1]
         if cands:
             g["_buscas_trecho"], g["_pessoas"], g["_afinidade"] = buscas, pessoas, cands[0]["afinidade"]
+            g["_cands"] = cands
             com_arquivo.append(g)
     com_arquivo.sort(key=lambda g: -g["_afinidade"])
     log(f"   Notícias com vídeos de arquivo sobre o tema: {len(com_arquivo)} de {len(grupos)}")
@@ -1089,15 +1093,19 @@ def procurar_excerto(roteiro: dict, cfg: dict, pasta, historico: list):
         tematicas = [f"{p} {t}" for p in pessoas[:2] for t in chaves[:2]]
     buscas = list(dict.fromkeys(tematicas + (pessoas or roteiro.get("buscas_commons", [])[:2])))
     tema = tokens(roteiro.get("manchete", "") + " " + roteiro.get("roteiro", "")) - set().union(*(tokens(p) for p in pessoas))
-    cands = _candidatos_excerto(buscas, usados, tema)
-    log(f"  Vídeos de arquivo ({'; '.join(buscas) or '-'}): {len(cands)}")
-    if not cands:
-        return None
-    try:
-        bons = _preselecionar(cands, roteiro, cfg)
-    except Exception as e:
-        log(f"  Pré-seleção falhou ({type(e).__name__}); a usar a afinidade de palavras")
-        bons = [c for c in cands if c["afinidade"] >= 2][:2]
+    if roteiro.get("_presel"):          # já pré-selecionados ao escolher a notícia
+        bons = roteiro["_presel"]
+        log(f"  Vídeos de arquivo já pré-selecionados: {len(bons)}")
+    else:
+        cands = _candidatos_excerto(buscas, usados, tema)
+        log(f"  Vídeos de arquivo ({'; '.join(buscas) or '-'}): {len(cands)}")
+        if not cands:
+            return None
+        try:
+            bons = _preselecionar(cands, roteiro, cfg)
+        except Exception as e:
+            log(f"  Pré-seleção falhou ({type(e).__name__}); a usar a afinidade de palavras")
+            bons = [c for c in cands if c["afinidade"] >= 2][:2]
     log(f"  Com probabilidade de falar do tema: {len(bons)}" + "".join(f"\n    - {c['titulo'][5:90]}" for c in bons))
     for n, c in enumerate(bons):
         janela = min(c["dur"], 240.0)
@@ -1150,10 +1158,15 @@ def procurar_excerto(roteiro: dict, cfg: dict, pasta, historico: list):
         except Exception as e:
             log(f"  Não consegui cortar o trecho: {type(e).__name__}: {str(e)[:160]}")
             continue
+        palavras = [{"texto": w["texto"], "ini": w["ini"] - t0, "fim": w["fim"] - t0} for w in falas]
+        texto = " ".join(s["texto"] for s in segs[a:b + 1])
+        traducao = str(esc.get("traducao") or "").strip()
+        if segs[a].get("lingua", "pt") != "pt" and traducao:   # legendas com a tradução
+            palavras = _estimar_tempos(traducao, dur)
+            texto = f"{traducao} (tradução)"
         log(f"  ✓ Trecho de {dur:.1f}s: {esc['orador']} ({c['data'] or 's/ data'})")
-        return {"tipo": "excerto", "caminho": clip, "som": som, "dur": dur,
-                "palavras": [{"texto": w["texto"], "ini": w["ini"] - t0, "fim": w["fim"] - t0} for w in falas],
-                "texto": " ".join(s["texto"] for s in segs[a:b + 1]), "orador": str(esc["orador"]).strip(),
+        return {"tipo": "excerto", "caminho": clip, "som": som, "dur": dur, "palavras": palavras,
+                "texto": texto, "orador": str(esc["orador"]).strip(),
                 "ponte": str(esc["ponte"]).strip(), "data": c["data"], "ano": c["ano"], "id": c["titulo"],
                 "autor": c["autor"], "licenca": c["lic"], "fonte": "Wikimedia Commons",
                 "url": c["info"].get("descriptionurl", "")}
@@ -1604,7 +1617,22 @@ def escolher_e_escrever(cfg: dict, historico: list, pasta):
     if exigir:
         log("   A ver que notícias têm vídeos de arquivo (entrevistas/discursos) sobre o tema...")
         try:
-            candidatos = noticias_com_arquivo(candidatos, cfg, historico) or candidatos
+            com_arquivo = noticias_com_arquivo(candidatos, cfg, historico)
+            prontos = []
+            for g in com_arquivo[:6]:          # a IA confirma, pelos títulos, que há um vídeo provável
+                it = g["itens"][0]
+                try:
+                    pre = _preselecionar(g["_cands"], {"manchete": it["titulo"], "roteiro": it.get("resumo", "")}, cfg)
+                except Exception as e:
+                    log(f"   Pré-seleção falhou ({type(e).__name__})")
+                    continue
+                if pre:
+                    g["_presel"] = pre
+                    prontos.append(g)
+                    log(f"   Com vídeo provável: {it['titulo'][:90]} -> {pre[0]['titulo'][5:80]}")
+                    if len(prontos) >= 2:
+                        break
+            candidatos = prontos or com_arquivo or candidatos
         except Exception as e:
             log(f"   Verificação falhou ({type(e).__name__}); a seguir com todas as notícias")
     for tentativa in range(4 if exigir else 3):
@@ -1625,6 +1653,8 @@ def escolher_e_escrever(cfg: dict, historico: list, pasta):
         if grupo.get("_buscas_trecho"):   # pesquisas que já deram vídeos de arquivo
             roteiro["buscas_trecho"] = list(dict.fromkeys(grupo["_buscas_trecho"] + roteiro.get("buscas_trecho", [])))
             roteiro["pessoas"] = list(dict.fromkeys(grupo["_pessoas"] + roteiro.get("pessoas", [])))
+        if grupo.get("_presel"):
+            roteiro["_presel"] = grupo["_presel"]
         excerto = None
         if usar_excerto:
             log("3b) A procurar um trecho de entrevista ou discurso (vídeo + som originais)...")
