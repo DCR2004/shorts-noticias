@@ -658,6 +658,8 @@ def _commons_procurar(q: str, tipo: str) -> list:
         texto = p.get("title", "") + " " + _meta(meta, "ImageDescription") + " " + _meta(meta, "ObjectName")
         if not (tokens(q) & tokens(texto)):
             continue   # o ficheiro tem de mencionar o termo pesquisado
+        if re.search(r"wiki(media|pedia|mania|data)|webinar|tutorial|palestra|oficina|workshop", texto, re.I):
+            continue   # evita vídeos/fotos sobre a própria Wikipédia, aulas e eventos
         ano = re.search(r"(19|20)\d\d", _meta(meta, "DateTimeOriginal") or _meta(meta, "DateTime"))
         out.append({"titulo": p.get("title", ""), "info": info, "lic": lic, "index": p.get("index", 99),
                     "autor": _meta(meta, "Artist") or "autor desconhecido", "ano": int(ano.group(0)) if ano else 0})
