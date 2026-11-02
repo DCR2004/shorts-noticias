@@ -897,7 +897,7 @@ def _segmento(foto: dict, saida, dur: float, mov: int, pasta, i: int) -> None:
               f"[0:v][fg]overlay=0:{FAIXA_Y}:shortest=1,format=yuv420p[v]")
     correr(["ffmpeg", "-y", "-v", "error", "-loop", "1", "-framerate", str(FPS), "-i", str(base),
             "-i", str(foto["caminho"]), "-filter_complex", filtro, "-map", "[v]", "-frames:v", str(n),
-            "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-r", str(FPS), str(saida)])
+            "-c:v", "libx264", "-preset", "ultrafast", "-crf", "17", "-r", str(FPS), str(saida)])
 
 
 def fundo(fotos: list, duracao: float, pasta) -> object:
@@ -923,7 +923,7 @@ def fundo(fotos: list, duracao: float, pasta) -> object:
         filtros.append(f"{ant}[{i}:v]xfade=transition=fade:duration={T}:offset={off:.3f}{rot}")
         ant = rot
     correr(["ffmpeg", "-y", "-v", "error", *entradas, "-filter_complex", ";".join(filtros),
-            "-map", ant, "-c:v", "libx264", "-preset", "veryfast", "-crf", "18",
+            "-map", ant, "-c:v", "libx264", "-preset", "ultrafast", "-crf", "17",
             "-pix_fmt", "yuv420p", "-r", str(FPS), str(saida)])
     return saida
 
@@ -940,7 +940,7 @@ def montar(fotos: list, audio, ass, grafico, duracao_audio: float, pasta, saida)
               f"[2:a]loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000,apad[a]")
     correr(["ffmpeg", "-y", "-v", "error", "-i", bg.name, "-i", grafico.name, "-i", str(audio),
             "-filter_complex", filtro, "-map", "[v]", "-map", "[a]", "-t", f"{total:.2f}",
-            "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-r", str(FPS),
+            "-c:v", "libx264", "-preset", "fast", "-crf", "21", "-r", str(FPS),
             "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", str(saida.resolve())],
            cwd=pasta)
 
@@ -1169,6 +1169,8 @@ def main():
 
     resumo = [f"## {roteiro['titulo_youtube']}", "", roteiro["roteiro"], "", "**Fontes:** " +
               ", ".join(f"[{a['fonte']}]({a['link']})" for a in artigos)]
+    resumo.append("\n**Imagens:** " + ("; ".join(f"[{f['id']}]({f.get('url', '')}) — {f['autor']} ({f.get('licenca', '')})"
+                                                  for f in fotos if f.get("autor")) or "fundos gerados"))
 
     if args.sem_upload:
         log("Modo sem upload: vídeo criado mas não enviado.")
