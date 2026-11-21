@@ -9273,5 +9273,39 @@
    "File:Reunião com a Ministra Tereza Cristina (50956533971).jpg",
    "File:Reunião com a Ministra Tereza Cristina (50955827428).jpg"
   ]
+ },
+ {
+  "data": "2026-11-21T01:10:36.441870+00:00",
+  "manchete": "Terremoto atinge o Peru e é sentido em Lima",
+  "titulo": "Terremoto atinge o Peru e tremor é sentido na capital Lima",
+  "categoria": "MUNDO",
+  "links": [
+   "https://noticias.uol.com.br/internacional/ultimas-noticias/2026/11/20/terremoto-de-magnitude-67-atinge-o-peru-diz-agencia.ghtm",
+   "https://g1.globo.com/mundo/noticia/2026/11/20/peru-registra-terremoto-de-magnitude-67-tremor-foi-sentido-em-lima.ghtml",
+   "https://www.cnnbrasil.com.br/internacional/terremoto-de-magnitude-69-atinge-lima-capital-do-peru/"
+  ],
+  "tokens": [
+   "6",
+   "7",
+   "9",
+   "agenci",
+   "atinge",
+   "lima",
+   "magnit",
+   "peru",
+   "regist",
+   "sentid",
+   "terrem",
+   "tremor"
+  ],
+  "video_id": "7K040rwbEmc",
+  "fotos": [
+   "File:Discurso de la presidenta Dina Boluarte en el Congreso de la República.webm",
+   "File:Congreso de la República del Perú en 2018.jpg",
+   "File:Arenga 8M Lima Palestina Libertad.webm",
+   "File:Marcha Disolución del Congreso de la República del Perú en 2019 IMG 20190930 200131.jpg",
+   "File:Circuito mágico del agua, Parque Reserva, Lima, Perú, 2015-07-28, DD 124.JPG",
+   "File:Lima public square.jpg"
+  ]
  }
 ]
