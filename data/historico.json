@@ -10640,5 +10640,30 @@
    "File:Palácio do Congresso Nacional - Câmara dos Deputados.jpg",
    "File:Congresso Nacional BSB 06 2014 8856 cropped.jpg"
   ]
+ },
+ {
+  "data": "2026-11-22T12:11:44.880521+00:00",
+  "manchete": "PEC da Segurança é aprovada pelo Congresso",
+  "titulo": "PEC da Segurança Pública permite criação de polícias municipais",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://g1.globo.com/politica/noticia/2026/11/22/pec-da-seguranca-como-uma-guarda-civil-municipal-pode-virar-policia.ghtml"
+  ],
+  "tokens": [
+   "civil",
+   "guarda",
+   "muda",
+   "munici",
+   "pec",
+   "pode",
+   "polici",
+   "popula",
+   "segura",
+   "virar"
+  ],
+  "video_id": "P75Rn7LUOPk",
+  "fotos": [
+   "File:Um passeio em 'hyperlapse' no prédio do Congresso Nacional.webm"
+  ]
  }
 ]
