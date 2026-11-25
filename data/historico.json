@@ -1,31 +1,5 @@
 [
  {
-  "data": "2026-11-02T18:39:49.430733+00:00",
-  "manchete": "Senado pauta votação da PEC da Segurança Pública",
-  "titulo": "Senado pauta votação da PEC da Segurança Pública",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://revistaoeste.com/politica/alcolumbre-pauta-votacao-da-pec-da-seguranca-publica/"
-  ],
-  "tokens": [
-   "alcolu",
-   "pauta",
-   "pec",
-   "public",
-   "segura",
-   "votaca"
-  ],
-  "video_id": "-WisYiYe4bM",
-  "fotos": [
-   "File:Tumulto após o Senado do Brasil aprovar a quebra de sigilo de Fabio Luis Lula da Silva.webm",
-   "File:Davi Alcolumbre e Paulo Guedes.jpg",
-   "File:Confira destaques do Alô Alô Brasil sobre depoimentos de Vorcaro nas CPIs do Congresso Nacional.webm",
-   "File:Rodrigo Maia, Davi Alcolumbre e Paulo Guedes.jpg",
-   "File:200 anos do Senado Federal (53454234104).jpg",
-   "File:2024-11-12, Senado Federal do Brasil - 399.jpg"
-  ]
- },
- {
   "data": "2026-11-02T19:11:37.307739+00:00",
   "manchete": "Boulos e Tarcísio divergem sobre alta do ICMS",
   "titulo": "Governo Lula e Tarcísio divergem sobre aumento do ICMS do diesel",
@@ -13272,6 +13246,36 @@
    "File:Fim da escala 6x1 e direitos a trabalhadores por aplicativo são prioridades do governo, diz Boulos.webm",
    "File:Guilherme Boulos - Housing the Majority 02.jpg",
    "File:Guilherme Boulos - Housing the Majority 01.jpg"
+  ]
+ },
+ {
+  "data": "2026-11-25T14:10:49.633086+00:00",
+  "manchete": "Governo Lula cogita recesso no Congresso",
+  "titulo": "Governo Lula estuda convocar Congresso no recesso para votar ajuste fiscal",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://g1.globo.com/politica/blog/valdo-cruz/post/2026/11/25/equipe-de-lula-nao-descarta-convocacao-do-congresso-em-janeiro-no-recesso-para-aprovar-pec-da-2a-etapa-do-ajuste-fiscal.ghtml"
+  ],
+  "tokens": [
+   "ajuste",
+   "aprova",
+   "congre",
+   "convoc",
+   "descar",
+   "equipe",
+   "etapa",
+   "fiscal",
+   "janeir",
+   "lula",
+   "nao",
+   "pec",
+   "recess"
+  ],
+  "video_id": "ElUWAPw33Ow",
+  "fotos": [
+   "File:Senador Davi Alcolumbre (52757789270).jpg",
+   "File:26.10.2026 - Davi Alcolumbre e Hugo Motta - 55614489954.jpg",
+   "File:26.10.2026 - Davi Alcolumbre e Hugo Motta - 55613262112.jpg"
   ]
  }
 ]
