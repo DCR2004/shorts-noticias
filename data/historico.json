@@ -1,32 +1,5 @@
 [
  {
-  "data": "2026-11-02T20:10:58.124521+00:00",
-  "manchete": "Lula sanciona a chamada OAB da Medicina",
-  "titulo": "Lula sanciona lei que cria o Exame Nacional para formandos de medicina",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://www.cnnbrasil.com.br/politica/lula-sanciona-esta-semana-lei-que-institui-a-oab-da-medicina/"
-  ],
-  "tokens": [
-   "instit",
-   "lei",
-   "lula",
-   "medici",
-   "oab",
-   "sancio",
-   "semana"
-  ],
-  "video_id": "iD9spd3ao10",
-  "fotos": [
-   "File:PM Modi holds bilateral meeting with President Luiz Inácio Lula da Silva of Brazil.webm",
-   "File:President Tarja Halonen and President Luiz Inácio Lula da Silva in 2003.jpg",
-   "File:Fenprof vai apresentar parecer ao Ministério da Educação.webm",
-   "File:Luiz Inácio kissing Rosângela Lula da Silva, August 2024.jpg",
-   "File:Fachada do Ministério da Educação (MEC) (15837724253).jpg",
-   "File:Fachada do Ministério da Educação (MEC) (15835268074).jpg"
-  ]
- },
- {
   "data": "2026-11-02T20:42:52.379015+00:00",
   "manchete": "Água no Ceará tem escolta após ameaças",
   "titulo": "Distribuição de água no Ceará passa a ter escolta policial após ameaças",
@@ -13299,6 +13272,39 @@
    "File:São Paulo - SP (4578870334).jpg",
    "File:20250731 091348 pagenumber-1.png",
    "File:Protesto pelo Impeachment de Alexandre de Moraes 1.jpg"
+  ]
+ },
+ {
+  "data": "2026-11-25T21:09:17.395149+00:00",
+  "manchete": "STF e governo miram emendas parlamentares",
+  "titulo": "STF julga emendas estaduais enquanto governo prepara novo ajuste fiscal",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://www.cartacapital.com.br/justica/emendas-parlamentares-estaduais-entram-na-mira-do-stf/",
+   "https://www.gazetadopovo.com.br/republica/segunda-parte-ajuste-fiscal-lula-mira-emendas-parlamentares-supersalarios/"
+  ],
+  "tokens": [
+   "ajuste",
+   "emenda",
+   "entram",
+   "estadu",
+   "fiscal",
+   "lula",
+   "mira",
+   "parlam",
+   "parte",
+   "segund",
+   "stf",
+   "supers"
+  ],
+  "video_id": "QjMOMmB1EjA",
+  "fotos": [
+   "File:Boulos diz que fim da escala 6X1 é prioridade do Governo.webm",
+   "File:Proposições Remanescentes do Dia Anterior. Dep. Guilherme Boulos (PSOL - SP).jpg",
+   "File:Dias Toffoli, Nelson Jobim e Rafael Favetti comentam o cenário atual.webm",
+   "File:Guilherme Boulos (cropped).jpg",
+   "File:Toffoli aniversario da constituição.jpg",
+   "File:Dias Toffoli em setembro de 2018.jpg"
   ]
  }
 ]
