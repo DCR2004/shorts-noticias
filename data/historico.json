@@ -1,36 +1,5 @@
 [
  {
-  "data": "2026-11-02T21:13:00.026816+00:00",
-  "manchete": "Projeto quer prazo do TSE para candidaturas",
-  "titulo": "Projeto quer prazo no TSE para julgar candidaturas antes das eleições",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://www.metropoles.com/colunas/grande-angular/deputado-do-psol-quer-estabelecer-prazo-para-tse-julgar-candidaturas",
-   "https://revistaoeste.com/politica/psol-dificulta-migracao-de-deputados-para-o-pt/"
-  ],
-  "tokens": [
-   "candid",
-   "deputa",
-   "dificu",
-   "estabe",
-   "julgar",
-   "migrac",
-   "prazo",
-   "psol",
-   "quer",
-   "tse"
-  ],
-  "video_id": "5fxUlKcD2vg",
-  "fotos": [
-   "File:Presidente do TSE diz que eleição ocorreu com segurança apesar de prorrogação inédita.webm",
-   "File:Tribunal Superior Eleitoral.png",
-   "File:Alerj Notícias - Com. Segurança Câmara Federal.webm",
-   "File:Tribunal Superior Eleitoral, instância máxima da justiça eleitoral brasileira.jpg",
-   "File:Lobbe Neto - Camara dos Deputados 03.jpg",
-   "File:Lobbe Neto - Camara dos Deputados 02.jpg"
-  ]
- },
- {
   "data": "2026-11-02T21:39:34.871480+00:00",
   "manchete": "Joao Jorge oficializa candidatura na Camara de SP",
   "titulo": "Vereador Joao Jorge oficializa candidatura a presidencia da Camara de SP",
@@ -13307,6 +13276,49 @@
    "File:Coletiva-de-imprensa-com-valeska-teixeira-cristiano-zanin (35847658326).jpg",
    "File:Eduardo Paes BID.jpg",
    "File:Eduardo Paes de cadeira de rodas inaugura a Arena Carioca 1.jpg"
+  ]
+ },
+ {
+  "data": "2026-11-25T22:12:54.936288+00:00",
+  "manchete": "Governo Lula critica novas tarifas dos EUA",
+  "titulo": "Governo Lula critica novas tarifas dos Estados Unidos sobre aeronaves e acucar",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://www1.folha.uol.com.br/mercado/2026/11/governo-lula-diz-que-nao-cedera-a-ameacas-apos-tarifas-dos-eua-para-aeronaves-e-acucar.shtml",
+   "https://www.poder360.com.br/poder-governo/governo-lula-critica-eua-e-diz-que-nao-cedera-a-ameaca-tarifaria/",
+   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/governo-lula-diz-que-nao-cedera-a-ameacas-apos-tarifas-dos-eua-para-aeronaves-e-acucar.shtml",
+   "https://www.metropoles.com/brasil/brasil-nao-cedera-leia-nota-do-governo-sobre-ameaca-de-tarifas-dos-eua",
+   "https://www.infomoney.com.br/mundo/governo-lula-reage-a-nova-tarifa-dos-eua-e-diz-que-brasil-nao-cedera-a-ameacas/",
+   "https://g1.globo.com/economia/noticia/2026/11/25/governo-lula-diz-estar-indignado-com-nova-proposta-de-tarifa-dos-eua-contra-o-brasil-e-que-nao-cedera-a-esse-tipo-de-ameaca.ghtml"
+  ],
+  "tokens": [
+   "acucar",
+   "aerona",
+   "ameaca",
+   "apos",
+   "brasil",
+   "cedera",
+   "critic",
+   "estar",
+   "eua",
+   "govern",
+   "indign",
+   "leia",
+   "lula",
+   "nao",
+   "nota",
+   "nova",
+   "propos",
+   "reage",
+   "tarifa",
+   "tipo"
+  ],
+  "video_id": "Iyh5ni1rSh0",
+  "fotos": [
+   "File:Flughafen BER 20260623 Abflug Embraer 190 Helvetic Airways.webm",
+   "File:Embraer E195-E2 Frontal shoot.jpg",
+   "File:Embraer E195-E2 cockpit.jpg",
+   "File:Lula responde a declarações do presidente dos EUA sobre taxação de produtos brasileiros.webm"
   ]
  }
 ]
