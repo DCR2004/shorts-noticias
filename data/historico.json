@@ -1,38 +1,5 @@
 [
  {
-  "data": "2026-11-02T11:01:02.278965+00:00",
-  "manchete": "Xi diz que Oriente Medio nao deve ser palco de potencias",
-  "titulo": "Xi Jinping afirma que Oriente Medio nao deve ser palco de potencias",
-  "categoria": "MUNDO",
-  "links": [
-   "https://noticias.uol.com.br/ultimas-noticias/reuters/2026/11/02/xijinping-afirma-que-oriente-medio-nao-deve-se-tornar-campo-de-batalha-para-rivalidade-entre-potencias.htm",
-   "https://www.cnnbrasil.com.br/internacional/xi-diz-que-oriente-medio-nao-deve-ser-palco-de-disputa-entre-potencias/"
-  ],
-  "tokens": [
-   "batalh",
-   "campo",
-   "deve",
-   "disput",
-   "jinpin",
-   "medio",
-   "nao",
-   "orient",
-   "palco",
-   "potenc",
-   "rivali",
-   "tornar"
-  ],
-  "video_id": "QEuM6pBXF3Q",
-  "fotos": [
-   "File:China President Xi Jinping welcomed Philippines President Ferdinand Marcos Jr. - 4 January 2023.webm",
-   "File:Bongbong Marcos and Xi Jinping 3.jpg",
-   "File:M-T Kylo Sinking in the Gulf of Oman (1021961).webm",
-   "File:Bongbong Marcos and Xi Jinping 2.jpg",
-   "File:Wadi Bani Khalid East RB.jpg",
-   "File:Oman Khanjar.jpg"
-  ]
- },
- {
   "data": "2026-11-02T16:10:12.640370+00:00",
   "manchete": "Grécia compra aviões da Embraer",
   "titulo": "Grecia compra avioes da Embraer e se torna o oitavo pais da Otan a escolher o KC-390",
@@ -13269,6 +13236,47 @@
    "File:Entrevistas Diversas (28124108476).jpg",
    "File:Luiz Marinho. CDH - Comissão de Direitos Humanos e Legislação Participativa (cropped).jpg",
    "File:Luiz Marinho PT.png"
+  ]
+ },
+ {
+  "data": "2026-11-25T11:09:48.341248+00:00",
+  "manchete": "Governo libera R$ 3,4 bi do Orçamento",
+  "titulo": "Governo libera R$ 3,4 bilhões do Orçamento após ajuste fiscal",
+  "categoria": "ECONOMIA",
+  "links": [
+   "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/governo-libera-r-343-bilhoes-do-orcamento-apos-ajuste-fiscal",
+   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/governo-lula-libera-r-34-bi-do-orcamento-apos-excluir-mais-despesas-da-meta-de-2026.shtml",
+   "https://www.cnnbrasil.com.br/economia/money/macroeconomia/governo-libera-r-3-43-bilhoes-do-orcamento-de-2026/"
+  ],
+  "tokens": [
+   "10",
+   "2026",
+   "3",
+   "4",
+   "43",
+   "5",
+   "ajuste",
+   "apos",
+   "bilhoe",
+   "exclui",
+   "fiscal",
+   "fora",
+   "gastos",
+   "govern",
+   "libera",
+   "lula",
+   "mas",
+   "meta",
+   "orcame",
+   "piora",
+   "projec"
+  ],
+  "video_id": "0lEO9HrZ89Q",
+  "fotos": [
+   "File:Depoimento dos deputados após reunião com Ministério do Planejamento.webm",
+   "File:CMO - Comissão Mista de Planos, Orçamentos Públicos e Fiscalização (15148339153).jpg",
+   "File:Em reunião no Planalto, senadores do PMDB reafirmam apoio a Temer.webm",
+   "File:CMO - Comissão Mista de Planos, Orçamentos Públicos e Fiscalização (36461277332).jpg"
   ]
  }
 ]
