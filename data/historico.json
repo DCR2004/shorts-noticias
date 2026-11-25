@@ -1,42 +1,5 @@
 [
  {
-  "data": "2026-11-02T20:42:52.379015+00:00",
-  "manchete": "Água no Ceará tem escolta após ameaças",
-  "titulo": "Distribuição de água no Ceará passa a ter escolta policial após ameaças",
-  "categoria": "SEGURANÇA",
-  "links": [
-   "https://www.poder360.com.br/poder-seguranca-publica/distribuicao-de-agua-no-ceara-tem-escolta-apos-ameacas/",
-   "https://www.cartacapital.com.br/justica/forcas-do-ceara-intervem-para-garantir-agua-apos-ameaca-de-faccao/",
-   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/cotidiano/2026/11/venda-de-agua-no-ce-ocorre-com-escolta-policial-apos-ameacas-a-comerciantes-atribuidas-a-faccao.shtml",
-   "https://agenciabrasil.ebc.com.br/geral/noticia/2026-11/forcas-do-ceara-intervem-para-garantir-agua-apos-ameaca-de-faccao"
-  ],
-  "tokens": [
-   "agua",
-   "ameaca",
-   "apos",
-   "atribu",
-   "ceara",
-   "comerc",
-   "distri",
-   "escolt",
-   "faccao",
-   "forcas",
-   "garant",
-   "interv",
-   "ocorre",
-   "polici",
-   "venda"
-  ],
-  "video_id": "6dMgpw9J4o0",
-  "fotos": [
-   "File:Ministros visitam o Ceará para verificar a situação da Segurança Pública.webm",
-   "File:Palácio da Polícia Civil - Ceará.jpg",
-   "File:Delegacia de Pacajus.jpg",
-   "File:Banda de Música da Polícia Militar do Ceará Major Xavier Torres 2024.jpg",
-   "File:Igreja matriz de banabuiu.jpg"
-  ]
- },
- {
   "data": "2026-11-02T21:13:00.026816+00:00",
   "manchete": "Projeto quer prazo do TSE para candidaturas",
   "titulo": "Projeto quer prazo no TSE para julgar candidaturas antes das eleições",
@@ -13305,6 +13268,45 @@
    "File:Guilherme Boulos (cropped).jpg",
    "File:Toffoli aniversario da constituição.jpg",
    "File:Dias Toffoli em setembro de 2018.jpg"
+  ]
+ },
+ {
+  "data": "2026-11-25T21:39:58.689510+00:00",
+  "manchete": "STF julgará ação do PSD sobre segundo turno no Rio",
+  "titulo": "STF julgará em dezembro ação do PSD sobre segundo turno no Rio de Janeiro",
+  "categoria": "JUSTIÇA",
+  "links": [
+   "https://revistaoeste.com/politica/zanin-leva-ao-plenario-virtual-acao-do-psd-por-2o-turno-no-rio/",
+   "https://www.cartacapital.com.br/justica/stf-marca-julgamento-de-acao-do-psd-que-pede-2o-turno-no-rio/",
+   "https://agenciabrasil.ebc.com.br/justica/noticia/2026-11/stf-marca-julgamento-sobre-eleicoes-no-rio-para-4-de-dezembro",
+   "https://www.cnnbrasil.com.br/politica/stf-marca-inicio-de-julgamento-sobre-2o-turno-no-rj-para-4-de-dezembro/"
+  ],
+  "tokens": [
+   "4",
+   "acao",
+   "dezemb",
+   "eleico",
+   "inicio",
+   "julgam",
+   "leva",
+   "marca",
+   "pede",
+   "plenar",
+   "psd",
+   "rio",
+   "stf",
+   "turno",
+   "virtua",
+   "zanin"
+  ],
+  "video_id": "pcHau4dHm-s",
+  "fotos": [
+   "File:Cristiano Zanin fala sobre a expectativa do depoimento de Lula.webm",
+   "File:Coletiva-de-imprensa-com-valeska-teixeira-cristiano-zanin (35757212731).jpg",
+   "File:Chuvas no Rio de Janeiro 2021 - Dilúvio em Quintino e Cascadura.webm",
+   "File:Coletiva-de-imprensa-com-valeska-teixeira-cristiano-zanin (35847658326).jpg",
+   "File:Eduardo Paes BID.jpg",
+   "File:Eduardo Paes de cadeira de rodas inaugura a Arena Carioca 1.jpg"
   ]
  }
 ]
