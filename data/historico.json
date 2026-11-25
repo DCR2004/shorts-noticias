@@ -1,38 +1,5 @@
 [
  {
-  "data": "2026-11-02T18:10:11.947888+00:00",
-  "manchete": "Desenhos bíblicos da Record viram alvo de mudança",
-  "titulo": "Ministerio da Justica muda classificacao de desenhos biblicos da Record",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://revistaoeste.com/politica/deputados-criticam-nova-classificacao-de-desenhos-biblicos-da-record/",
-   "https://www.gazetadopovo.com.br/vida-e-cidadania/apos-eleicao-ministerio-da-justica-muda-classificacao-de-desenhos-biblicos-da-record/"
-  ],
-  "tokens": [
-   "apos",
-   "biblic",
-   "classi",
-   "critic",
-   "deputa",
-   "desenh",
-   "eleica",
-   "justic",
-   "minist",
-   "muda",
-   "nova",
-   "record"
-  ],
-  "video_id": "-pqJjalUVGo",
-  "fotos": [
-   "File:Conheça as ações do Ministério da Justiça no enfrentamento à -Covid19.webm",
-   "File:DSCI2814 Ministerio da Justica.jpg",
-   "File:SPACE STATION ASTRONAUT DISCUSSES RECORD BREAKING MISSION WITH PREVIOUS RECORD HOLDER.webm",
-   "File:Ministerio da Justiça, Bissau.jpg",
-   "File:Rede Record de Televisão - Rua da Várzea, 240 - Barra Funda - panoramio.jpg",
-   "File:Comparativo novela das oito (Rede Record).png"
-  ]
- },
- {
   "data": "2026-11-02T18:39:49.430733+00:00",
   "manchete": "Senado pauta votação da PEC da Segurança Pública",
   "titulo": "Senado pauta votação da PEC da Segurança Pública",
@@ -13276,6 +13243,35 @@
    "File:01.01.2023 - Posse de Fernando Haddad, Ministro de Estado da Fazenda (52626557424).jpg",
    "File:Vistas de Brasília - Palácio da Alvorada (1).jpg",
    "File:Palácio da Alvorada (1).jpg"
+  ]
+ },
+ {
+  "data": "2026-11-25T13:42:49.183819+00:00",
+  "manchete": "Governo Lula discute novo pacote econômico",
+  "titulo": "Governo Lula prepara novo pacote de medidas econômicas",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://www1.folha.uol.com.br/mercado/2026/11/novo-pacote-de-lula-vai-mirar-emendas-gastos-tributarios-e-supersalarios-diz-chefe-da-secretaria-geral.shtml",
+   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/novo-pacote-de-lula-vai-mirar-emendas-gastos-tributarios-e-supersalarios-diz-chefe-da-secretaria-geral.shtml"
+  ],
+  "tokens": [
+   "chefe",
+   "emenda",
+   "gastos",
+   "geral",
+   "lula",
+   "mirar",
+   "novo",
+   "pacote",
+   "secret",
+   "supers",
+   "tribut"
+  ],
+  "video_id": "lTjdoBhV0ko",
+  "fotos": [
+   "File:Fim da escala 6x1 e direitos a trabalhadores por aplicativo são prioridades do governo, diz Boulos.webm",
+   "File:Guilherme Boulos - Housing the Majority 02.jpg",
+   "File:Guilherme Boulos - Housing the Majority 01.jpg"
   ]
  }
 ]
