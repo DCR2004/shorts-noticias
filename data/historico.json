@@ -1,35 +1,5 @@
 [
  {
-  "data": "2026-11-02T17:42:32.862765+00:00",
-  "manchete": "STF pauta loterias municipais e TCU para esta semana",
-  "titulo": "STF julga nesta semana loterias municipais, TCU e liberdade de imprensa",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://revistaoeste.com/politica/stf-deve-julgar-loterias-municipais-poderes-do-tcu-e-liberdade-de-imprensa-nesta-semana/"
-  ],
-  "tokens": [
-   "deve",
-   "impren",
-   "julgar",
-   "liberd",
-   "loteri",
-   "munici",
-   "podere",
-   "semana",
-   "stf",
-   "tcu"
-  ],
-  "video_id": "fK41Zvgmmis",
-  "fotos": [
-   "File:África Agora- \"O Tribunal Supremo parece uma casa de gangsters\", diz Rafael Marques.webm",
-   "File:Supremo Tribunal Federal por Henrique Goldenstein (01).jpg",
-   "File:Energia - Capitalização da Eletrobras.webm",
-   "File:Supreme Federal Court - Statue.jpg",
-   "File:Fachada Tribunal de Contas da União - TCU (40014115302).jpg",
-   "File:Tribunal de contas da uniao sede.jpg"
-  ]
- },
- {
   "data": "2026-11-02T18:10:11.947888+00:00",
   "manchete": "Desenhos bíblicos da Record viram alvo de mudança",
   "titulo": "Ministerio da Justica muda classificacao de desenhos biblicos da Record",
@@ -13267,5 +13237,45 @@
   ],
   "video_id": "QM7Kvvsan4o",
   "fotos": []
+ },
+ {
+  "data": "2026-11-25T13:10:21.871651+00:00",
+  "manchete": "Haddad fora do novo governo",
+  "titulo": "Fernando Haddad decide ficar fora do novo governo de Lula",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/colunas/monicabergamo/2026/11/haddad-ficara-fora-do-quarto-governo-de-lula.shtml",
+   "https://g1.globo.com/politica/blog/gerson-camarotti/post/2026/11/25/haddad-sinaliza-a-lula-que-deve-ficar-fora-do-novo-governo.ghtml",
+   "https://revistaoeste.com/politica/ex-ministro-da-fazenda-era-cotado-para-a-casa-civil-com-a-saida-de-cena-camilo-santana-ganha-forca-na-disputa-pela-pastahaddad-vai-ficar-fora-do-1o-escalao-do-novo-governo-lula/",
+   "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/disputa-pela-casa-civil-pode-deixar-haddad-fora-do-governo-lula-4.shtml"
+  ],
+  "tokens": [
+   "4",
+   "casa",
+   "civil",
+   "deixar",
+   "deve",
+   "disput",
+   "escala",
+   "ficar",
+   "ficara",
+   "fora",
+   "govern",
+   "haddad",
+   "lula",
+   "novo",
+   "pode",
+   "quarto",
+   "sinali"
+  ],
+  "video_id": "rQHRfipL0sM",
+  "fotos": [
+   "File:Pesquisa de intenção BTG-FSB- Bolsonaro lidera e Haddad em 2° lugar.webm",
+   "File:01.01.2023 - Posse de Fernando Haddad, Ministro de Estado da Fazenda (52626309956).jpg",
+   "File:Por dentro do Palácio da Alvorada, residência oficial dos presidentes do Brasil.webm",
+   "File:01.01.2023 - Posse de Fernando Haddad, Ministro de Estado da Fazenda (52626557424).jpg",
+   "File:Vistas de Brasília - Palácio da Alvorada (1).jpg",
+   "File:Palácio da Alvorada (1).jpg"
+  ]
  }
 ]
