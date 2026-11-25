@@ -1,35 +1,5 @@
 [
  {
-  "data": "2026-11-02T16:39:44.706708+00:00",
-  "manchete": "Janones fala em democracia mitigada para vencer",
-  "titulo": "Janones diz que Lula usou democracia mitigada para vencer eleicao",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://revistaoeste.com/politica/janones-diz-que-lula-precisou-de-democracia-mitigada-para-vencer/",
-   "https://www.gazetadopovo.com.br/republica/janones-diz-que-estado-de-democracia-mitigada-foi-necessario-para-vencer-eleicao/"
-  ],
-  "tokens": [
-   "democr",
-   "eleica",
-   "estado",
-   "janone",
-   "lula",
-   "mitiga",
-   "necess",
-   "precis",
-   "vencer"
-  ],
-  "video_id": "bwlaLlNtONg",
-  "fotos": [
-   "File:Luiz Inácio Lula da Silva es reelecto en segunda vuelta electoral como presidente de Brasil.webm",
-   "File:13.08.2022-Lula e Janones falam sobre Auxílio Emergencial.jpg",
-   "File:Mantida condenação da TV Globo por exposição de inocente em programa sobre a Chacina da Candelária.webm",
-   "File:André Janones, August 2022.jpg",
-   "File:Sérgio Cabral Filho e Lula no Cristo - 14jun2007.jpg",
-   "File:Luiz Inácio Lula da Silva and George W. Bush 20080709.jpg"
-  ]
- },
- {
   "data": "2026-11-02T17:14:58.122571+00:00",
   "manchete": "Oposicao quer voto aberto no Senado",
   "titulo": "Oposicao quer voto aberto no Senado para barrar Alcolumbre",
@@ -13270,6 +13240,32 @@
    "File:Palácio da Redenção - Sede do Governo da Paraíba - panoramio.jpg",
    "File:João Pessoa (Paraíba).jpg",
    "File:João Pessoa Airport Logo.jpg"
+  ]
+ },
+ {
+  "data": "2026-11-25T12:12:57.479037+00:00",
+  "manchete": "Alcolumbre busca apoio de senadoras",
+  "titulo": "Davi Alcolumbre se reúne com senadoras em articulação para o Senado",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://www.poder360.com.br/poder-congresso/alcolumbre-se-reune-com-senadoras-da-atual-legislatura-e-recem-eleitas/"
+  ],
+  "tokens": [
+   "alcolu",
+   "atual",
+   "eleita",
+   "legisl",
+   "recem",
+   "reune",
+   "senado"
+  ],
+  "video_id": "oMuXMSG9104",
+  "fotos": [
+   "File:Ministro do Desenvolvimento Regional, Rogério Marinho.webm",
+   "File:2022 Cerimônia alusiva a Regularização Fundiária.jpg",
+   "File:Tereza Cristina - 2019.jpg",
+   "File:Senador Rogerio Marinho (PL-RN) (52795763830).jpg",
+   "File:Senador Rogerio Marinho (PL-RN) (52795372591).jpg"
   ]
  }
 ]
