@@ -1,41 +1,5 @@
 [
  {
-  "data": "2026-11-02T02:16:54.747093+00:00",
-  "manchete": "PF APURA VIAGEM DE FLÁVIO BOLSONARO",
-  "titulo": "PF apura viagem de Flávio Bolsonaro aos Estados Unidos",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://www.poder360.com.br/poder-justica/pf-apura-se-flavio-saiu-do-brasil-em-aviao-de-amigo-advogado/",
-   "https://revistaoeste.com/politica/nao-sai-do-brasil-sai-pelo-brasil-diz-flavio/",
-   "https://www.gazetadopovo.com.br/opiniao/editoriais/divida-publica-global-alerta/",
-   "https://www.cartacapital.com.br/mundo/marco-rubio-afirma-que-eua-nao-teve-envolvimento-na-fuga-de-flavio-bolsonaro-do-brasil/"
-  ],
-  "tokens": [
-   "advoga",
-   "amigo",
-   "apura",
-   "aviao",
-   "bolson",
-   "brasil",
-   "divida",
-   "envolv",
-   "eua",
-   "exclus",
-   "fantas",
-   "flavio",
-   "fuga",
-   "marco",
-   "nao",
-   "public",
-   "rubio",
-   "sai",
-   "saiu",
-   "teve"
-  ],
-  "video_id": "QY9aN5dgPhg",
-  "fotos_pexels": []
- },
- {
   "data": "2026-11-02T04:13:53.479480+00:00",
   "manchete": "Degelo irreversível pode acelerar nível do mar",
   "titulo": "Aquecimento acima de 1,5°C pode causar perda irreversível de gelo, diz ONU",
@@ -13323,6 +13287,38 @@
    "File:Ricardo Nunes na Alesp.jpg",
    "File:Vereador Giannazi em Plenário da Câmara Municipal de São Paulo.jpg",
    "File:Câmara Municipal de São Sebastião 01.jpg"
+  ]
+ },
+ {
+  "data": "2026-11-25T10:10:05.377118+00:00",
+  "manchete": "Brasil decide não mandar embaixador para Argentina",
+  "titulo": "Brasil decide que embaixador não voltará para a Argentina após crise",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://revistaoeste.com/politica/brasil-decide-nao-mandar-embaixador-de-volta-a-argentina/",
+   "https://g1.globo.com/politica/noticia/2026/11/24/brasil-decide-que-embaixador-brasileiro-na-argentina-nao-retornara-a-buenos-aires.ghtml"
+  ],
+  "tokens": [
+   "aires",
+   "argent",
+   "brasil",
+   "buenos",
+   "decide",
+   "embaix",
+   "lula",
+   "mandar",
+   "nao",
+   "retorn",
+   "volta"
+  ],
+  "video_id": "c_4FUdEBayk",
+  "fotos": [
+   "File:Incontro del Presidente Meloni con il Presidente della Repubblica argentina Milei.webm",
+   "File:2024-07-15 Reunião de Geraldo Alckmin com Julio Glinternick Bitelli, 23.jpg",
+   "File:Abertura da exposição \"Centenário Mandela\" no palácio Itamaraty.webm",
+   "File:2024-07-15 Reunião de Geraldo Alckmin com Julio Glinternick Bitelli, 11.jpg",
+   "File:Javier Milei VIVA 24 (7).jpg",
+   "File:Javier Milei VIVA 24 (2).jpg"
   ]
  }
 ]
