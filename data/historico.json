@@ -1,36 +1,5 @@
 [
  {
-  "data": "2026-11-02T21:39:34.871480+00:00",
-  "manchete": "Joao Jorge oficializa candidatura na Camara de SP",
-  "titulo": "Vereador Joao Jorge oficializa candidatura a presidencia da Camara de SP",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://www1.folha.uol.com.br/colunas/painel/2026/11/aliado-de-nunes-oficializa-candidatura-a-presidencia-da-camara-de-sp-e-se-beneficia-de-prisao-de-leite.shtml",
-   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/11/aliado-de-nunes-oficializa-candidatura-a-presidencia-da-camara-de-sp-e-se-beneficia-de-prisao-de-leite.shtml",
-   "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/11/aliado-de-nunes-oficializa-candidatura-a-presidencia-da-camara-de-sp-e-se-beneficia-de-prisao-de-leite.shtml"
-  ],
-  "tokens": [
-   "aliado",
-   "benefi",
-   "camara",
-   "candid",
-   "leite",
-   "nunes",
-   "oficia",
-   "presid",
-   "prisao"
-  ],
-  "video_id": "0y4DcCYZGh4",
-  "fotos": [
-   "File:Explicação Pessoal do GCM Uelton - (21-06-2022) - Câmara Municipal de Arujá.webm",
-   "File:Vereador Giannazi em Plenário da Câmara Municipal de São Paulo.jpg",
-   "File:Visit of Ricardo Lagos, President of Chile, to Romano Prodi and Christopher Patten (I-037271).webm",
-   "File:Câmara Municipal de São Sebastião 01.jpg",
-   "File:O Vice-governador Rodrigo Garcia e o prefeito de São Paulo Ricardo Nunes participam, neste sábado, 5, do Dia D para a aplicação da segunda dose da vacina contra Covid-19 que está atrasada - 51227655665.jpg",
-   "File:Ricardo Nunes na Alesp.jpg"
-  ]
- },
- {
   "data": "2026-11-03T17:13:07.285538+00:00",
   "manchete": "Impasse sobre maioridade penal na PEC da Segurança",
   "titulo": "Governo e oposição divergem sobre maioridade penal na PEC da Segurança",
@@ -13319,6 +13288,53 @@
    "File:Embraer E195-E2 Frontal shoot.jpg",
    "File:Embraer E195-E2 cockpit.jpg",
    "File:Lula responde a declarações do presidente dos EUA sobre taxação de produtos brasileiros.webm"
+  ]
+ },
+ {
+  "data": "2026-11-25T22:39:26.278967+00:00",
+  "manchete": "Trabuco cotado para a Fazenda",
+  "titulo": "Luiz Carlos Trabuco ganha força para assumir o Ministério da Fazenda",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://www.gazetadopovo.com.br/economia/quem-e-luiz-carlos-trabuco-cotado-para-assumir-o-ministerio-da-fazenda-no-governo-lula/",
+   "https://g1.globo.com/politica/noticia/2026/11/25/luiz-trabuco-quem-e-o-executivo-cotado-para-ser-ministro-da-fazenda.ghtml",
+   "https://g1.globo.com/politica/blog/julia-duailibi/post/2026/11/25/lula-haddad-pasta-de-investimentos-trabuco-ganha-forca-para-fazenda.ghtml",
+   "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/lula-quer-nova-governanca-para-articular-investimentos-de-forma-integrada-nos-ministerios.shtml"
+  ],
+  "tokens": [
+   "articu",
+   "assumi",
+   "brades",
+   "carlos",
+   "cotado",
+   "estar",
+   "execut",
+   "fazend",
+   "forca",
+   "forma",
+   "ganha",
+   "govern",
+   "haddad",
+   "integr",
+   "invest",
+   "luiz",
+   "lula",
+   "mas",
+   "minist",
+   "nao",
+   "nova",
+   "pasta",
+   "quer",
+   "sonda",
+   "trabuc"
+  ],
+  "video_id": "UiUd20CMAtU",
+  "fotos": [
+   "File:Negacionismo eleitoral no Alvorada em 2022.webm",
+   "File:Luiz Carlos Trabuco Cappi.jpg",
+   "File:Palacio da Alvorada Exterior.JPG",
+   "File:Palácio da Alvorada (3).jpg",
+   "File:Banco Bradesco logo (horizontal).png"
   ]
  }
 ]
