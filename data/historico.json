@@ -1,44 +1,5 @@
 [
  {
-  "data": "2026-11-03T22:09:54.390711+00:00",
-  "manchete": "Lula viaja a São Paulo para exames",
-  "titulo": "Lula viaja a São Paulo para exames médicos de rotina nesta terça-feira",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://www.cartacapital.com.br/politica/lula-viaja-a-sao-paulo-para-realizar-exames-de-rotina/",
-   "https://revistaoeste.com/politica/lula-vai-fazer-exames-de-rotina-em-sao-paulo/",
-   "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/lula-vai-sao-paulo-para-fazer-exames-de-rotina-nesta-terca-feira",
-   "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/lula-passara-por-exames-de-rotina-em-hospital-de-sp.shtml",
-   "https://g1.globo.com/sp/sao-paulo/noticia/2026/11/03/lula-viaja-a-sao-paulo-para-fazer-exames-de-rotina.ghtml",
-   "https://g1.globo.com/politica/noticia/2026/11/03/lula-vai-a-sao-paulo-nesta-terca-para-fazer-exames-de-rotina.ghtml"
-  ],
-  "tokens": [
-   "antes",
-   "embarc",
-   "encont",
-   "exames",
-   "fazer",
-   "feira",
-   "lula",
-   "minist",
-   "paulo",
-   "realiz",
-   "rotina",
-   "sao",
-   "terca",
-   "viaja"
-  ],
-  "video_id": "xm0B2Hje6Ww",
-  "fotos": [
-   "File:Brasília - Posse de Luís Inácio Lula da Silva 2023 (4).webm",
-   "File:Luiz Inácio Lula da Silva 03102008.jpg",
-   "File:Ministra Miriam Belchior passa mal e é internada no Hospital Sírio Libanês.webm",
-   "File:Luiz Inácio Lula da Silva 03102008 (cropped).jpg",
-   "File:Hospital Sírio-Libanês visto do MASP em Julho de 2025.jpg",
-   "File:Hospital Sírio-Libanês visto do MASP em 31 de Julho de 2025.jpg"
-  ]
- },
- {
   "data": "2026-11-03T22:40:10.619267+00:00",
   "manchete": "Governo defende proibição de bets no STF",
   "titulo": "Ministros de Lula defendem proibição de apostas em audiência no STF",
@@ -13303,6 +13264,42 @@
    "File:Dilma Rousseff and Hugo Chavez 2011.jpg",
    "File:Fachada Tribunal de Contas da União - TCU (40014115302).jpg",
    "File:Posse do novo presidente do Tribunal de Contas da União (TCU), ministro Aroldo Cedraz. (15992908275).jpg"
+  ]
+ },
+ {
+  "data": "2026-11-26T09:39:42.541860+00:00",
+  "manchete": "PL pode romper com Hugo Motta e temer isolamento",
+  "titulo": "PL avalia romper com Hugo Motta e teme isolamento na Câmara",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://www.cnnbrasil.com.br/politica/sem-apoio-a-hugo-ala-pragmatica-do-pl-teme-risco-de-isolamento-na-camara/",
+   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/poder/2026/11/ala-de-valdemar-admite-que-pl-deve-romper-com-hugo-motta-e-teme-anos-de-seca-na-camara.shtml",
+   "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/ala-de-valdemar-admite-que-pl-deve-romper-com-hugo-motta-e-teme-anos-de-seca-na-camara.shtml"
+  ],
+  "tokens": [
+   "admite",
+   "ala",
+   "apoio",
+   "camara",
+   "deve",
+   "hugo",
+   "isolam",
+   "motta",
+   "pragma",
+   "risco",
+   "romper",
+   "seca",
+   "teme",
+   "valdem"
+  ],
+  "video_id": "UojyHBeOTSA",
+  "fotos": [
+   "File:PSD-Congresso- Reações dos partidos.webm",
+   "File:Fundadores del Partido Liberal Paraguayo.jpg",
+   "File:O Cristão e a Política Nikolas Ferreira.webm",
+   "File:Logo del Partido Liberal Colombiano.jpg",
+   "File:26.10.2026 - Davi Alcolumbre e Hugo Motta - 55614272131.jpg",
+   "File:26.10.2026 - Davi Alcolumbre e Hugo Motta - 55614414308.jpg"
   ]
  }
 ]
