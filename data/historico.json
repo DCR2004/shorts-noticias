@@ -1,43 +1,5 @@
 [
  {
-  "data": "2026-11-06T17:10:16.930586+00:00",
-  "manchete": "Lula diz que pobre não pagará ajuste fiscal",
-  "titulo": "Lula defende seriedade fiscal e diz que pobre não pagará ajuste",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://www.metropoles.com/brasil/mercado-tem-que-saber-que-pobre-nao-pagara-a-conta-diz-lula-sobre-ajuste",
-   "https://www.poder360.com.br/poder-governo/lula-rebate-e-diz-que-pobre-nao-pagara-sacrificio-de-ajuste-fiscal/",
-   "https://g1.globo.com/politica/noticia/2026/11/06/pressionado-a-cortar-gastos-lula-diz-que-brasil-tem-responsabilidade-e-seriedade-fiscal-e-que-pobre-nao-vai-pagar-a-conta.ghtml"
-  ],
-  "tokens": [
-   "ajuste",
-   "brasil",
-   "conta",
-   "cortar",
-   "fiscal",
-   "gastos",
-   "lula",
-   "mercad",
-   "nao",
-   "pagara",
-   "pobre",
-   "pressi",
-   "rebate",
-   "saber",
-   "sacrif",
-   "seried"
-  ],
-  "video_id": "Q73PQyzhMCY",
-  "fotos": [
-   "File:Eleições 2022 - Lula da Silva foi eleito presidente do Brasil.webm",
-   "File:Ministry of Mines and Energy (Cambodia).jpg",
-   "File:Governo presta apoio ao Amapá.webm",
-   "File:Ministries Esplanade Brasilia.jpg",
-   "File:Planalto panorama.jpg",
-   "File:Palácio do Planalto (8721928846).jpg"
-  ]
- },
- {
   "data": "2026-11-06T17:40:03.942289+00:00",
   "manchete": "Justiça rejeita ação contra Bolsonaro",
   "titulo": "Justica rejeita acao contra Bolsonaro e Wal do Acai",
@@ -13121,6 +13083,74 @@
    "File:Luiz Philippe de Orléans e Bragança em março de 2019.jpg",
    "File:ValdemarCostaNeto107405.jpeg",
    "File:CostaNeto120090.jpeg"
+  ]
+ },
+ {
+  "data": "2026-11-26T21:09:22.784050+00:00",
+  "manchete": "Trabuco viaja a Brasília para reunião com Lula",
+  "titulo": "Trabuco viaja a Brasília para reunião com Lula sobre Ministério da Fazenda",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://www.infomoney.com.br/politica/cotado-para-assumir-a-fazenda-trabuco-deve-ter-reuniao-com-lula-nesta-5a-diz-fonte/",
+   "https://www.metropoles.com/brasil/cotado-para-a-fazenda-trabuco-chega-a-brasilia-para-se-reunir-com-lula",
+   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/trabuco-vai-ao-palacio-da-alvorada-para-se-reunir-com-lula.shtml",
+   "https://www.cnnbrasil.com.br/politica/cotado-para-fazenda-trabuco-vai-a-brasilia-para-reuniao-com-lula/",
+   "https://g1.globo.com/politica/noticia/2026/11/26/luiz-trabuco-chega-a-brasilia-para-se-reunir-com-lula-executivo-do-bradesco-e-cotado-para-assumir-ministerio-da-fazenda.ghtml",
+   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/veja-o-que-trabuco-cotado-para-fazenda-ja-disse-sobre-politica-fiscal-programas-sociais-e-reforma-tributaria.shtml",
+   "https://www.cnnbrasil.com.br/economia/money/macroeconomia/trabuco-na-fazenda-traz-maior-credibilidade-ao-lula-4-apontam-economistas/",
+   "https://www.cartacapital.com.br/politica/flerte-com-a-faria-lima-fantasma-de-levy-e-vontade-de-lula-como-o-pt-reage-a-trabuco-na-fazenda/",
+   "https://g1.globo.com/politica/blog/andreia-sadi/post/2026/11/26/ministerio-fazenda-lula-4.ghtml"
+  ],
+  "tokens": [
+   "4",
+   "alvora",
+   "amigo",
+   "aponta",
+   "assumi",
+   "blinda",
+   "brades",
+   "brasil",
+   "chega",
+   "cotado",
+   "credib",
+   "desafi",
+   "deve",
+   "disse",
+   "econom",
+   "execut",
+   "fantas",
+   "faria",
+   "fazend",
+   "fiscal",
+   "flerte",
+   "fogo",
+   "fonte",
+   "levy",
+   "lima",
+   "luiz",
+   "lula",
+   "maior",
+   "minist",
+   "palaci",
+   "politi",
+   "progra",
+   "reage",
+   "reform",
+   "reunia",
+   "reunir",
+   "sociai",
+   "trabuc",
+   "traz",
+   "tribut",
+   "vontad"
+  ],
+  "video_id": "PGrm76jAGSM",
+  "fotos": [
+   "File:Michel Temer participa de troca da guarda presidencial no Palácio do Planalto.webm",
+   "File:Palácio da Alvorada (2).jpg",
+   "File:Palácio da Alvorada (7).jpg",
+   "File:Brasilia night.jpg",
+   "File:Sovenirs of Brasilia.jpg"
   ]
  }
 ]
