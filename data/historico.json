@@ -1,40 +1,5 @@
 [
  {
-  "data": "2026-11-06T19:11:00.289205+00:00",
-  "manchete": "Cidadania italiana de irmãos Bolsonaro gerou debate",
-  "titulo": "Italia confirma cidadania de Flavio, Carlos e Eduardo Bolsonaro em 58 dias",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://www.cnnbrasil.com.br/internacional/italia-aprovou-cidadania-de-eduardo-carlos-e-flavio-bolsonaro-em-58-dias/",
-   "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/governo-italiano-diz-que-flavio-bolsonaro-obteve-cidadania-58-dias-apos-apresentar-documentos.shtml"
-  ],
-  "tokens": [
-   "2023",
-   "58",
-   "apos",
-   "aprovo",
-   "bolson",
-   "carlos",
-   "cidada",
-   "docume",
-   "eduard",
-   "enviar",
-   "flavio",
-   "italia",
-   "janeir",
-   "obteve"
-  ],
-  "video_id": "1Qz9ff_oFY4",
-  "fotos": [
-   "File:Candidatos à presidência já votaram. Lula em São Paulo e Flávio, no Rio.webm",
-   "File:Flávio Bolsonaro em entrevista (3x4).jpg",
-   "File:Eduardo Bolsonaro.ogg",
-   "File:Eduardo Bolsonaro em maio de 2019.jpg",
-   "File:Eduardo Bolsonaro em abril de 2019.jpg",
-   "File:Jair Bolsonaro, Carlos Bolsonaro, Hamilton Mourão e Michelle Bolsonaro.jpg"
-  ]
- },
- {
   "data": "2026-11-06T20:08:28.414283+00:00",
   "manchete": "Lula sanciona lei do Enamed",
   "titulo": "Lula sanciona lei que cria o Enamed, a OAB da medicina",
@@ -13131,6 +13096,35 @@
   "fotos": [
    "File:Uczai e Haddad 2009.jpg",
    "File:Pedro Uczai em 2026 - Reuniao de lideres.jpg"
+  ]
+ },
+ {
+  "data": "2026-11-26T23:12:14.953513+00:00",
+  "manchete": "Lindbergh compara Trabuco a Levy",
+  "titulo": "Lindbergh Farias compara escolha de Luiz Carlos Trabuco para a Fazenda a Joaquim Levy",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://redir.folha.com.br/redir/online/colunas/monicabergamo/rss091/*https://www1.folha.uol.com.br/colunas/monicabergamo/2026/11/lindbergh-compara-escolha-de-trabuco-para-a-fazenda-a-de-levy-no-governo-dilma.shtml",
+   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/colunas/monicabergamo/2026/11/lindbergh-compara-escolha-de-trabuco-para-a-fazenda-a-de-levy-no-governo-dilma.shtml"
+  ],
+  "tokens": [
+   "compar",
+   "dilma",
+   "escolh",
+   "fazend",
+   "govern",
+   "levy",
+   "lindbe",
+   "trabuc"
+  ],
+  "video_id": "dFfJE3D3uaQ",
+  "fotos": [
+   "File:DIA DO TRABALHADOR - Entrevista com Lindbergh Farias e Jandira Feghali.webm",
+   "File:Lindbergh Farias 2011.jpg",
+   "File:Dilma Rousseff se defende no julgamento de impeachment.webm",
+   "File:Lindberg Farias.JPG",
+   "File:Dilma Rousseff and David Granger at 48th Mercosur Summit.jpg",
+   "File:Dilma Rousseff and Nicolás Maduro at 48th Mercosur Summit (2).jpg"
   ]
  }
 ]
