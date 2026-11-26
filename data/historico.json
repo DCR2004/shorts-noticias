@@ -1,43 +1,5 @@
 [
  {
-  "data": "2026-11-04T18:27:48.056368+00:00",
-  "manchete": "Paes pede cassação de Douglas Ruas no TRE-RJ",
-  "titulo": "Eduardo Paes pede cassação de Douglas Ruas no TRE do Rio",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://noticias.uol.com.br/politica/ultimas-noticias/2026/11/04/paes-pede-cassacao-de-douglas-ruas-por-suspeita-de-compra-de-votos.ghtm",
-   "https://www.cartacapital.com.br/politica/paes-pede-a-cassacao-de-douglas-ruas-por-suposta-compra-de-votos-e-desinformacao/",
-   "https://www.gazetadopovo.com.br/republica/eduardo-paes-pede-a-cassacao-da-chapa-de-douglas-ruas/",
-   "https://g1.globo.com/politica/blog/julia-duailibi/post/2026/11/04/paes-pede-investigacao-de-douglas-ruas-por-suspeitas-de-compra-de-votos-e-irregularidades-eleitorais.ghtml"
-  ],
-  "tokens": [
-   "cassac",
-   "chapa",
-   "compra",
-   "desinf",
-   "dougla",
-   "eduard",
-   "eleito",
-   "invest",
-   "irregu",
-   "paes",
-   "pede",
-   "rio",
-   "ruas",
-   "supost",
-   "suspei",
-   "votos"
-  ],
-  "video_id": "LiB0MScmM4Y",
-  "fotos": [
-   "File:Chuvas no Rio de Janeiro 2021 - Dilúvio em Quintino e Cascadura.webm",
-   "File:Eduardo Paes BID.jpg",
-   "File:Eduardo Paes de cadeira de rodas inaugura a Arena Carioca 1.jpg",
-   "File:Douglas Ruas 2023.png",
-   "File:Secretário Estadual RJ Douglas Ruas (2).jpg"
-  ]
- },
- {
   "data": "2026-11-04T18:55:40.879272+00:00",
   "manchete": "Apenas Lula e Alckmin estao garantidos",
   "titulo": "Luiz Marinho diz que apenas Lula e Alckmin estao garantidos no proximo governo",
@@ -13282,6 +13244,35 @@
    "File:Gleisi Hoffmann in 2024.jpg",
    "File:Gleisi Hoffmann na 10 ª edição do Congresso Internacional Brasil Competitivo.JPG",
    "File:GOVERNO QUER QUE PAÍS CRESÇA ACIMA DA META MUNDIAL.webm"
+  ]
+ },
+ {
+  "data": "2026-11-26T11:10:03.554681+00:00",
+  "manchete": "Flávio Bolsonaro indica R$ 79 milhões em emendas",
+  "titulo": "Flávio Bolsonaro indica R$ 79 milhões em emendas do exterior",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://www.metropoles.com/brasil/fora-do-brasil-flavio-bolsonaro-indica-r-79-milhoes-em-emendas-para-2027",
+   "https://www.cnnbrasil.com.br/politica/dos-eua-flavio-bolsonaro-indica-r-79-milhoes-em-emendas-para-2027/"
+  ],
+  "tokens": [
+   "2027",
+   "79",
+   "bolson",
+   "brasil",
+   "emenda",
+   "eua",
+   "flavio",
+   "fora",
+   "indica",
+   "milhoe"
+  ],
+  "video_id": "QqGkZU0RkbU",
+  "fotos": [
+   "File:PDVSA negocia la venta de petróleo con los Estados Unidos (2026).webm",
+   "File:Ato pró-Flávio Bolsonaro em Campinas - 24.10.2026.6.jpg",
+   "File:Lago Pippin, Copper Center, Alaska, Estados Unidos, 2017-08-22, DD 115-118 PAN.jpg",
+   "File:Glaciar Lamplugh, Parque Nacional Bahía del Glaciar, Alaska, Estados Unidos, 2017-08-19, DD 05-07 PAN.jpg"
   ]
  }
 ]
