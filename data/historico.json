@@ -1,32 +1,5 @@
 [
  {
-  "data": "2026-11-04T18:55:40.879272+00:00",
-  "manchete": "Apenas Lula e Alckmin estao garantidos",
-  "titulo": "Luiz Marinho diz que apenas Lula e Alckmin estao garantidos no proximo governo",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://www.poder360.com.br/poder-governo/so-lula-e-alckmin-estao-garantidos-no-proximo-governo-diz-marinho/"
-  ],
-  "tokens": [
-   "alckmi",
-   "estao",
-   "garant",
-   "govern",
-   "lula",
-   "marinh",
-   "proxim"
-  ],
-  "video_id": "JdHjqOStbW8",
-  "fotos": [
-   "File:Ministro defende diálogo para reduzir jornada de trabalho e avançar no fim da escala 6x1.webm",
-   "File:Luiz Marinho e Lula.jpg",
-   "File:Brasília - Posse de Luís Inácio Lula da Silva 2023 (1).webm",
-   "File:Luiz Marinho e Manuela d'Ávila.jpg",
-   "File:Luiz Inácio Lula da Silva (cropped).jpg",
-   "File:Luiz Inácio Lula da Silva transparent.png"
-  ]
- },
- {
   "data": "2026-11-04T19:12:22.561081+00:00",
   "manchete": "CAE aprova renegociação de dívidas no fim de mandato",
   "titulo": "Comissão do Senado aprova renegociação de dívidas no fim de mandato",
@@ -13273,6 +13246,39 @@
    "File:Ato pró-Flávio Bolsonaro em Campinas - 24.10.2026.6.jpg",
    "File:Lago Pippin, Copper Center, Alaska, Estados Unidos, 2017-08-22, DD 115-118 PAN.jpg",
    "File:Glaciar Lamplugh, Parque Nacional Bahía del Glaciar, Alaska, Estados Unidos, 2017-08-19, DD 05-07 PAN.jpg"
+  ]
+ },
+ {
+  "data": "2026-11-26T11:42:31.529122+00:00",
+  "manchete": "Provas fora de relatórios podem ser usadas",
+  "titulo": "PGR pode usar provas fora de relatorios da PF contra ministros do STF",
+  "categoria": "JUSTIÇA",
+  "links": [
+   "https://www.gazetadopovo.com.br/republica/pgr-pode-usar-provas-nao-incluidas-em-relatorios-contra-ministros-do-stf-diz-andrei/",
+   "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/chefe-da-pf-diz-que-pgr-pode-usar-provas-fora-de-relatorios-contra-ministros-do-stf-no-caso-master.shtml"
+  ],
+  "tokens": [
+   "andrei",
+   "caso",
+   "chefe",
+   "fora",
+   "inclui",
+   "master",
+   "minist",
+   "nao",
+   "pgr",
+   "pode",
+   "provas",
+   "relato",
+   "stf",
+   "usar"
+  ],
+  "video_id": "ptpEadx6NV8",
+  "fotos": [
+   "File:Polícia Federal inicia Operação permanente de bloqueio do Rio Paraná.webm",
+   "File:TSE - Tribunal Superior Eleitoral Ministro Edson Fachin recebe indígenas no TSE.jpg",
+   "File:Para Aloysio Nunes, indicação de Alexandre de Moraes para o STF foi acertada.webm",
+   "File:Ministro Edson Fachin (3x4).jpg"
   ]
  }
 ]
