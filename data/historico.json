@@ -1,36 +1,5 @@
 [
  {
-  "data": "2026-11-06T18:39:50.750096+00:00",
-  "manchete": "PSD busca manter ministérios em negociação com Lula",
-  "titulo": "PSD quer manter ministerios e negocia com governo Lula",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://www1.folha.uol.com.br/poder/2026/11/psd-quer-manter-agricultura-e-pesca-e-espera-conversa-com-lula-para-3o-ministerio.shtml",
-   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/poder/2026/11/psd-quer-manter-agricultura-e-pesca-e-espera-conversa-com-lula-para-3o-ministerio.shtml",
-   "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/psd-quer-manter-agricultura-e-pesca-e-espera-conversa-com-lula-para-3o-ministerio.shtml"
-  ],
-  "tokens": [
-   "agricu",
-   "conver",
-   "espera",
-   "lula",
-   "manter",
-   "minist",
-   "pesca",
-   "psd",
-   "quer"
-  ],
-  "video_id": "KxV0MOlxHUA",
-  "fotos": [
-   "File:Bicentenário da Independência - Relíquia de Dom Pedro no Palácio do Planalto.webm",
-   "File:Palacio do Planalto.jpeg",
-   "File:Mensagem do Presidente, Jair Bolsonaro, ao Congresso Nacional.webm",
-   "File:Palacio do Planalto - Brasilia.jpg",
-   "File:Congresso Nacional Brasília.jpg",
-   "File:Bancada Feminina do Congresso Nacional.jpg"
-  ]
- },
- {
   "data": "2026-11-06T19:11:00.289205+00:00",
   "manchete": "Cidadania italiana de irmãos Bolsonaro gerou debate",
   "titulo": "Italia confirma cidadania de Flavio, Carlos e Eduardo Bolsonaro em 58 dias",
@@ -13139,6 +13108,29 @@
    "File:Luiz Fux destaca que devemos aprender com a história para superar nossos problemas.webm",
    "File:Luiz Fux-2012.jpg",
    "File:Posse Fux 1.jpg"
+  ]
+ },
+ {
+  "data": "2026-11-26T22:39:30.370909+00:00",
+  "manchete": "Líder do PT faz ressalvas a Trabuco na Fazenda",
+  "titulo": "Líder do PT critica possível escolha de Trabuco para a Fazenda",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://revistaoeste.com/politica/lider-do-pt-na-camara-faz-ressalvas-a-escolha-de-trabuco-para-a-fazenda/"
+  ],
+  "tokens": [
+   "camara",
+   "escolh",
+   "faz",
+   "fazend",
+   "lider",
+   "ressal",
+   "trabuc"
+  ],
+  "video_id": "LARUNHdY2Tw",
+  "fotos": [
+   "File:Uczai e Haddad 2009.jpg",
+   "File:Pedro Uczai em 2026 - Reuniao de lideres.jpg"
   ]
  }
 ]
