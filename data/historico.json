@@ -1,33 +1,5 @@
 [
  {
-  "data": "2026-11-04T20:41:04.278061+00:00",
-  "manchete": "PEC da Seguranca foi desvirtuada, diz Sarrubbo",
-  "titulo": "Ex-secretario critica versao aprovada da PEC da Seguranca Publica",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/11/ex-secretario-responsavel-pela-pec-da-seguranca-diz-que-medidas-populistas-a-desvirtuaram.shtml",
-   "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/11/ex-secretario-responsavel-pela-pec-da-seguranca-diz-que-medidas-populistas-a-desvirtuaram.shtml"
-  ],
-  "tokens": [
-   "desvir",
-   "medida",
-   "pec",
-   "populi",
-   "respon",
-   "secret",
-   "segura"
-  ],
-  "video_id": "NsCE0aIqflI",
-  "fotos": [
-   "File:Entenda como funciona o sistema de votação eletrônica do Senado.webm",
-   "File:2024-11-12, Senado Federal do Brasil - 395.jpg",
-   "File:Congresso celebra os 200 anos da Independência do Brasil.webm",
-   "File:2024-11-12, Senado Federal do Brasil - 407.jpg",
-   "File:Brazilian National Congress.jpg",
-   "File:Brasilia National Congress Buildings.jpg"
-  ]
- },
- {
   "data": "2026-11-04T21:09:40.964587+00:00",
   "manchete": "Alcolumbre adia votação da maioridade penal",
   "titulo": "Alcolumbre adia votacao sobre maioridade penal no Senado",
@@ -13261,6 +13233,38 @@
    "File:-AoVivo- Medidas de Fomento à Produção e ao Uso Sustentável do Biometano.webm",
    "File:Palacio da Alvorada Restoration.JPG",
    "File:Palácio da Alvorada (5).jpg"
+  ]
+ },
+ {
+  "data": "2026-11-26T13:41:53.011802+00:00",
+  "manchete": "Dino cobra Fachin sobre votos pró-aborto no STF",
+  "titulo": "Flávio Dino cobra Fachin sobre votos pró-aborto no Supremo",
+  "categoria": "JUSTIÇA",
+  "links": [
+   "https://www.gazetadopovo.com.br/vida-e-cidadania/dino-volta-a-cobrar-fachin-para-decidir-se-anula-votos-pro-aborto-de-barroso-e-rosa-weber/"
+  ],
+  "tokens": [
+   "aborto",
+   "anula",
+   "barros",
+   "cobrar",
+   "decidi",
+   "dino",
+   "fachin",
+   "pro",
+   "rosa",
+   "volta",
+   "votos",
+   "weber"
+  ],
+  "video_id": "JJ407mh4wZg",
+  "fotos": [
+   "File:Governador do Maranhão afirma que impedimento vai atrapalhar retomada do crescimento do país.webm",
+   "File:Entrevistas - Senador Flávio Dino (PSB-MA) (53538699332).jpg",
+   "File:Ministro Luís Roberto Barroso propõe reformas contra impunidade.webm",
+   "File:01.01.2023 - Posse de Flávio Dino, Ministro de Estado da Justiça (52625803952).jpg",
+   "File:Edson Fachin (3x4).jpg",
+   "File:Luiz Edson Fachin sabatina.jpg"
   ]
  }
 ]
