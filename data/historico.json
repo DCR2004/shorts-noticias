@@ -1,31 +1,5 @@
 [
  {
-  "data": "2026-11-03T20:10:02.486711+00:00",
-  "manchete": "STF debate proibição de bets",
-  "titulo": "STF realiza audiência pública sobre proibição de apostas online",
-  "categoria": "JUSTIÇA",
-  "links": [
-   "https://c-level.folha.uol.com.br/negocios/2026/11/entenda-o-que-esta-em-jogo-no-stf-sobre-a-proibicao-das-bets.shtml",
-   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/entenda-o-que-esta-em-jogo-no-stf-sobre-a-proibicao-das-bets.shtml"
-  ],
-  "tokens": [
-   "bets",
-   "entend",
-   "jogo",
-   "proibi",
-   "stf"
-  ],
-  "video_id": "4y-WVr6y7z0",
-  "fotos": [
-   "File:STF é depredado por manifestantes.webm",
-   "File:Supremo Tribunal Federal (1091707775).jpg",
-   "File:Luiz Fux destaca que devemos aprender com a história para superar nossos problemas.webm",
-   "File:Supreme Federal Court of Brazil.jpg",
-   "File:Luiz Fux-2012.jpg",
-   "File:Posse Fux 1.jpg"
-  ]
- },
- {
   "data": "2026-11-03T20:41:27.999002+00:00",
   "manchete": "Câmara de SP arquiva impeachment de Ricardo Nunes",
   "titulo": "Câmara de São Paulo arquiva pedido de impeachment contra Ricardo Nunes",
@@ -13306,6 +13280,30 @@
   "fotos": [
    "File:Plenário do Senado Federal.jpg",
    "File:Brasilia, Brazil.jpg"
+  ]
+ },
+ {
+  "data": "2026-11-26T01:39:26.004851+00:00",
+  "manchete": "Senado aprova urgência para quarentena em estatais",
+  "titulo": "Senado aprova urgência para reduzir quarentena em estatais",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://noticias.uol.com.br/politica/ultimas-noticias/2026/11/25/senado-acelera-projeto-que-corta-quarentena-de-36-meses-para-30-dias.ghtm"
+  ],
+  "tokens": [
+   "aprova",
+   "estata",
+   "quaren",
+   "reduz",
+   "senado",
+   "texto",
+   "urgenc",
+   "votaca"
+  ],
+  "video_id": "lSRVKkTKMao",
+  "fotos": [
+   "File:2025-11-06, Senado Federal do Brasil - 185.jpg",
+   "File:2025-11-06, Senado Federal do Brasil - 072.jpg"
   ]
  }
 ]
