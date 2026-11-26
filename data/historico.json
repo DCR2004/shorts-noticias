@@ -1,38 +1,5 @@
 [
  {
-  "data": "2026-11-03T21:10:31.900656+00:00",
-  "manchete": "PT descarta impeachment no STF e anistia",
-  "titulo": "PT descarta impeachment no STF e anistia, diz Edinho Silva",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://noticias.uol.com.br/ultimas-noticias/agencia-estado/2026/11/03/bancada-do-agro-rejeita-mudancas-na-reforma-tributaria.htm",
-   "https://www.gazetadopovo.com.br/republica/pt-rejeita-impeachment-no-stf-afasta-debate-sobre-anistia-e-descarta-mudancas-tributarias/"
-  ],
-  "tokens": [
-   "afasta",
-   "agro",
-   "anisti",
-   "bancad",
-   "debate",
-   "descar",
-   "impeac",
-   "mudanc",
-   "reform",
-   "rejeit",
-   "stf",
-   "tribut"
-  ],
-  "video_id": "LlgfzXyzP6E",
-  "fotos": [
-   "File:Edinho Silva prefeito de Araraquara é Jorge Roque.webm",
-   "File:Edinho Silva-2015 05 06.jpg",
-   "File:Alexandre de Moraes toma posse no Supremo Tribunal Federal.webm",
-   "File:Prefeito de Araraquara Edinho Silva (52813046673).jpg",
-   "File:Supremo Tribunal Federal (1).jpg",
-   "File:Supreme Federal Court.jpg"
-  ]
- },
- {
   "data": "2026-11-03T21:41:41.945653+00:00",
   "manchete": "Brasil espera proposta dos EUA sobre o tarifaço",
   "titulo": "Brasil espera proposta dos EUA sobre o tarifaço",
@@ -13302,6 +13269,39 @@
    "File:Senador Randolfe Rodrigues mostra imagens via satélite.jpg",
    "File:Eliziane Gama durante reunião no Senado.jpg",
    "File:Senadora Eliziane Gama.jpg"
+  ]
+ },
+ {
+  "data": "2026-11-26T02:39:16.783984+00:00",
+  "manchete": "Governo prepara prorrogação de subsídio ao diesel",
+  "titulo": "Governo deve prorrogar subsídio ao diesel por mais 30 dias, diz ministro",
+  "categoria": "ECONOMIA",
+  "links": [
+   "https://www.cartacapital.com.br/economia/governo-prepara-renovacao-de-subsidio-ao-diesel-por-mais-30-dias/",
+   "https://g1.globo.com/economia/noticia/2026/11/25/em-meio-a-alta-do-petroleo-governo-deve-prorrogar-subvencao-ao-diesel-por-mais-30-dias-diz-ministro.ghtml"
+  ],
+  "tokens": [
+   "30",
+   "alta",
+   "deve",
+   "diesel",
+   "govern",
+   "meio",
+   "minist",
+   "petrol",
+   "prepar",
+   "prorro",
+   "renova",
+   "subsid",
+   "subven"
+  ],
+  "video_id": "wiy_yYof-yU",
+  "fotos": [
+   "File:Governo do Brasil fornece apoio para que o Rio de Janeiro supere crise na segurança pública.webm",
+   "File:CMO - Comissão Mista de Planos, Orçamentos Públicos e Fiscalização (15767754215).jpg",
+   "File:CMO - Comissão Mista de Planos, Orçamentos Públicos e Fiscalização (36492542451).jpg",
+   "File:30 03 2022 - Cerimônia Alusiva ao 5g no agro e a entregas do Governo Federal, em Baixa Grande do Ribeiro-PI (51972147593).jpg",
+   "File:30 03 2022 - Cerimônia Alusiva ao 5g no agro e a entregas do Governo Federal, em Baixa Grande do Ribeiro-PI (51971076247).jpg"
   ]
  }
 ]
