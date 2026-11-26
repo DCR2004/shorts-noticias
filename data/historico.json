@@ -1,50 +1,5 @@
 [
  {
-  "data": "2026-11-04T17:09:59.905896+00:00",
-  "manchete": "PL oficializa Rogério Marinho para o Senado",
-  "titulo": "PL oficializa candidatura de Rogério Marinho à presidência do Senado",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://g1.globo.com/politica/noticia/2026/11/04/rogerio-marinho-do-pl-lanca-candidatura-a-presidencia-do-senado.ghtml",
-   "https://www.cnnbrasil.com.br/politica/pl-oficializa-indicacao-para-marinho-concorrer-a-presidencia-do-senado/",
-   "https://www.metropoles.com/brasil/pl-oficializa-candidatura-de-rogerio-marinho-para-a-presidencia-do-senado",
-   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/poder/2026/11/pl-lanca-rogerio-marinho-para-a-presidencia-do-senado.shtml",
-   "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/pl-lanca-rogerio-marinho-para-a-presidencia-do-senado.shtml",
-   "https://www.gazetadopovo.com.br/republica/pl-confirma-candidatura-de-rogerio-marinho-a-presidencia-do-senado/",
-   "https://revistaoeste.com/politica/marinho-vai-ser-o-candidato-da-oposicao-para-a-presidencia-do-senado/",
-   "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/pp-se-irrita-com-ataques-a-tereza-cristina-apos-acordo-com-rogerio-marinho-por-chefia-do-senado.shtml"
-  ],
-  "tokens": [
-   "acordo",
-   "apos",
-   "ataque",
-   "candid",
-   "chefia",
-   "concor",
-   "confir",
-   "cristi",
-   "indica",
-   "irrita",
-   "lanca",
-   "marinh",
-   "oficia",
-   "oposic",
-   "presid",
-   "rogeri",
-   "senado",
-   "tereza"
-  ],
-  "video_id": "y-UYDkKf1qA",
-  "fotos": [
-   "File:Rogério Marinho é nomeado novo ministro do Desenvolvimento Regional.webm",
-   "File:Senador Rogerio Marinho (PL-RN) (52795763830).jpg",
-   "File:Ministra da Agricultura, Tereza Cristina.webm",
-   "File:Senador Rogerio Marinho (PL-RN) (52794804177).jpg",
-   "File:Foto oficial 2 de Davi Alcolumbre (v. AgSen).jpg",
-   "File:Deputado Federal Davi Alcolumbre.jpg"
-  ]
- },
- {
   "data": "2026-11-04T18:27:48.056368+00:00",
   "manchete": "Paes pede cassação de Douglas Ruas no TRE-RJ",
   "titulo": "Eduardo Paes pede cassação de Douglas Ruas no TRE do Rio",
@@ -13290,6 +13245,43 @@
    "File:2026-05-21 Reunião com José Nobre Guimarães 03.jpg",
    "File:Diário Oficial da União (Brazil).jpg",
    "File:Diário Oficial da União, 15 de setembro de 2005 - recondução ao CNDM.jpg"
+  ]
+ },
+ {
+  "data": "2026-11-26T10:42:34.818650+00:00",
+  "manchete": "Lula tenta acomodar aliados derrotados",
+  "titulo": "Lula busca acomodar aliados derrotados nas eleições para o novo governo",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://www.cnnbrasil.com.br/politica/aliados-derrotados-nas-eleicoes-buscam-espaco-no-novo-governo-lula/",
+   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/poder/2026/11/mesmo-sem-haddad-no-governo-lula-tem-desafio-de-acomodar-outros-aliados-derrotados-veja-quem-sao.shtml",
+   "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/mesmo-sem-haddad-no-governo-lula-tem-desafio-de-acomodar-outros-aliados-derrotados-veja-quem-sao.shtml"
+  ],
+  "tokens": [
+   "acomod",
+   "aliado",
+   "buscam",
+   "derrot",
+   "desafi",
+   "eleico",
+   "espaco",
+   "govern",
+   "haddad",
+   "lula",
+   "mesmo",
+   "novo",
+   "outros",
+   "sao"
+  ],
+  "video_id": "4JW9p4fouEw",
+  "fotos": [
+   "File:Pesquisa de intenção BTG-FSB- Bolsonaro contra Haddad.webm",
+   "File:01.01.2023 - Posse de Fernando Haddad, Ministro de Estado da Fazenda (52625795487).jpg",
+   "File:O Ambiente Político e Eleições de 2022 - ACM Neto, Bruno Araújo, Gilberto Kassab e Gleisi Hoffmann.webm",
+   "File:01.01.2023 - Posse de Fernando Haddad, Ministro de Estado da Fazenda (52626557229).jpg",
+   "File:Gleisi Hoffmann in 2024.jpg",
+   "File:Gleisi Hoffmann na 10 ª edição do Congresso Internacional Brasil Competitivo.JPG",
+   "File:GOVERNO QUER QUE PAÍS CRESÇA ACIMA DA META MUNDIAL.webm"
   ]
  }
 ]
