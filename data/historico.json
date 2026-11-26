@@ -1,37 +1,5 @@
 [
  {
-  "data": "2026-11-05T20:12:57.633703+00:00",
-  "manchete": "Decreto define niveis para minerais criticos",
-  "titulo": "Governo cria tres niveis de prioridade para minerais criticos",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://www.poder360.com.br/poder-governo/lula-baixa-decreto-que-cria-3-niveis-de-prioridade-para-minerais-criticos/",
-   "https://www.cnnbrasil.com.br/infra/governo-cria-tres-niveis-de-prioridade-para-minerais-criticos/"
-  ],
-  "tokens": [
-   "3",
-   "baixa",
-   "cria",
-   "critic",
-   "decret",
-   "govern",
-   "lula",
-   "minera",
-   "niveis",
-   "priori",
-   "tres"
-  ],
-  "video_id": "tclWQXnBd7M",
-  "fotos": [
-   "File:Presidente Lula participa de coroação do rei Charles III.webm",
-   "File:Luiz Inacio Lula da Silva and Silvio Berlusconi 20080709.jpg",
-   "File:Agenda-Brasil - Ministro Bento Albuquerque fala das entregas do Ministério de Minas e Energia.webm",
-   "File:Alexandre Silveira e José Alencar.jpg",
-   "File:Alexandre Silveira e Lula.jpg",
-   "File:Seminário - Ministério de Minas e Energia (48683971747).jpg"
-  ]
- },
- {
   "data": "2026-11-05T20:41:12.285933+00:00",
   "manchete": "Mendonça extingue ação de sigilo de Lula e Flávio",
   "titulo": "Mendonca extingue processo de sigilo de Lula e Flavio Bolsonaro no TSE",
@@ -13203,6 +13171,33 @@
    "File:Dario Durigan.jpg",
    "File:Luiz Inácio Lula da Silva speaking.jpg",
    "File:Luiz Inácio Lula da Silva (cropped).jpg"
+  ]
+ },
+ {
+  "data": "2026-11-26T18:40:24.687308+00:00",
+  "manchete": "Messias participa de jantar em meio a articulação",
+  "titulo": "Jorge Messias participa de jantar em Brasília em meio a articulações para o STF",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://www.metropoles.com/colunas/vinicius-passarelli/de-olho-no-stf-messias-participa-de-jantar-com-alckmin-e-advogados-do-pt"
+  ],
+  "tokens": [
+   "advoga",
+   "alckmi",
+   "jantar",
+   "messia",
+   "olho",
+   "partic",
+   "stf"
+  ],
+  "video_id": "-3iI02T31tI",
+  "fotos": [
+   "File:Filho do governador de São Paulo é sepultado em Pindamonhangaba.webm",
+   "File:11.06.2024 - Advogado-Geral da União, Jorge Messias, Governadora de Pernambuco, Raquel Lyra, e Presidente da Caixa Econômica Federal, Carlos Vieira (53785021561).jpg",
+   "File:Brasilia, Brazil.webm",
+   "File:11.06.2024 - Advogado-Geral da União, Jorge Messias, Governadora de Pernambuco, Raquel Lyra, e Presidente da Caixa Econômica Federal, Carlos Vieira (53785346209).jpg",
+   "File:Geraldo Alckmin (8533452842).jpg",
+   "File:Geraldo Alckmin novos Trens.jpg"
   ]
  }
 ]
