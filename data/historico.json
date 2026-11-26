@@ -1,36 +1,5 @@
 [
  {
-  "data": "2026-11-03T18:41:39.495019+00:00",
-  "manchete": "Gilmar critica Nunes Marques por gestão no TSE",
-  "titulo": "Gilmar Mendes critica Nunes Marques por condução do TSE nas eleições",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://revistaoeste.com/no-ponto/gilmar-mendes-colegiado-do-tse-assegurou-que-a-disputa-transcorresse-dentro-das-regras-do-jogo-democratico/",
-   "https://www.gazetadopovo.com.br/republica/gilmar-sinaliza-incomodo-com-nunes-marques-por-nao-prorrogar-eleicoes/"
-  ],
-  "tokens": [
-   "demora",
-   "eleico",
-   "gilmar",
-   "incomo",
-   "indire",
-   "marque",
-   "mendon",
-   "nunes",
-   "prorro",
-   "sinali"
-  ],
-  "video_id": "GESnlTbghZ4",
-  "fotos": [
-   "File:Juiz Gilmar Mendes diz que Brasil viveu um momento muito surreal em 08 de janeiro (1080p).webm",
-   "File:Gilmar Mendes.jpg",
-   "File:Lula é reeleito. Presidente do TSE proclama o resultado final das Eleições 2026.webm",
-   "File:Julgamento de demarcação contínua da Terra Indígena Raposa Serra do Sol, 19-03-2009 - Gilmar Mendes e Marco Aurélio.jpg",
-   "File:CCJ - Comissão de Constituição, Justiça e Cidadania - sabatina Kassio Nunes Marques 03.jpg",
-   "File:CCJ - Comissão de Constituição, Justiça e Cidadania - sabatina Kassio Nunes Marques 04.jpg"
-  ]
- },
- {
   "data": "2026-11-03T19:10:00.727252+00:00",
   "manchete": "Governo prevê enviar MP do Imposto Seletivo hoje",
   "titulo": "Governo prevê enviar MP do Imposto Seletivo ao Congresso nesta terça",
@@ -13295,6 +13264,33 @@
   "fotos": [
    "File:Gustavo Gayer.jpg",
    "File:Florismar Júnior junto com os deputados Gustavo Gayer e Igor Franco.jpg"
+  ]
+ },
+ {
+  "data": "2026-11-26T00:09:54.035576+00:00",
+  "manchete": "TSE mapeia crime organizado nas eleições",
+  "titulo": "TSE cria grupo de trabalho para mapear crime organizado nas eleições",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://www.cnnbrasil.com.br/politica/tse-vai-mapear-atuacao-do-crime-organizado-nas-eleicoes/",
+   "https://g1.globo.com/politica/noticia/2026/11/25/tse-vai-mapear-atuacao-do-crime-organizado-nas-eleicoes-para-ampliar-combate.ghtml"
+  ],
+  "tokens": [
+   "amplia",
+   "atuaca",
+   "combat",
+   "crime",
+   "eleico",
+   "mapear",
+   "organi",
+   "tse"
+  ],
+  "video_id": "_SwcFB89hiE",
+  "fotos": [
+   "File:Tribunal Superior Eleitoral in 28-08-2025 17.jpg",
+   "File:Tribunal Superior Eleitoral in 11-09-2025 07.jpg",
+   "File:2020 Solenidade de Posse do Senhor Kassio Nunes Marques, no cargo de Ministro do Supremo Tribunal Federal.jpg",
+   "File:Kássio Nunes se encontra com o vice-presidente Michel Temer.jpg"
   ]
  }
 ]
