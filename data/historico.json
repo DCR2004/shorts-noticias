@@ -1,45 +1,5 @@
 [
  {
-  "data": "2026-11-04T21:40:03.299017+00:00",
-  "manchete": "Flávio Bolsonaro vota no Senado direto dos EUA",
-  "titulo": "Flávio Bolsonaro vota no Senado dos EUA e é investigado pela Polícia Federal",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/nos-eua-flavio-bolsonaro-vota-remotamente-favor-da-pec-da-seguranca",
-   "https://www.cartacapital.com.br/artigo/flavio-bolsonaro-e-a-internacionalizacao-do-cristofascismo/",
-   "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/rui-costa-pimenta-do-pco-diz-ver-perseguicao-a-flavio-e-defende-legitimidade-do-bolsonarismo.shtml"
-  ],
-  "tokens": [
-   "bolson",
-   "costa",
-   "cristo",
-   "defend",
-   "eua",
-   "favor",
-   "flavio",
-   "intern",
-   "legiti",
-   "pco",
-   "pec",
-   "perseg",
-   "piment",
-   "remota",
-   "rui",
-   "segura",
-   "ver",
-   "vota"
-  ],
-  "video_id": "3SR2GR_Ns3c",
-  "fotos": [
-   "File:Entrevista com Flávio Bolsonaro - CEO Conference 2026.webm",
-   "File:Entrevistas - Senador Flávio Bolsonaro (Republicanos-RJ) e advogado Frederick Wassef.jpg",
-   "File:Diário Oficial publica indicação de Alexandre de Moraes para ministro do STF.webm",
-   "File:Donald Trump, Eduardo Bolsonaro, Flávio Bolsonaro, and Paulo Figueiredo.jpg",
-   "File:29.09.2025 – Sessão Solene de Posse do Ministro Edson Fachin no cargo de Presidente e do Ministro Alexandre de Moraes no cargo de Vice-Presidente do Supremo Tribunal Federal e do Conselho Nacional de Justiça 07.jpg",
-   "File:Joseli Camelo e Alexandre de Moraes (14.02.2023).jpg"
-  ]
- },
- {
   "data": "2026-11-04T22:09:20.015771+00:00",
   "manchete": "Banco Central mantem Selic em 13,75%",
   "titulo": "Banco Central mantem taxa Selic em 13,75 porcento",
@@ -13269,6 +13229,33 @@
    "File:Geraldo Alckmin in 2006.jpg",
    "File:President Trump Visits St. John's Episcopal Church (49963649028).jpg",
    "File:Donald Trump swearing in ceremony.jpg"
+  ]
+ },
+ {
+  "data": "2026-11-26T14:41:43.037905+00:00",
+  "manchete": "Governo abre processo contra o Google",
+  "titulo": "Governo abre processo contra o Google por transparência de anúncios",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://www.cnnbrasil.com.br/politica/governo-abre-processo-contra-google-por-falta-de-transparencia-em-anuncios/"
+  ],
+  "tokens": [
+   "abre",
+   "anunci",
+   "falta",
+   "google",
+   "govern",
+   "proces",
+   "transp"
+  ],
+  "video_id": "CePYIliDR0o",
+  "fotos": [
+   "File:Justiça e Segurança Pública tem novo ministro.webm",
+   "File:08 06 2020 Posse do Secretário Nacional de Justiça do Ministério da Justiça e Segurança Pública, Claudio de Castro Panoeiro (49984409398).jpg",
+   "File:Lake Urmia Google Earth Timelapse 1984–2018.webm",
+   "File:Sede do Ministério da Justiça, Bissau, Guiné-Bissau (2).jpg",
+   "File:Googleplex HQ (cropped).jpg",
+   "File:Pieter Brueghel the Elder - The Dutch Proverbs - Google Art Project.jpg"
   ]
  }
 ]
