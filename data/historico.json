@@ -1,37 +1,5 @@
 [
  {
-  "data": "2026-11-04T19:40:40.119898+00:00",
-  "manchete": "Lula e André Janones marcam live para esta quinta",
-  "titulo": "Lula e André Janones marcam live para esta quinta-feira",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://noticias.uol.com.br/eleicoes/2026/11/04/janones-marca-live-com-lula-e-fala-em-nocautear-extrema-direita.ghtm",
-   "https://www.poder360.com.br/poder-eleicoes-2026/lula-fara-live-com-andre-janones-na-5a-feira/"
-  ],
-  "tokens": [
-   "andre",
-   "direit",
-   "extrem",
-   "fala",
-   "fara",
-   "feira",
-   "janone",
-   "live",
-   "lula",
-   "marca",
-   "nocaut"
-  ],
-  "video_id": "r7StdO77eUw",
-  "fotos": [
-   "File:Discurso do presidente Lula durante os ataques de 8 de janeiro.webm",
-   "File:Luiz Inacio Lula da Silva and Juan Manuel Santos.jpg",
-   "File:Bicentenário da Independência - Solenidade no Palácio do Planalto.webm",
-   "File:Akira Amari and Luiz Inacio Lula da Silva 20080702 2.jpg",
-   "File:PalaciodoplanaltoFR.jpg",
-   "File:Palácio do Planalto em 2020.jpg"
-  ]
- },
- {
   "data": "2026-11-04T20:09:56.564456+00:00",
   "manchete": "CNC pede ao STF mais prazo para fim da escala 6x1",
   "titulo": "Confederação do comércio pede ao STF adiamento do fim da escala 6x1",
@@ -13273,6 +13241,32 @@
    "File:Jair Bolsonaro em 24 de abril de 2019 (1).jpg",
    "File:-AoVivo- Discurso do presidente Jair Bolsonaro na Cúpula das Américas.webm",
    "File:Presidente Jair Messias Bolsonaro.jpg"
+  ]
+ },
+ {
+  "data": "2026-11-26T12:40:27.389333+00:00",
+  "manchete": "Alckmin cotado para a Segurança Pública",
+  "titulo": "Geraldo Alckmin é o favorito para o Ministério da Segurança Pública",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://www.cnnbrasil.com.br/politica/alckmin-e-favorito-para-comandar-ministerio-da-seguranca-publica/",
+   "https://g1.globo.com/politica/blog/andreia-sadi/post/2026/11/26/alckmin-seguranca-publica.ghtml"
+  ],
+  "tokens": [
+   "alckmi",
+   "aliado",
+   "comand",
+   "defend",
+   "favori",
+   "minist",
+   "public",
+   "segura"
+  ],
+  "video_id": "kFXbslVRzCY",
+  "fotos": [
+   "File:Entrevista com Presidenciáveis- veja a sabatina com Geraldo Alckmin.webm",
+   "File:Geraldo Alckmin TV A Crítica.jpg",
+   "File:Geraldo Alckmin (8533456890).jpg"
   ]
  }
 ]
