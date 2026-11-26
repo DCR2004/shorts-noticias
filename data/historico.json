@@ -1,38 +1,5 @@
 [
  {
-  "data": "2026-11-04T23:09:58.831385+00:00",
-  "manchete": "Câmara aprova prisão por uso de drone em presídio",
-  "titulo": "Camara aprova ate 5 anos de prisao para drone em presidio",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://noticias.uol.com.br/politica/ultimas-noticias/2026/11/04/camara-aprova-ate-5-anos-de-prisao-por-drones-em-presidios.ghtm",
-   "https://www.cnnbrasil.com.br/politica/camara-proibe-uso-de-drones-em-presidios-sob-pena-de-ate-5-anos-de-prisao/"
-  ],
-  "tokens": [
-   "5",
-   "aprova",
-   "ate",
-   "camara",
-   "drone",
-   "drones",
-   "pena",
-   "presid",
-   "prisao",
-   "proibe",
-   "sobrev",
-   "uso"
-  ],
-  "video_id": "bwL-cvI2qZk",
-  "fotos": [
-   "File:Moro entrega Projetos de Lei Anticrime à Câmara dos Deputados; entenda como vai ser a tramitação.webm",
-   "File:Lobbe Neto - Camara dos Deputados 01.jpg",
-   "File:Kim Kataguiri - Allan dos Santos e Olavo de Carvalho são infiltrados comunistas.webm",
-   "File:ImgNoticia-1541105351563-SergioMoro-Portal-Camara-dos-Deputados-2018.jpg",
-   "File:Dilma faz sua defesa no plenário do Senado 1040836-29-08-2016 dsc1228.jpg",
-   "File:Renan Santos e Kim Kataguiri em Live.png"
-  ]
- },
- {
   "data": "2026-11-05T17:10:32.543097+00:00",
   "manchete": "TSE muda regra sobre fraude em cotas de gênero",
   "titulo": "TSE muda regra sobre fraude em cotas e protege mandatos femininos",
@@ -13197,6 +13164,35 @@
    "File:Google (5879010443).jpg",
    "File:Ministério da justiça (47946741981).jpg",
    "File:Sede do Ministério da Justiça, Bissau, Guiné-Bissau (1).jpg"
+  ]
+ },
+ {
+  "data": "2026-11-26T15:41:45.164690+00:00",
+  "manchete": "Setor produtivo pede adiamento da reforma",
+  "titulo": "Entidades pedem ao STF adiamento da reforma tributaria",
+  "categoria": "JUSTIÇA",
+  "links": [
+   "https://www.cnnbrasil.com.br/economia/money/macroeconomia/stf-preve-aumento-de-acoes-contra-reforma-tributaria/",
+   "https://www.gazetadopovo.com.br/economia/entidades-do-setor-produtivo-pedem-ao-stf-adiamento-da-reforma-tributaria/"
+  ],
+  "tokens": [
+   "acoes",
+   "adie",
+   "aument",
+   "entida",
+   "pedem",
+   "preve",
+   "produt",
+   "reform",
+   "setor",
+   "stf",
+   "tribut"
+  ],
+  "video_id": "9rhzR5qCAH4",
+  "fotos": [
+   "File:Suspensa ordem para que TV Record revele editores do Cidade Alerta em inquérito sobre calúnia.webm",
+   "File:Superior Tribunal de Justiça (51178085712).jpg",
+   "File:Brasilia DF Brasil - STJ - Superior Tribunal de Justiça - panoramio.jpg"
   ]
  }
 ]
