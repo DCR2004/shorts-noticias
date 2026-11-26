@@ -1,51 +1,5 @@
 [
  {
-  "data": "2026-11-04T21:09:40.964587+00:00",
-  "manchete": "Alcolumbre adia votação da maioridade penal",
-  "titulo": "Alcolumbre adia votacao sobre maioridade penal no Senado",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://www.metropoles.com/brasil/alcolumbre-decide-aguardar-camara-e-retira-reducao-da-maioridade-da-pauta",
-   "https://www.cartacapital.com.br/politica/alcolumbre-indica-que-vai-aguardar-camara-votar-reducao-da-maioridade/",
-   "https://g1.globo.com/politica/noticia/2026/11/04/alcolumbre-decide-aguardar-camara-votar-reducao-da-maioridade-penal-para-pautar-tema-no-senado.ghtml",
-   "https://www.cnnbrasil.com.br/politica/alcolumbre-diz-que-vai-aguardar-camara-para-debater-reducao-da-maioridade/",
-   "https://g1.globo.com/politica/blog/valdo-cruz/noticia/2026/11/04/alcolumbre-quer-votar-ainda-nesta-quarta-pec-da-reducao-da-maioridade-penal-em-busca-de-apoio-da-direita-para-reeleicao.ghtml"
-  ],
-  "tokens": [
-   "aguard",
-   "alcolu",
-   "apoio",
-   "busca",
-   "camara",
-   "debate",
-   "decide",
-   "direit",
-   "indica",
-   "maiori",
-   "pauta",
-   "pautar",
-   "pec",
-   "penal",
-   "quarta",
-   "quer",
-   "reduca",
-   "reelei",
-   "retira",
-   "senado",
-   "tema",
-   "votar"
-  ],
-  "video_id": "cywm8_jdOtA",
-  "fotos": [
-   "File:Saiba como funciona a Comissão de Educação do Senado.webm",
-   "File:Davi Alcolumbre (3x4).jpg",
-   "File:Após modificações no Senado, PEC da Relevância é aprovada em comissão da Câmara 05.07.22.webm",
-   "File:Foto oficial de Davi Alcolumbre (v. Flickr; recorte).jpg",
-   "File:Hugo Motta, Abertura da Sessão do dia 6 de agosto de 2025.jpg",
-   "File:Deputado Federal Hugo Motta.jpg"
-  ]
- },
- {
   "data": "2026-11-04T21:40:03.299017+00:00",
   "manchete": "Flávio Bolsonaro vota no Senado direto dos EUA",
   "titulo": "Flávio Bolsonaro vota no Senado dos EUA e é investigado pela Polícia Federal",
@@ -13265,6 +13219,56 @@
    "File:01.01.2023 - Posse de Flávio Dino, Ministro de Estado da Justiça (52625803952).jpg",
    "File:Edson Fachin (3x4).jpg",
    "File:Luiz Edson Fachin sabatina.jpg"
+  ]
+ },
+ {
+  "data": "2026-11-26T14:11:38.489063+00:00",
+  "manchete": "EUA propõem tarifa de 10% sobre aviões do Brasil",
+  "titulo": "EUA propõem taxa sobre aviões e Alckmin reage",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://www.infomoney.com.br/politica/alckmin-afirma-que-tarifas-dos-eua-contra-setor-aereo-sao-totalmente-descabidas/",
+   "https://www.poder360.com.br/poder-governo/tarifa-dos-eua-sobre-aeronaves-sao-descabidas-diz-alckmin/",
+   "https://www.cnnbrasil.com.br/politica/alckmin-diz-que-tarifa-ao-setor-aeronautico-e-totalmente-descabida/",
+   "https://g1.globo.com/economia/noticia/2026/11/26/alckimin-eua-tarias.ghtml",
+   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/tarifa-sobre-avioes-e-descabida-e-nao-existe-em-lugar-nenhum-do-mundo-diz-alckmin.shtml",
+   "https://www.cartacapital.com.br/politica/amcham-participara-de-consulta-dos-eua-sobre-tarifas-ao-brasil/"
+  ],
+  "tokens": [
+   "10",
+   "aereo",
+   "aerona",
+   "alckmi",
+   "amcham",
+   "avioes",
+   "brasil",
+   "chama",
+   "comple",
+   "consul",
+   "critic",
+   "descab",
+   "eua",
+   "existe",
+   "irrazo",
+   "lugar",
+   "medida",
+   "mundo",
+   "nao",
+   "nenhum",
+   "partic",
+   "sao",
+   "setor",
+   "tarifa",
+   "totalm"
+  ],
+  "video_id": "Nv-Fj4uAZWc",
+  "fotos": [
+   "File:Entrevista com vice-presidente- Senadora Ana Amélia.webm",
+   "File:Geraldo Alckmin (8532349687).jpg",
+   "File:Donald Trump signs executive orders on January 30, 2025.webm",
+   "File:Geraldo Alckmin in 2006.jpg",
+   "File:President Trump Visits St. John's Episcopal Church (49963649028).jpg",
+   "File:Donald Trump swearing in ceremony.jpg"
   ]
  }
 ]
