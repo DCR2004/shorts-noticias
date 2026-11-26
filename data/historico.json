@@ -1,42 +1,5 @@
 [
  {
-  "data": "2026-11-03T21:41:41.945653+00:00",
-  "manchete": "Brasil espera proposta dos EUA sobre o tarifaço",
-  "titulo": "Brasil espera proposta dos EUA sobre o tarifaço",
-  "categoria": "ECONOMIA",
-  "links": [
-   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/brasil-espera-proposta-dos-eua-sobre-tarifas-ate-semana-que-vem-diz-ministro.shtml",
-   "https://www.cnnbrasil.com.br/economia/money/macroeconomia/brasil-espera-proposta-dos-eua-para-negociar-tarifaco-em-ate-duas-semanas/",
-   "https://g1.globo.com/politica/noticia/2026/11/03/tarifaco-brasil-deve-receber-proposta-dos-eua-entre-esta-semana-e-a-proxima-diz-ministro.ghtml"
-  ],
-  "tokens": [
-   "ate",
-   "brasil",
-   "deve",
-   "duas",
-   "espera",
-   "eua",
-   "minist",
-   "negoci",
-   "propos",
-   "proxim",
-   "recebe",
-   "semana",
-   "tarifa",
-   "vem"
-  ],
-  "video_id": "8nLzDQWM1T8",
-  "fotos": [
-   "File:Brasília - Posse de Luís Inácio Lula da Silva 2023 (2).webm",
-   "File:Márcio Fernando Elias Rosa.jpg",
-   "File:Donald Trump signs executive orders on February 4, 2025.webm",
-   "File:Foto oficial de Luiz Inácio Lula da Silva (ombros).jpg",
-   "File:Foto oficial do Presidente da República Luiz Inácio Lula da Silva.jpg",
-   "File:Kim Jong-un and Donald Trump impersonators.jpg",
-   "File:Lula responde a declarações do presidente dos EUA sobre taxação de produtos brasileiros.webm"
-  ]
- },
- {
   "data": "2026-11-03T22:09:54.390711+00:00",
   "manchete": "Lula viaja a São Paulo para exames",
   "titulo": "Lula viaja a São Paulo para exames médicos de rotina nesta terça-feira",
@@ -13302,6 +13265,44 @@
    "File:CMO - Comissão Mista de Planos, Orçamentos Públicos e Fiscalização (36492542451).jpg",
    "File:30 03 2022 - Cerimônia Alusiva ao 5g no agro e a entregas do Governo Federal, em Baixa Grande do Ribeiro-PI (51972147593).jpg",
    "File:30 03 2022 - Cerimônia Alusiva ao 5g no agro e a entregas do Governo Federal, em Baixa Grande do Ribeiro-PI (51971076247).jpg"
+  ]
+ },
+ {
+  "data": "2026-11-26T09:13:18.275165+00:00",
+  "manchete": "TCU afasta multas a Dilma por pedaladas de 2014",
+  "titulo": "TCU afasta multas a Dilma e ex-ministros por pedaladas fiscais de 2014",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://www.poder360.com.br/poder-justica/tcu-afasta-multas-a-dilma-e-auxiliares-por-irregularidades-fiscais/",
+   "https://www.cnnbrasil.com.br/politica/tcu-afasta-multas-a-dilma-rousseff-por-irregularidades-fiscais-em-2014/",
+   "https://revistaoeste.com/politica/tcu-livra-dilma-de-punicoes-por-irregularidades-fiscais-de-2014/",
+   "https://www.cartacapital.com.br/politica/tcu-retira-multas-de-dilma-rousseff-e-ex-auxiliares-por-gestao-fiscal-de-2014/",
+   "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/tcu-livra-dilma-de-multas-por-irregularidades-fiscais-em-2014.shtml"
+  ],
+  "tokens": [
+   "2014",
+   "afasta",
+   "auxili",
+   "dilma",
+   "fiscai",
+   "fiscal",
+   "gestao",
+   "irregu",
+   "livra",
+   "multas",
+   "punico",
+   "retira",
+   "rousse",
+   "tcu"
+  ],
+  "video_id": "JMQqyA90sIc",
+  "fotos": [
+   "File:Conference in Defense of Democracy - Dilma Rousseff.webm",
+   "File:Dilma Rousseff e Mohamed Morsi.JPG",
+   "File:Ministro da Fazenda anuncia que manterá inflação sob controle e investimentos no país.webm",
+   "File:Dilma Rousseff and Hugo Chavez 2011.jpg",
+   "File:Fachada Tribunal de Contas da União - TCU (40014115302).jpg",
+   "File:Posse do novo presidente do Tribunal de Contas da União (TCU), ministro Aroldo Cedraz. (15992908275).jpg"
   ]
  }
 ]
