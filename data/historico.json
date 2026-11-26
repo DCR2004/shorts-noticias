@@ -1,46 +1,5 @@
 [
  {
-  "data": "2026-11-05T17:10:32.543097+00:00",
-  "manchete": "TSE muda regra sobre fraude em cotas de gênero",
-  "titulo": "TSE muda regra sobre fraude em cotas e protege mandatos femininos",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://www.poder360.com.br/poder-eleicoes-2026/tse-mantem-mandato-de-mulheres-em-chapas-com-fraude-a-cota-no-amapa/",
-   "https://www.gazetadopovo.com.br/republica/tse-muda-entendimento-sobre-fraude-a-cota-de-genero-e-mantem-mandato-de-deputada-sem-envolvimento/",
-   "https://www.cnnbrasil.com.br/politica/tse-decide-manter-mandatos-de-mulheres-eleitas-em-chapas-com-fraude-a-cota/",
-   "https://g1.globo.com/politica/noticia/2026/11/05/tse-permite-manter-mandato-de-mulher-eleita-em-chapa-com-fraude-a-cota-de-genero.ghtml"
-  ],
-  "tokens": [
-   "amapa",
-   "chapa",
-   "chapas",
-   "cota",
-   "decide",
-   "deputa",
-   "eleita",
-   "entend",
-   "envolv",
-   "fraude",
-   "genero",
-   "mandat",
-   "mantem",
-   "manter",
-   "muda",
-   "mulher",
-   "permit",
-   "tse"
-  ],
-  "video_id": "OkUfERpU5qU",
-  "fotos": [
-   "File:Assinada a nomeação de André Mendonça para o STF.webm",
-   "File:Tribunal Superior Eleitoral in 04-09-2025.jpg",
-   "File:Estado, autoritarismo e identidade no Amapá - Maura Leal.webm",
-   "File:Tribunal Superior Eleitoral in 11-09-2025 26.jpg",
-   "File:André Mendonça 2011.jpg",
-   "File:André Luiz de Almeida Mendonça em 9 de maio de 2019.jpg"
-  ]
- },
- {
   "data": "2026-11-05T17:40:29.368850+00:00",
   "manchete": "Bolsonaro pede a Moraes para receber senadores",
   "titulo": "Defesa de Bolsonaro pede a Moraes autorização para receber Rogério Marinho e Tereza",
@@ -13193,6 +13152,53 @@
    "File:Suspensa ordem para que TV Record revele editores do Cidade Alerta em inquérito sobre calúnia.webm",
    "File:Superior Tribunal de Justiça (51178085712).jpg",
    "File:Brasilia DF Brasil - STJ - Superior Tribunal de Justiça - panoramio.jpg"
+  ]
+ },
+ {
+  "data": "2026-11-26T16:10:15.419757+00:00",
+  "manchete": "Maioria nas federais pela 1ª vez",
+  "titulo": "Pretos, pardos e indigenas sao maioria nas federais pela primeira vez",
+  "categoria": "BRASIL",
+  "links": [
+   "https://g1.globo.com/educacao/noticia/2026/11/26/pela-1a-vez-pretos-pardos-e-indigenas-sao-maioria-entre-estudantes-das-universidades-federais.ghtml",
+   "https://www.cartacapital.com.br/educacao/brasil-bate-recorde-de-matriculas-na-graduacao-pretos-pardos-e-indigenas-sao-maioria-nas-federais-pela-1a-vez/",
+   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/educacao/2026/11/brasil-atinge-recorde-de-alunos-no-ensino-superior-e-mais-pretos-pardos-e-indigenas-nas-federais-pela-1a-vez.shtml",
+   "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-11/brasil-atinge-recorde-de-106-milhoes-de-matriculas-no-ensino-superior",
+   "https://www.cnnbrasil.com.br/educacao/com-avanco-do-ead-brasil-tem-recorde-de-matriculados-no-ensino-superior/"
+  ],
+  "tokens": [
+   "10",
+   "6",
+   "alunos",
+   "atinge",
+   "avanco",
+   "bate",
+   "brasil",
+   "ead",
+   "ensino",
+   "estuda",
+   "federa",
+   "gradua",
+   "indige",
+   "maiori",
+   "matric",
+   "milhoe",
+   "pardos",
+   "pretos",
+   "record",
+   "sao",
+   "superi",
+   "univer",
+   "vez"
+  ],
+  "video_id": "1ElUA45tV-c",
+  "fotos": [
+   "File:Fenprof vai apresentar parecer ao Ministério da Educação.webm",
+   "File:Fachada do Ministério da Educação (MEC) (15837724253).jpg",
+   "File:Mensagem do presidente do STF, Luiz Fux - 9º Prêmio AMAERJ Patrícia Acioli de Direitos Humanos.webm",
+   "File:Fachada do Ministério da Educação (MEC) (15835268074).jpg",
+   "File:Pronome neutro na Universidade Federal do Rio de Janeiro (2).jpg",
+   "File:Palácio Universitário da Universidade Federal do Rio de Janeiro 4.jpg"
   ]
  }
 ]
