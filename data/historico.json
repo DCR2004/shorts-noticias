@@ -1,38 +1,5 @@
 [
  {
-  "data": "2026-11-04T19:12:22.561081+00:00",
-  "manchete": "CAE aprova renegociação de dívidas no fim de mandato",
-  "titulo": "Comissão do Senado aprova renegociação de dívidas no fim de mandato",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://noticias.uol.com.br/politica/ultimas-noticias/2026/11/04/cae-aprova-projeto-que-libera-renegociacao-de-dividas-no-fim-do-mandato.ghtm",
-   "https://www.gazetadopovo.com.br/republica/comissao-do-senado-aprova-renegociacao-de-dividas-por-governadores-e-prefeitos-no-fim-do-mandato/"
-  ],
-  "tokens": [
-   "aprova",
-   "cae",
-   "comiss",
-   "divida",
-   "fim",
-   "govern",
-   "libera",
-   "mandat",
-   "prefei",
-   "projet",
-   "renego",
-   "senado"
-  ],
-  "video_id": "G3I45lPvDjg",
-  "fotos": [
-   "File:Senado Federal promove debate sobre a segurança pública no país.webm",
-   "File:2024-11-12, Senado Federal do Brasil - 405.jpg",
-   "File:FILHO DO PRESIDENTE BOLSONARO REVELA VERDADES.webm",
-   "File:2024-11-12, Senado Federal do Brasil - 401.jpg",
-   "File:Recebe em audiência o governador de Alagoas, Renan Filho. (16985168979).jpg",
-   "File:Recebe em audiência o governador de Alagoas, Renan Filho. (16551164453).jpg"
-  ]
- },
- {
   "data": "2026-11-04T19:40:40.119898+00:00",
   "manchete": "Lula e André Janones marcam live para esta quinta",
   "titulo": "Lula e André Janones marcam live para esta quinta-feira",
@@ -13279,6 +13246,33 @@
    "File:TSE - Tribunal Superior Eleitoral Ministro Edson Fachin recebe indígenas no TSE.jpg",
    "File:Para Aloysio Nunes, indicação de Alexandre de Moraes para o STF foi acertada.webm",
    "File:Ministro Edson Fachin (3x4).jpg"
+  ]
+ },
+ {
+  "data": "2026-11-26T12:11:14.115537+00:00",
+  "manchete": "Moraes arquiva inquérito sobre Bolsonaro",
+  "titulo": "STF arquiva inquérito sobre postagens ligando Bolsonaro a canibalismo",
+  "categoria": "JUSTIÇA",
+  "links": [
+   "https://noticias.uol.com.br/politica/ultimas-noticias/2026/11/26/moraes-arquiva-apuracao-sobre-posts-que-ligavam-bolsonaro-a-canibalismo.ghtm",
+   "https://www.gazetadopovo.com.br/republica/moraes-arquiva-investigacao-sobre-posts-que-associavam-bolsonaro-ao-canibalismo/"
+  ],
+  "tokens": [
+   "arquiv",
+   "associ",
+   "bolson",
+   "caniba",
+   "invest",
+   "ligava",
+   "moraes",
+   "posts"
+  ],
+  "video_id": "wYlfxYueCXc",
+  "fotos": [
+   "File:Eunício defende 'celeridade' na tramitação da indicação de Moraes ao STF.webm",
+   "File:Jair Bolsonaro em 24 de abril de 2019 (1).jpg",
+   "File:-AoVivo- Discurso do presidente Jair Bolsonaro na Cúpula das Américas.webm",
+   "File:Presidente Jair Messias Bolsonaro.jpg"
   ]
  }
 ]
