@@ -1,39 +1,5 @@
 [
  {
-  "data": "2026-11-05T17:40:29.368850+00:00",
-  "manchete": "Bolsonaro pede a Moraes para receber senadores",
-  "titulo": "Defesa de Bolsonaro pede a Moraes autorização para receber Rogério Marinho e Tereza",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://www.gazetadopovo.com.br/republica/bolsonaro-pede-a-moraes-autorizacao-para-receber-rogerio-marinho-e-tereza-cristina/",
-   "https://g1.globo.com/politica/noticia/2026/11/05/bolsonaro-pede-a-moraes-autorizacao-para-receber-marinho-e-tereza-que-devem-disputar-presidencia-do-senado.ghtml"
-  ],
-  "tokens": [
-   "autori",
-   "bolson",
-   "candid",
-   "cristi",
-   "marinh",
-   "moraes",
-   "pede",
-   "pre",
-   "presid",
-   "recebe",
-   "rogeri",
-   "senado",
-   "tereza"
-  ],
-  "video_id": "h2Qevi6-p1k",
-  "fotos": [
-   "File:Reunião entre o presidente Jair Bolsonaro e seu gabinete em 5 de julho de 2022.webm",
-   "File:Jair Bolsonaro 71st birthday of Israel.jpg",
-   "File:Ministro do Desenvolvimento Regional, Rogério Marinho.webm",
-   "File:Jair Bolsonaro pela EC 77 - Médico Militar no SUS (2).jpg",
-   "File:Senador Rogerio Marinho (PL-RN) (52795372591).jpg",
-   "File:Tereza Cristina (politician) in 2025 Plenário do Senado.jpg"
-  ]
- },
- {
   "data": "2026-11-05T18:09:41.814087+00:00",
   "manchete": "Impasse sobre redução da maioridade penal",
   "titulo": "Discussão sobre maioridade penal avança e relator admite flexibilizar proposta",
@@ -13199,6 +13165,48 @@
    "File:Fachada do Ministério da Educação (MEC) (15835268074).jpg",
    "File:Pronome neutro na Universidade Federal do Rio de Janeiro (2).jpg",
    "File:Palácio Universitário da Universidade Federal do Rio de Janeiro 4.jpg"
+  ]
+ },
+ {
+  "data": "2026-11-26T16:39:31.247031+00:00",
+  "manchete": "Ministra do TSE relata ataques e cobra apoio",
+  "titulo": "Ministra do TSE relata ataques e cobra apoio de colegas",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://noticias.uol.com.br/politica/ultimas-noticias/2026/11/26/ministra-relata-ameacas-e-falta-de-apoio-de-colegas-do-tse.ghtm",
+   "https://g1.globo.com/politica/noticia/2026/11/26/tse-estela-aranha-relata-ataques-misoginos-e-cobra-solidariedade-de-colegas-ministros-rebatem.ghtml",
+   "https://www.metropoles.com/colunas/manoela-alcantara/ministra-do-tse-diz-que-sofreu-ataques-misoginos-e-ministros-silenciaram",
+   "https://www.cartacapital.com.br/justica/estela-aranha-expoe-ataques-misoginos-e-cobra-resposta-de-nunes-marques-no-tse/"
+  ],
+  "tokens": [
+   "ameaca",
+   "apoiar",
+   "aranha",
+   "ataque",
+   "cobra",
+   "colega",
+   "eleico",
+   "estela",
+   "expoe",
+   "marque",
+   "minist",
+   "misogi",
+   "nao",
+   "nunes",
+   "rebate",
+   "relata",
+   "respos",
+   "silenc",
+   "sofreu",
+   "solida",
+   "tse"
+  ],
+  "video_id": "judk4e2ctBg",
+  "fotos": [
+   "File:Tribunal Superior Eleitoral in 04-09-2025 13.jpg",
+   "File:Tribunal Superior Eleitoral in 04-09-2025 28.jpg",
+   "File:Solenidade pela posse dos Ministros Estela Aranha e Floriano Marques 65.jpg",
+   "File:Solenidade pela posse dos Ministros Estela Aranha e Floriano Marques 83.jpg"
   ]
  }
 ]
