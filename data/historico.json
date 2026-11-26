@@ -1,39 +1,5 @@
 [
  {
-  "data": "2026-11-04T20:09:56.564456+00:00",
-  "manchete": "CNC pede ao STF mais prazo para fim da escala 6x1",
-  "titulo": "Confederação do comércio pede ao STF adiamento do fim da escala 6x1",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://g1.globo.com/economia/noticia/2026/11/04/confederacao-do-comercio-pede-mais-prazo-para-implementar-a-escala-5x2.ghtml",
-   "https://www.gazetadopovo.com.br/economia/confederacao-do-comercio-pede-que-stf-adie-transicao-para-o-fim-da-escala-6-1/"
-  ],
-  "tokens": [
-   "1",
-   "5x2",
-   "6",
-   "adie",
-   "comerc",
-   "confed",
-   "escala",
-   "fim",
-   "implem",
-   "pede",
-   "prazo",
-   "stf",
-   "transi"
-  ],
-  "video_id": "-WmqHBGE2tk",
-  "fotos": [
-   "File:Supremo racionaliza rito para julgamento do mensalão em Questão de Ordem.webm",
-   "File:Supremo Tribunal Federal - Brazil's Supreme Court (3492208700).jpg",
-   "File:TUE Series 1000 train leaving Praça do Relógio metro station, Brasília, 29-03-2024.webm",
-   "File:Supremo Tribunal Federal (5944394217).jpg",
-   "File:Catedral Metropolitana de Brasília - Brasília - 20150603150521.jpg",
-   "File:Brasília Memorial dos Povos Indígenas 2009.jpg"
-  ]
- },
- {
   "data": "2026-11-04T20:41:04.278061+00:00",
   "manchete": "PEC da Seguranca foi desvirtuada, diz Sarrubbo",
   "titulo": "Ex-secretario critica versao aprovada da PEC da Seguranca Publica",
@@ -13267,6 +13233,34 @@
    "File:Entrevista com Presidenciáveis- veja a sabatina com Geraldo Alckmin.webm",
    "File:Geraldo Alckmin TV A Crítica.jpg",
    "File:Geraldo Alckmin (8533456890).jpg"
+  ]
+ },
+ {
+  "data": "2026-11-26T13:09:17.999325+00:00",
+  "manchete": "Lula avalia medidas fiscais e ministérios",
+  "titulo": "Lula negocia medidas fiscais com aliados antes de definir ministérios",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://g1.globo.com/politica/blog/valdo-cruz/post/2026/11/26/lula-precisa-negociar-com-aliados-novas-medidas-fiscais-antes-de-fazer-convites-para-ministerios.ghtml"
+  ],
+  "tokens": [
+   "aliado",
+   "antes",
+   "convit",
+   "fazer",
+   "fiscai",
+   "lula",
+   "medida",
+   "minist",
+   "negoci",
+   "novas",
+   "precis"
+  ],
+  "video_id": "uxBQSlu9-CI",
+  "fotos": [
+   "File:-AoVivo- Medidas de Fomento à Produção e ao Uso Sustentável do Biometano.webm",
+   "File:Palacio da Alvorada Restoration.JPG",
+   "File:Palácio da Alvorada (5).jpg"
   ]
  }
 ]
