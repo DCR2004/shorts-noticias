@@ -1,36 +1,5 @@
 [
  {
-  "data": "2026-11-03T19:10:00.727252+00:00",
-  "manchete": "Governo prevê enviar MP do Imposto Seletivo hoje",
-  "titulo": "Governo prevê enviar MP do Imposto Seletivo ao Congresso nesta terça",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://www.cartacapital.com.br/politica/governo-lula-preve-enviar-mp-do-imposto-seletivo-ao-congresso-nesta-terca/",
-   "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/governo-quer-enviar-mp-do-imposto-seletivo-ainda-hoje-ao-congresso"
-  ],
-  "tokens": [
-   "ainda",
-   "congre",
-   "enviar",
-   "govern",
-   "impost",
-   "lula",
-   "preve",
-   "quer",
-   "seleti",
-   "terca"
-  ],
-  "video_id": "msfPWdzZFfU",
-  "fotos": [
-   "File:Briefing sobre a participação do presidente Luiz Inácio Lula da Silva na cúpula do G7.webm",
-   "File:Dario Durigan.jpg",
-   "File:Ministério da Fazenda regulamenta a renegociação da dívida dos Estados e Distrito Federal.webm",
-   "File:Brasília - Posse de Luiz Inácio Lula da Silva 2023 (87).jpg",
-   "File:Foto oficial de Luiz Inácio Lula da Silva (estreita).jpg",
-   "File:Ministério da Fazenda 2017 03 15 1.jpg"
-  ]
- },
- {
   "data": "2026-11-03T19:40:03.141042+00:00",
   "manchete": "Eduardo Braga será relator do Orçamento",
   "titulo": "Eduardo Braga é escolhido relator do Orçamento de 2027 no Congresso",
@@ -13291,6 +13260,47 @@
    "File:Tribunal Superior Eleitoral in 11-09-2025 07.jpg",
    "File:2020 Solenidade de Posse do Senhor Kassio Nunes Marques, no cargo de Ministro do Supremo Tribunal Federal.jpg",
    "File:Kássio Nunes se encontra com o vice-presidente Michel Temer.jpg"
+  ]
+ },
+ {
+  "data": "2026-11-26T00:42:45.277774+00:00",
+  "manchete": "Moraes rejeita crédito de R$ 324 mi para MPU",
+  "titulo": "Moraes rejeita pedido de crédito para penduricalhos do MPU",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://www.cnnbrasil.com.br/politica/moraes-rejeita-pedido-sobre-custeio-de-r-324-mi-em-penduricalhos-no-mpu/",
+   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/poder/2026/11/moraes-rejeita-pedido-da-pgr-para-pagar-penduricalhos-com-credito-extra-de-r-324-milhoes.shtml",
+   "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/moraes-rejeita-pedido-da-pgr-para-pagar-penduricalhos-com-credito-extra-de-r-324-milhoes.shtml",
+   "https://www.gazetadopovo.com.br/republica/moraes-rejeita-pedido-da-pgr-para-liberar-r-324-milhoes-em-penduricalho/",
+   "https://g1.globo.com/politica/noticia/2026/11/25/moraes-rejeita-pedido-para-stf-indicar-como-devem-ser-custeados-r-324-milhoes-em-penduricalhos-no-mpu.ghtml"
+  ],
+  "tokens": [
+   "324",
+   "credit",
+   "custea",
+   "custei",
+   "devem",
+   "extra",
+   "indica",
+   "libera",
+   "milhoe",
+   "moraes",
+   "mpu",
+   "pagar",
+   "pedido",
+   "pendur",
+   "pgr",
+   "rejeit",
+   "stf"
+  ],
+  "video_id": "MKjtKc8pByo",
+  "fotos": [
+   "File:Rose diz que 'vasculhou' biografia de Moraes e não tem 'restrição' à indicação ao STF.webm",
+   "File:Alexandre de Moraes, 2017 (cropped).jpg",
+   "File:Doppaz sai da prisão.webm",
+   "File:Procuradoria Geral da República (East Timor) (building), 2018 (01).jpg",
+   "File:Procuradoria Geral da República.jpg",
+   "File:Líderes de povos e organizações indígenas vão à sede da Advocacia Geral da União.jpg"
   ]
  }
 ]
