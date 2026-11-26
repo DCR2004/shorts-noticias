@@ -1,38 +1,5 @@
 [
  {
-  "data": "2026-11-06T20:08:28.414283+00:00",
-  "manchete": "Lula sanciona lei do Enamed",
-  "titulo": "Lula sanciona lei que cria o Enamed, a OAB da medicina",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://g1.globo.com/politica/noticia/2026/11/06/lula-sanciona-lei-que-institui-oab-da-medicina-para-novos-medicos.ghtml",
-   "https://www.metropoles.com/brasil/oab-da-medicina-lula-sanciona-exame-obrigatorio-para-novos-medicos",
-   "https://www.poder360.com.br/poder-governo/ao-vivo-lula-sanciona-lei-que-institui-o-enamed/"
-  ],
-  "tokens": [
-   "enamed",
-   "exame",
-   "instit",
-   "lei",
-   "lula",
-   "medici",
-   "medico",
-   "novos",
-   "oab",
-   "obriga",
-   "sancio"
-  ],
-  "video_id": "ufBXg-cv4is",
-  "fotos": [
-   "File:Cerimônia no Palácio do Planalto marca os 400 dias de governo.webm",
-   "File:Palácio do Planalto reflexcao em Rosa.jpg",
-   "File:Professores do ensino artístico protestam junto ao Ministério da Educação.webm",
-   "File:Palácio do Planalto (14277980235).jpg",
-   "File:Fachada do Ministério da Educação (MEC) (16271551659).jpg",
-   "File:Ministério da Saúde (49702074706).jpg"
-  ]
- },
- {
   "data": "2026-11-06T20:42:21.918833+00:00",
   "manchete": "Imposto de 12% sobre petróleo prorrogado",
   "titulo": "Governo prorroga imposto de 12 por cento sobre exportação de petróleo",
@@ -13125,6 +13092,36 @@
    "File:Lindberg Farias.JPG",
    "File:Dilma Rousseff and David Granger at 48th Mercosur Summit.jpg",
    "File:Dilma Rousseff and Nicolás Maduro at 48th Mercosur Summit (2).jpg"
+  ]
+ },
+ {
+  "data": "2026-11-26T23:39:29.423227+00:00",
+  "manchete": "Orçamento prevê corte de R$ 2 bi e emendas",
+  "titulo": "Orcamento de 2027 prevê corte de 2 bilhões e emendas de comissão",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://www1.folha.uol.com.br/mercado/2026/11/relatorio-do-orcamento-preve-r-128-bi-para-emendas-de-comissao-e-corte-de-r-2-bi-do-governo.shtml",
+   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/relatorio-do-orcamento-preve-r-128-bi-para-emendas-de-comissao-e-corte-de-r-2-bi-do-governo.shtml"
+  ],
+  "tokens": [
+   "12",
+   "2",
+   "8",
+   "comiss",
+   "corte",
+   "emenda",
+   "govern",
+   "orcame",
+   "preve",
+   "relato"
+  ],
+  "video_id": "z4r5_HVR4l8",
+  "fotos": [
+   "File:Lobão entrega ao presidente do Senado relatório da LDO.webm",
+   "File:Eduardo Braga (2) (8185771426).jpg",
+   "File:Eduardo Braga (1) (8185731537).jpg",
+   "File:CMO - Comissão Mista de Planos, Orçamentos Públicos e Fiscalização (33322470670).jpg",
+   "File:CMO - Comissão Mista de Planos, Orçamentos Públicos e Fiscalização (15148338703).jpg"
   ]
  }
 ]
