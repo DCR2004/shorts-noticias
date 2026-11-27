@@ -1,36 +1,5 @@
 [
  {
-  "data": "2026-11-08T21:09:53.994932+00:00",
-  "manchete": "Kassab cobra corte de gastos para apoiar Lula",
-  "titulo": "Kassab condiciona apoio do PSD a Lula a cortes nas contas públicas",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://noticias.uol.com.br/ultimas-noticias/agencia-estado/2026/11/08/kassab-espera-corte-nas-contas-publicas-para-balizar-apoio-do-psd-a-lula-4.htm",
-   "https://www.infomoney.com.br/politica/kassab-espera-corte-nas-contas-publicas-para-balizar-apoio-do-psd-a-lula-4/"
-  ],
-  "tokens": [
-   "4",
-   "apoio",
-   "baliza",
-   "contas",
-   "corte",
-   "espera",
-   "kassab",
-   "lula",
-   "psd",
-   "public"
-  ],
-  "video_id": "bpjRWu5P-eM",
-  "fotos": [
-   "File:O Ambiente Político e Eleições de 2022 - ACM Neto, Bruno Araújo, Gilberto Kassab e Gleisi Hoffmann.webm",
-   "File:Gilberto Kassab (2007).jpg",
-   "File:Arquivo S - há 40 anos, ditadura fechava o Congresso.webm",
-   "File:Gilberto Kassab (25000936617).jpg",
-   "File:National Congress of Brazil in Brasília.jpg",
-   "File:Construção do Congresso Nacional 1959-1.jpg"
-  ]
- },
- {
   "data": "2026-11-08T21:39:40.291204+00:00",
   "manchete": "Lula chama Enem de operação de guerra",
   "titulo": "Lula chama Enem de operacao de guerra e destaca mais de 5 milhoes de inscritos",
@@ -13156,6 +13125,40 @@
    "File:01.01.2023 - Posse de Fernando Haddad, Ministro de Estado da Fazenda (52626309381).jpg",
    "File:Lula e Fernando Haddad na Universidade Estadual de Campinas em 2022.jpg",
    "File:Banco Central do Brasil de Fortaleza 08.jpg"
+  ]
+ },
+ {
+  "data": "2026-11-27T17:40:44.588110+00:00",
+  "manchete": "Cármen Lúcia nega consulta de Lula sobre STF",
+  "titulo": "Cármen Lúcia nega consulta de Lula sobre STF",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://www.cartacapital.com.br/justica/carmen-lucia-nega-ter-sido-consultada-por-lula-sobre-nomes-de-mulheres-para-o-stf/",
+   "https://www.cnnbrasil.com.br/politica/lula-consulta-carmen-lucia-sobre-mulher-no-stf/",
+   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/poder/2026/11/mobilizacao-para-indicacao-de-mulher-negra-ao-stf-e-legitima-diz-ministra-de-lula.shtml",
+   "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/mobilizacao-para-indicacao-de-mulher-negra-ao-stf-e-legitima-diz-ministra-de-lula.shtml"
+  ],
+  "tokens": [
+   "carmen",
+   "consul",
+   "indica",
+   "legiti",
+   "lucia",
+   "lula",
+   "minist",
+   "mobili",
+   "mulher",
+   "nega",
+   "negra",
+   "nomes",
+   "sido",
+   "stf"
+  ],
+  "video_id": "LvcXomSFXAQ",
+  "fotos": [
+   "File:Cármen Lúcia assume presidência do STF para mandato de dois anos.webm",
+   "File:Cármen Lúcia em 2016 02.jpg",
+   "File:STF - Julgamento das algemas, 7-8-2008 - Carmem Lúcia, Eros Grau, Ayres Britto e Ellen Gracie.jpg"
   ]
  }
 ]
