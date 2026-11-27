@@ -1,35 +1,5 @@
 [
  {
-  "data": "2026-11-08T17:09:43.262693+00:00",
-  "manchete": "PT pede R$ 7 milhões em vaquinha para Lula",
-  "titulo": "PT pede vaquinha de R$ 7 milhões para quitar dívidas da campanha de Lula",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://www.gazetadopovo.com.br/republica/pt-pede-7-milhoes-em-vaquinha-para-quitar-dividas-da-campanha-de-lula/",
-   "https://revistaoeste.com/politica/pt-pede-pix-para-cobrir-gastos-com-campanha-de-lula/"
-  ],
-  "tokens": [
-   "7",
-   "campan",
-   "cobrir",
-   "divida",
-   "gastos",
-   "lula",
-   "milhoe",
-   "pede",
-   "pix",
-   "quitar",
-   "vaquin"
-  ],
-  "video_id": "vXyLdq-p1GE",
-  "fotos": [
-   "File:Partido dos Trabalhadores - Diretório Estadual de Mato Grosso 2024-9426.jpg",
-   "File:Dilma discursando em congresso do Partido dos Trabalhadores, em junho de 2017.jpg",
-   "File:Tribunal Superior Eleitoral in 28-08-2025 17.jpg",
-   "File:Tribunal Superior Eleitoral in 11-09-2025 07.jpg"
-  ]
- },
- {
   "data": "2026-11-08T17:41:19.981557+00:00",
   "manchete": "Quaest aponta 48% de aprovação para Lula",
   "titulo": "Pesquisa Quaest mostra aprovação e desaprovação do governo Lula",
@@ -13156,6 +13126,33 @@
   "fotos": [
    "File:Balanço do IBGE.webm",
    "File:População residente do munícipio de Condeúba - BA de acordo com os censos do IBGE- Brasil.png"
+  ]
+ },
+ {
+  "data": "2026-11-27T13:41:29.089667+00:00",
+  "manchete": "STF prorroga inquérito sobre filme de Bolsonaro",
+  "titulo": "STF prorroga inquerito sobre financiamento de filme de Jair Bolsonaro",
+  "categoria": "JUSTIÇA",
+  "links": [
+   "https://www.cnnbrasil.com.br/politica/fachin-prorroga-inquerito-sobre-financiamento-do-dark-horse-por-60-dias/",
+   "https://www.metropoles.com/brasil/fachin-prorroga-inquerito-que-investiga-flavio-por-filme-dark-horse",
+   "https://g1.globo.com/politica/noticia/2026/11/27/fachin-prorroga-inquerito-sobre-dark-horse-por-60-dias.ghtml"
+  ],
+  "tokens": [
+   "60",
+   "bolson",
+   "dark",
+   "fachin",
+   "financ",
+   "flavio",
+   "horse",
+   "inquer",
+   "invest",
+   "prorro"
+  ],
+  "video_id": "_1BbpgXh4cU",
+  "fotos": [
+   "File:Sistema da Polícia Federal vai agilizar registro e posse de armas.webm"
   ]
  }
 ]
