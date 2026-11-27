@@ -1,36 +1,5 @@
 [
  {
-  "data": "2026-11-09T17:39:29.047715+00:00",
-  "manchete": "Alcolumbre cancela reunião com bancada feminina",
-  "titulo": "Davi Alcolumbre cancela encontro com bancada feminina do Senado",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://www.metropoles.com/brasil/alcolumbre-adia-encontro-com-bancada-feminina-do-senado",
-   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/11/na-disputa-a-reeleicao-alcolumbre-tem-encontro-com-bancada-feminina-cancelado.shtml",
-   "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/11/na-disputa-a-reeleicao-alcolumbre-tem-encontro-com-bancada-feminina-cancelado.shtml"
-  ],
-  "tokens": [
-   "adia",
-   "alcolu",
-   "bancad",
-   "cancel",
-   "encont",
-   "falta",
-   "femini",
-   "quorum",
-   "senado"
-  ],
-  "video_id": "4s_Dv9kVxxc",
-  "fotos": [
-   "File:Ministra Tereza Cristina apresenta agronegócio brasileiro ao Oriente Médio.webm",
-   "File:Senador Davi Alcolumbre (52757789270).jpg",
-   "File:Rogério Correia alerta para a necessidade de uma investigação no caso Queiroz, Bolsonaros e milícias.webm",
-   "File:Foto oficial 2 de Davi Alcolumbre (recorte II).jpg",
-   "File:Zenaide Maia, Izalci Lucas and Tereza Cristina Plenário do Senado.jpg",
-   "File:2022 Cerimônia alusiva a Regularização Fundiária.jpg"
-  ]
- },
- {
   "data": "2026-11-09T18:10:33.867397+00:00",
   "manchete": "PGR pede arquivamento de inquérito",
   "titulo": "PGR pede o arquivamento do Inquérito das Fake News no STF",
@@ -13140,5 +13109,40 @@
   ],
   "video_id": "MGvm81vcRcg",
   "fotos": []
+ },
+ {
+  "data": "2026-11-27T19:11:01.709515+00:00",
+  "manchete": "Bruno Moretti segue no Planejamento",
+  "titulo": "Lula acerta permanência de Bruno Moretti no Ministério do Planejamento",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/lula-acerta-permanencia-de-bruno-moretti-no-ministerio-do-planejamento-dizem-aliados.shtml",
+   "https://www.poder360.com.br/poder-governo/magico-do-orcamento-bruno-moretti-vai-seguir-como-ministro/",
+   "https://g1.globo.com/politica/blog/valdo-cruz/post/2026/11/27/manutencao-de-moretti-no-ministerio-do-planejamento-e-vista-como-praticamente-certa-em-um-aceno-de-lula-ao-pt.ghtml"
+  ],
+  "tokens": [
+   "aceno",
+   "acerta",
+   "aliado",
+   "bruno",
+   "certa",
+   "lula",
+   "magico",
+   "manute",
+   "minist",
+   "morett",
+   "orcame",
+   "perman",
+   "planej",
+   "pratic",
+   "seguir",
+   "vista"
+  ],
+  "video_id": "1MnaSBKrJ9w",
+  "fotos": [
+   "File:Secretaria Nacional do Consumidor oferece cursos on-line sobre mercado e planejamento financeiro.webm",
+   "File:Fotos produzidas pelo Senado (37029925881).jpg",
+   "File:Fotos produzidas pelo Senado (37029920781).jpg"
+  ]
  }
 ]
