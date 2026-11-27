@@ -1,38 +1,5 @@
 [
  {
-  "data": "2026-11-06T22:11:15.375859+00:00",
-  "manchete": "Meta nega favorecimento a Flávio Bolsonaro no TSE",
-  "titulo": "Meta nega favorecimento a Flávio Bolsonaro no TSE e cita alcance de Lula",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://noticias.uol.com.br/politica/ultimas-noticias/2026/11/06/ao-tse-meta-nega-vies-e-diz-que-lula-alcancou-mais-pessoas-que-flavio.ghtm",
-   "https://noticias.uol.com.br/ultimas-noticias/agencia-estado/2026/11/06/meta-diz-ao-tse-que-posts-de-lula-alcancaram-15x-mais-pessoas-do-que-os-de-flavio-no-instagram.htm",
-   "https://revistaoeste.com/politica/meta-nega-favorecimento-a-flavio-nas-eleicoes/"
-  ],
-  "tokens": [
-   "1",
-   "alcanc",
-   "eleico",
-   "favore",
-   "flavio",
-   "instag",
-   "lula",
-   "meta",
-   "nega",
-   "pessoa",
-   "posts",
-   "tse",
-   "vies"
-  ],
-  "video_id": "6R2bhevFOzo",
-  "fotos": [
-   "File:Testemunho de empresário pode pôr em risco o governo de Jair Bolsonaro.webm",
-   "File:Tribunal Superior Eleitoral in 04-09-2025 29.jpg",
-   "File:Tribunal Superior Eleitoral in 04-09-2025 03.jpg",
-   "File:Entrevistas Diversas (52068540141) (cropped).jpg"
-  ]
- },
- {
   "data": "2026-11-07T17:10:24.397894+00:00",
   "manchete": "Gonet pede ao STF suspensão de ações sobre bets",
   "titulo": "Gonet pede ao STF suspensão nacional de processos sobre proibição das bets",
@@ -13119,6 +13086,37 @@
    "File:Brigitte Macron, Ursula von der Leyen and Emmanuel Macron in Nice, France - June 2025.jpg",
    "File:Ministério da Agricultura e Pecuária (Brasil).png",
    "File:Esplanada dos Ministérios (fachada ministérios).jpg"
+  ]
+ },
+ {
+  "data": "2026-11-27T01:42:41.537008+00:00",
+  "manchete": "Bolsonaro melhora, mas segue na UTI",
+  "titulo": "Jair Bolsonaro apresenta melhora clinica mas segue na UTI sem previsao de alta",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://www.infomoney.com.br/politica/jair-bolsonaro-tem-melhora-mas-ainda-sem-previsao-de-sair-da-uti-informa-hospital/",
+   "https://www.cartacapital.com.br/politica/bolsonaro-apresenta-melhora-mas-segue-na-uti-e-sem-previsao-de-alta/"
+  ],
+  "tokens": [
+   "ainda",
+   "alta",
+   "aprese",
+   "bolson",
+   "hospit",
+   "inform",
+   "jair",
+   "mas",
+   "melhor",
+   "previs",
+   "sair",
+   "segue",
+   "uti"
+  ],
+  "video_id": "uAo3PhaELj0",
+  "fotos": [
+   "File:Presidente Jair Bolsonaro faz visita oficial ao Suriname.webm",
+   "File:Jair Bolsonaro pela EC 77 - Médico Militar no SUS (cropped).jpg",
+   "File:2020-03-24 Pronunciamento do Presidente da República, Jair Bolsonaro em Rede Nacional de Rádio e Televisão - 49695919452 (cropped 2).jpg"
   ]
  }
 ]
