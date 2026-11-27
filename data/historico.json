@@ -1,36 +1,5 @@
 [
  {
-  "data": "2026-11-10T17:12:28.146347+00:00",
-  "manchete": "Lula indica Fernando Igreja para embaixada na Itália",
-  "titulo": "Lula indica Fernando Igreja para embaixador do Brasil na Itália",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://revistaoeste.com/politica/lula-escolhe-diplomata-proximo-ao-planalto-para-embaixada-na-italia/",
-   "https://www.gazetadopovo.com.br/republica/lula-indica-chefe-do-cerimonial-do-planalto-para-embaixada-na-italia/"
-  ],
-  "tokens": [
-   "cerimo",
-   "chefe",
-   "diplom",
-   "embaix",
-   "escolh",
-   "indica",
-   "italia",
-   "lula",
-   "planal",
-   "proxim"
-  ],
-  "video_id": "JLZc9bsVQe8",
-  "fotos": [
-   "File:Discurso de posse do embaixador Ernesto Araújo, ministro de estado das Relações Exteriores.webm",
-   "File:Palácio do Itamaraty 6.jpg",
-   "File:Exposição leva a história do Brasil ao Palácio do Planalto.webm",
-   "File:Palácio do Itamaraty - iluminado - LGBTQIA+.jpg",
-   "File:2025-11-06, Senado Federal do Brasil - 198.jpg",
-   "File:2025-11-06, Senado Federal do Brasil - 008.jpg"
-  ]
- },
- {
   "data": "2026-11-10T17:40:43.876924+00:00",
   "manchete": "Tarcisio defende direito de Flavio em 2030",
   "titulo": "Tarcisio diz que Flavio Bolsonaro tem direito de disputar Presidencia em 2030",
@@ -13106,6 +13075,35 @@
    "File:Fernando Henrique Cardoso - Mário Covas - José Roberto Magalhães Teixeira (1994).jpg",
    "File:Aécio Neves - Encontro em Florianópolis - 27 01 2014 (12188498293).jpg",
    "File:Aécio Neves em 2023.jpg"
+  ]
+ },
+ {
+  "data": "2026-11-27T23:39:21.996082+00:00",
+  "manchete": "Zucco cria conselho econômico no RS",
+  "titulo": "Luciano Zucco cria conselho econômico no Rio Grande do Sul",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://www.metropoles.com/brasil/rs-zucco-anuncia-daniella-marques-e-ex-ministro-de-bolsonaro-para-conselho",
+   "https://www.poder360.com.br/poder-brasil/zucco-anuncia-sachsida-e-daniella-marques-para-conselho-no-rs/"
+  ],
+  "tokens": [
+   "anunci",
+   "bolson",
+   "consel",
+   "daniel",
+   "marque",
+   "minist",
+   "sachsi",
+   "zucco"
+  ],
+  "video_id": "snwvPZO0wdo",
+  "fotos": [
+   "File:-AoVivo- A Voz do Brasil – 07-10-2022.webm",
+   "File:Deputado Zucco em 2025.jpg",
+   "File:Economia - nova presidência na Caixa.webm",
+   "File:Deputado Zucco em CPI do MST.jpg",
+   "File:Daniella Marques e Augusto Aras 07.jpg",
+   "File:Daniella Marques e Augusto Aras 02.jpg"
   ]
  }
 ]
