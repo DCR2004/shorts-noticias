@@ -1,38 +1,5 @@
 [
  {
-  "data": "2026-11-06T20:42:21.918833+00:00",
-  "manchete": "Imposto de 12% sobre petróleo prorrogado",
-  "titulo": "Governo prorroga imposto de 12 por cento sobre exportação de petróleo",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://revistaoeste.com/politica/lula-mantem-imposto-de-12-sobre-exportacao-de-petroleo-ate-dezembro/",
-   "https://g1.globo.com/economia/noticia/2026/11/06/governo-prorroga-ate-31-de-dezembro-cobranca-de-imposto-de-12percent-sobre-exportacao-de-petroleo.ghtml"
-  ],
-  "tokens": [
-   "12",
-   "31",
-   "ate",
-   "cobran",
-   "dezemb",
-   "export",
-   "govern",
-   "impost",
-   "lula",
-   "mantem",
-   "petrol",
-   "prorro"
-  ],
-  "video_id": "RkY2RSN9niI",
-  "fotos": [
-   "File:Ministério da Fazenda e deputados discutem novo regime fiscal.webm",
-   "File:Delegacia do Ministério da Fazenda de Aracaju.jpg",
-   "File:Cerimônia no Palácio do Planalto marcou o Dia Nacional do Voluntariado.webm",
-   "File:Ministério da Fazenda Aracaju Sergipe 20220424-6107.jpg",
-   "File:Palácio do Planalto (14091329059).jpg",
-   "File:Reflexos do Planalto.jpg"
-  ]
- },
- {
   "data": "2026-11-06T21:11:20.976158+00:00",
   "manchete": "Governo lança transição energética",
   "titulo": "Governo federal lança Plano Nacional de Transição Energética",
@@ -13122,6 +13089,40 @@
    "File:Eduardo Braga (1) (8185731537).jpg",
    "File:CMO - Comissão Mista de Planos, Orçamentos Públicos e Fiscalização (33322470670).jpg",
    "File:CMO - Comissão Mista de Planos, Orçamentos Públicos e Fiscalização (15148338703).jpg"
+  ]
+ },
+ {
+  "data": "2026-11-27T00:09:58.604082+00:00",
+  "manchete": "STF rejeita ampliar porte de arma de guardas",
+  "titulo": "STF mantém regras atuais de porte de arma para guardas municipais",
+  "categoria": "JUSTIÇA",
+  "links": [
+   "https://www1.folha.uol.com.br/cotidiano/2026/11/stf-rejeita-ampliar-porte-de-armas-de-guardas-municipais.shtml",
+   "https://noticias.uol.com.br/politica/ultimas-noticias/2026/11/26/stf-mantem-exigencia-para-porta-de-arma-de-guardas-municipais.ghtm",
+   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/cotidiano/2026/11/stf-rejeita-ampliar-porte-de-armas-de-guardas-municipais.shtml",
+   "https://www.cnnbrasil.com.br/politica/stf-mantem-restricoes-ao-porte-de-arma-de-guardas-municipais/"
+  ],
+  "tokens": [
+   "amplia",
+   "arma",
+   "armas",
+   "exigen",
+   "guarda",
+   "mantem",
+   "munici",
+   "porte",
+   "rejeit",
+   "restri",
+   "stf"
+  ],
+  "video_id": "m5JRKHGNBtA",
+  "fotos": [
+   "File:Vanessa Grazziotin afirma que indicação de Moraes para o STF foi política.webm",
+   "File:2020 Solenidade de Posse do Senhor Kassio Nunes Marques, no cargo de Ministro do Supremo Tribunal Federal - 50570990412.jpg",
+   "File:São inválidas provas obtidas por guarda municipal em investigação deflagrada por denúncia anônima.webm",
+   "File:2020 Solenidade de Posse do Senhor Kassio Nunes Marques, no cargo de Ministro do Supremo Tribunal Federal - 50570857236.jpg",
+   "File:Viatura da Guarda Municipal de Marabá.jpg",
+   "File:Guarda Municipal de limeira.png"
   ]
  }
 ]
