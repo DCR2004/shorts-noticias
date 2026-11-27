@@ -1,49 +1,5 @@
 [
  {
-  "data": "2026-11-10T09:10:27.362622+00:00",
-  "manchete": "STF debate escala 6x1 e governo adia decreto",
-  "titulo": "STF debate fim da escala 6x1 e governo adia decreto",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://www.cnnbrasil.com.br/politica/stf-promove-audiencia-nesta-terca-10-para-discutir-fim-da-escala-6x1/",
-   "https://www.poder360.com.br/poder-justica/presidente-do-tst-defende-fim-imediato-da-escala-6-x-1/",
-   "https://revistaoeste.com/politica/governo-adia-decreto-sobre-fim-da-escala-6x1/",
-   "https://www.gazetadopovo.com.br/republica/decreto-sobre-fim-da-escala-6x1-fica-para-depois-de-viagem-de-lula/"
-  ],
-  "tokens": [
-   "1",
-   "10",
-   "6",
-   "adia",
-   "audien",
-   "decret",
-   "defend",
-   "depois",
-   "discut",
-   "escala",
-   "fica",
-   "fim",
-   "govern",
-   "imedia",
-   "lula",
-   "presid",
-   "promov",
-   "stf",
-   "terca",
-   "tst",
-   "viagem"
-  ],
-  "video_id": "LNVmz3ilKc0",
-  "fotos": [
-   "File:-AoVivo- Coletiva de Imprensa do ministro da Justiça, Flávio Dino.webm",
-   "File:01.01.2023 - Posse de Flávio Dino, Ministro de Estado da Justiça (52626565364).jpg",
-   "File:Grupo de trabalho sobre igualdade racial apresenta relatório com propostas 30.07.21.webm",
-   "File:01.01.2023 - Posse de Flávio Dino, Ministro de Estado da Justiça (52625803877).jpg",
-   "File:Brasilia DF Brasil - TST, Tribunal Superior do Trabalho - panoramio.jpg",
-   "File:Tribunal Superior do Trabalho - Flickr - Rafael Delazari.jpg"
-  ]
- },
- {
   "data": "2026-11-10T09:45:08.202218+00:00",
   "manchete": "STF arquiva Inquérito das Fake News",
   "titulo": "STF arquiva o Inquérito das Fake News após mais de 7 anos",
@@ -13136,6 +13092,37 @@
    "File:Forças Armadas realizam transporte de guerra- MANAUS - AM.webm",
    "File:Brinquedo - Avião Força Aérea Brasileira, Acervo do Museu Paulista da USP (1).jpg",
    "File:Brinquedo - Avião Força Aérea Brasileira, Acervo do Museu Paulista da USP (10).jpg"
+  ]
+ },
+ {
+  "data": "2026-11-27T21:39:32.520643+00:00",
+  "manchete": "Trabuco na Fazenda divide centrais sindicais",
+  "titulo": "Trabuco na Fazenda divide centrais sindicais sem CUT e CTB",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://www.gazetadopovo.com.br/republica/centrais-sindicais-esquerda-recusam-apoio-trabuco/",
+   "https://www.cartacapital.com.br/economia/cinco-centrais-sindicais-saudam-o-anuncio-de-trabuco-para-ministro-da-fazenda/",
+   "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/11/sem-cut-centrais-sindicais-saudam-nomeacao-de-trabuco-para-fazenda.shtml"
+  ],
+  "tokens": [
+   "anunci",
+   "apoio",
+   "centra",
+   "cinco",
+   "cut",
+   "esquer",
+   "fazend",
+   "minist",
+   "nomeac",
+   "recusa",
+   "saudam",
+   "sindic",
+   "trabuc"
+  ],
+  "video_id": "Ooldz91Zpcg",
+  "fotos": [
+   "File:Bradesco em Caetité, frente.jpg",
+   "File:Agência do Bradesco em Caetité Bahia.jpg"
   ]
  }
 ]
