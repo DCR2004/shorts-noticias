@@ -1,36 +1,5 @@
 [
  {
-  "data": "2026-11-06T21:39:13.275949+00:00",
-  "manchete": "Fachin homologa delação no caso Master",
-  "titulo": "STF homologa delacao premiada de fundador da Reag no caso Master",
-  "categoria": "JUSTIÇA",
-  "links": [
-   "https://agenciabrasil.ebc.com.br/justica/noticia/2026-11/fachin-homologa-delacao-de-investigado-no-caso-master",
-   "https://www.cartacapital.com.br/justica/fachin-homologa-proposta-de-delacao-do-fundador-da-reag-investigado-no-caso-master/",
-   "https://g1.globo.com/politica/noticia/2026/11/06/fachin-homologa-delacao-de-fundador-da-reag-investigado-no-caso-master.ghtml"
-  ],
-  "tokens": [
-   "caso",
-   "delaca",
-   "fachin",
-   "fundad",
-   "homolo",
-   "invest",
-   "master",
-   "propos",
-   "reag"
-  ],
-  "video_id": "MsF3ISccj9g",
-  "fotos": [
-   "File:Pleno - STF mantém desmembramento em ação penal contra deputado federal baiano.webm",
-   "File:Luiz Edson Fachin-12-05.2015.jpg",
-   "File:Doppaz sai da prisão.webm",
-   "File:Edson Fachin.jpg",
-   "File:Procuradoria Geral da República (East Timor) (building), 2018 (01).jpg",
-   "File:Procuradoria Geral da República.jpg"
-  ]
- },
- {
   "data": "2026-11-06T22:11:15.375859+00:00",
   "manchete": "Meta nega favorecimento a Flávio Bolsonaro no TSE",
   "titulo": "Meta nega favorecimento a Flávio Bolsonaro no TSE e cita alcance de Lula",
@@ -13119,6 +13088,37 @@
    "File:Eduardo Paes e Michel Temer em 2016.jpg",
    "File:Eduardo Paes de cadeira de rodas inaugura a Arena Carioca 1 (foto 2).jpg",
    "File:Living room in apartment of Condomínio do Edifício Zaher, Le Blond, Rio de Janeiro, Brazil.jpg"
+  ]
+ },
+ {
+  "data": "2026-11-27T01:09:53.181201+00:00",
+  "manchete": "Governo brasileiro rebate críticas de Macron",
+  "titulo": "Governo brasileiro repudia fala de Macron sobre carne dopada",
+  "categoria": "ECONOMIA",
+  "links": [
+   "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/governo-e-produtores-repudiam-critica-de-macron-carne-brasileira",
+   "https://www.cnnbrasil.com.br/agro/ministerio-da-agricultura-rebate-macron-por-criticas-a-carne-do-brasil/"
+  ],
+  "tokens": [
+   "agricu",
+   "brasil",
+   "carne",
+   "critic",
+   "govern",
+   "macron",
+   "minist",
+   "produt",
+   "rebate",
+   "repudi"
+  ],
+  "video_id": "8j-n60RrxDQ",
+  "fotos": [
+   "File:Emmanuel Macron, President of France, at the 2026 World Economic Forum Annual Meeting.webm",
+   "File:Emmanuel Macron, 2017.06.22 (08).jpg",
+   "File:Segurança no Agronegócio durante a pandemia do novo coronavírus.webm",
+   "File:Brigitte Macron, Ursula von der Leyen and Emmanuel Macron in Nice, France - June 2025.jpg",
+   "File:Ministério da Agricultura e Pecuária (Brasil).png",
+   "File:Esplanada dos Ministérios (fachada ministérios).jpg"
   ]
  }
 ]
