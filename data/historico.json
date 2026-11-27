@@ -1,39 +1,5 @@
 [
  {
-  "data": "2026-11-08T20:10:06.981044+00:00",
-  "manchete": "PSOL avalia lançar Erika Hilton em São Paulo",
-  "titulo": "PSOL avalia lançar Erika Hilton à Prefeitura de São Paulo em 2028",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://www1.folha.uol.com.br/poder/2026/11/psol-avalia-lancar-erika-hilton-a-prefeitura-de-sp-para-mante-la-no-partido-e-conter-dissidentes-apos-crise.shtml",
-   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/poder/2026/11/psol-avalia-lancar-erika-hilton-a-prefeitura-de-sp-para-mante-la-no-partido-e-conter-dissidentes-apos-crise.shtml",
-   "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/psol-avalia-lancar-erika-hilton-a-prefeitura-de-sp-para-mante-la-no-partido-e-conter-dissidentes-apos-crise.shtml"
-  ],
-  "tokens": [
-   "apos",
-   "avalia",
-   "conter",
-   "crise",
-   "dissid",
-   "erika",
-   "hilton",
-   "lancar",
-   "mante",
-   "partid",
-   "prefei",
-   "psol"
-  ],
-  "video_id": "VieUQgAapiU",
-  "fotos": [
-   "File:Erika Hilton – ser mulher na política, estratégias de luta e 8M.webm",
-   "File:Conversatorio con Erika Hilton 02.jpg",
-   "File:Boulos diz que fim da escala 6X1 é prioridade do Governo.webm",
-   "File:Conversatorio con Erika Hilton 03.jpg",
-   "File:Proposições Remanescentes do Dia Anterior. Dep. Guilherme Boulos (PSOL - SP).jpg",
-   "File:Guilherme Boulos (cropped).jpg"
-  ]
- },
- {
   "data": "2026-11-08T20:41:25.565037+00:00",
   "manchete": "PF investiga ameaças contra Ana Elisa",
   "titulo": "Polícia Federal investiga ameaças de morte e estupro contra deputada Ana Elisa",
@@ -13151,6 +13117,54 @@
   "fotos": [
    "File:Lula, Elmano e Camilo Santana em 2022.jpg",
    "File:21-11-2024 Reunião com Camilo Santana, Ministro da Educação (54155746245).jpg"
+  ]
+ },
+ {
+  "data": "2026-11-27T16:40:54.402647+00:00",
+  "manchete": "Lula defende ajustes, mas descarta corte",
+  "titulo": "Lula defende ajustes fiscais, mas afasta corte de benefícios sociais",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://www.metropoles.com/brasil/lula-descarta-corte-em-beneficios-e-na-educacao-mas-defende-ajustes",
+   "https://www.infomoney.com.br/politica/lula-diz-que-tera-de-fazer-ajustes-porque-governo-nao-pode-gastar-a-toa/",
+   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/lula-fala-em-ajustes-diz-que-nao-pode-gastar-dinheiro-a-toa-mas-nega-corte-de-beneficios.shtml",
+   "https://www.cnnbrasil.com.br/politica/nao-podemos-gastar-dinheiro-a-toa-diz-lula-ao-defender-ajuste-fiscal/",
+   "https://g1.globo.com/politica/noticia/2026/11/27/lula-defende-ajuste-fiscal-e-diz-que-para-pais-crescer-nao-se-pode-gastar-dinheiro-a-toa.ghtml"
+  ],
+  "tokens": [
+   "ajuste",
+   "benefi",
+   "cita",
+   "cortar",
+   "corte",
+   "cresce",
+   "defend",
+   "descar",
+   "dinhei",
+   "fala",
+   "fazer",
+   "fiscal",
+   "gastar",
+   "govern",
+   "lula",
+   "mas",
+   "nao",
+   "nega",
+   "pais",
+   "pode",
+   "podemo",
+   "tera",
+   "toa"
+  ],
+  "video_id": "RySzq2MX6sY",
+  "fotos": [
+   "File:Depoimentos WikiConecta - Elisa Frühauf Garcia 1.webm",
+   "File:UFF by Diego Baravelli 02.jpg",
+   "File:Valquiria Niterói, Tatiana dos Santos, Criola.webm",
+   "File:Prédio em construção na Universidade Federal Fluminense.jpg",
+   "File:Boa Viagem Niterói.JPG",
+   "File:Vista Geral do Museu de Arte Contemporânea de Niterói... MAC.jpg",
+   "File:Renan diz a Lula que ajuste fiscal precisa ser ampliado.webm"
   ]
  }
 ]
