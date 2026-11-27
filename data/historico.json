@@ -1,32 +1,5 @@
 [
  {
-  "data": "2026-11-08T21:39:40.291204+00:00",
-  "manchete": "Lula chama Enem de operação de guerra",
-  "titulo": "Lula chama Enem de operacao de guerra e destaca mais de 5 milhoes de inscritos",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://www.cartacapital.com.br/educacao/aplicacao-do-enem-e-operacao-de-guerra-contra-o-retrocesso-diz-lula/",
-   "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-11/aplicacao-do-enem-e-operacao-de-guerra-contra-o-retrocesso-diz-lula"
-  ],
-  "tokens": [
-   "aplica",
-   "enem",
-   "guerra",
-   "lula",
-   "operac",
-   "retroc"
-  ],
-  "video_id": "SwPKZKpP8rY",
-  "fotos": [
-   "File:Inep divulga edital de prova para revalidar diplomas estrangeiros de medicina.webm",
-   "File:GRAFICO DOCENTES ENSINO SUPERIOR INSTITUICOES PUBLICAS OU PRIVADAS.png",
-   "File:Mostra “Brasílis a Brasília” será exibida no Palácio do Planalto.webm",
-   "File:CE - Comissão de Educação, Cultura e Esporte (25807171223).jpg",
-   "File:Exposição do plano piloto de Brasília - Mapa Plano Piloto.jpg",
-   "File:Exposição do plano piloto de Brasília (1).jpg"
-  ]
- },
- {
   "data": "2026-11-09T17:09:46.485279+00:00",
   "manchete": "Governo prorroga Gás do Povo até 2031",
   "titulo": "Governo prorroga o programa Gás do Povo até 2031",
@@ -13159,6 +13132,34 @@
    "File:Cármen Lúcia assume presidência do STF para mandato de dois anos.webm",
    "File:Cármen Lúcia em 2016 02.jpg",
    "File:STF - Julgamento das algemas, 7-8-2008 - Carmem Lúcia, Eros Grau, Ayres Britto e Ellen Gracie.jpg"
+  ]
+ },
+ {
+  "data": "2026-11-27T18:10:06.768933+00:00",
+  "manchete": "Fachin mantém prisão de ex-presidente do BRB",
+  "titulo": "STF Mantém Prisão de Ex-Presidente do BRB Paulo Henrique Costa",
+  "categoria": "JUSTIÇA",
+  "links": [
+   "https://agenciabrasil.ebc.com.br/justica/noticia/2026-11/fachin-mantem-prisao-de-paulo-henrique-costa-ex-presidente-do-brb",
+   "https://www.cartacapital.com.br/justica/fachin-mantem-prisao-preventiva-de-ex-presidente-do-brb/",
+   "https://www.gazetadopovo.com.br/republica/fachin-mantem-prisao-do-ex-presidente-do-brb/"
+  ],
+  "tokens": [
+   "brb",
+   "costa",
+   "fachin",
+   "henriq",
+   "mantem",
+   "paulo",
+   "presid",
+   "preven",
+   "prisao"
+  ],
+  "video_id": "yCzKcuXj5Z8",
+  "fotos": [
+   "File:Abraham Weintraub solicita investigação da Polícia Federal sobre supostos ataques em páginas do MEC.webm",
+   "File:Biblioteca Nacional de Brasília, Banco do Brasil , Brasilia DF, Brasil (32447405835).jpg",
+   "File:Presidente Juscelino Kubitschek de Oliveira (1956-1961) fora do Palácio da Alvorada - visita a sede do Banco do Brasil, Brasília, DF (2).jpg"
   ]
  }
 ]
