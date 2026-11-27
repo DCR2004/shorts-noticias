@@ -1,38 +1,5 @@
 [
  {
-  "data": "2026-11-08T17:41:19.981557+00:00",
-  "manchete": "Quaest aponta 48% de aprovação para Lula",
-  "titulo": "Pesquisa Quaest mostra aprovação e desaprovação do governo Lula",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://www.cnnbrasil.com.br/politica/quaest-48-aprovam-governo-lula-desaprovacao-e-de-44/",
-   "https://g1.globo.com/politica/noticia/2026/11/08/quaest-48percent-aprovam-e-44percent-desaprovam-governo-lula-na-primeira-pesquisa-apos-a-eleicao.ghtml"
-  ],
-  "tokens": [
-   "44",
-   "48",
-   "apos",
-   "aprova",
-   "desapr",
-   "eleica",
-   "govern",
-   "lula",
-   "pesqui",
-   "primei",
-   "quaest"
-  ],
-  "video_id": "FDaWOFcShcY",
-  "fotos": [
-   "File:Palácio do Planalto tem exposição em homenagem ao Dia internacional da Síndrome de Down.webm",
-   "File:Palácio do Planalto Breast Cancer Awareness Month Pink.jpg",
-   "File:Brasilia 58 Anos.webm",
-   "File:16-11-2014 - Palácio do Planalto (15210645243).jpg",
-   "File:Cachoeira de Brasília 1959-3.jpg",
-   "File:Aeroporto de Brasília 1959-1.jpg",
-   "File:Governo - Discurso no Parlatório.webm"
-  ]
- },
- {
   "data": "2026-11-08T18:11:26.208488+00:00",
   "manchete": "Marinho mira partidos do Centrão na eleição do Senado",
   "titulo": "Rogério Marinho busca apoios no Centrão para a disputa da presidência do Senado",
@@ -13153,6 +13120,35 @@
   "video_id": "_1BbpgXh4cU",
   "fotos": [
    "File:Sistema da Polícia Federal vai agilizar registro e posse de armas.webm"
+  ]
+ },
+ {
+  "data": "2026-11-27T14:14:20.745250+00:00",
+  "manchete": "Lula afasta guinada e diz que não pode repetir Dilma",
+  "titulo": "Lula diz a aliados que nao pode repetir Dilma na economia",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://redir.folha.com.br/redir/online/colunas/monicabergamo/rss091/*https://www1.folha.uol.com.br/colunas/monicabergamo/2026/11/lula-diz-que-nao-pode-repetir-dilma-e-descarta-guinada-em-conversas-com-aliados.shtml",
+   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/colunas/monicabergamo/2026/11/lula-diz-que-nao-pode-repetir-dilma-e-descarta-guinada-em-conversas-com-aliados.shtml"
+  ],
+  "tokens": [
+   "aliado",
+   "conver",
+   "descar",
+   "dilma",
+   "guinad",
+   "lula",
+   "nao",
+   "pode",
+   "repeti"
+  ],
+  "video_id": "oFxEyUfrIds",
+  "fotos": [
+   "File:Presidenta Dilma Rousseff discursa na 21ª Conferência do Clima.webm",
+   "File:Dilma Rousseff and Cristina Kirchner at 48th Mercosur Summit (2).jpg",
+   "File:Dilma Rousseff and Barack Obama.jpg",
+   "File:Ministério da Fazenda Aracaju Sergipe 20220424-6095.jpg",
+   "File:Ministério da Fazenda Aracaju Sergipe 20220424-6106.jpg"
   ]
  }
 ]
