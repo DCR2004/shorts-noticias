@@ -1,57 +1,5 @@
 [
  {
-  "data": "2026-11-10T09:45:08.202218+00:00",
-  "manchete": "STF arquiva Inquérito das Fake News",
-  "titulo": "STF arquiva o Inquérito das Fake News após mais de 7 anos",
-  "categoria": "JUSTIÇA",
-  "links": [
-   "https://www.gazetadopovo.com.br/opiniao/bom-dia/fachin-arquiva-inquerito-fake-news-novo-codigo-civil-prejuizo/",
-   "https://www.cartacapital.com.br/justica/leia-a-integra-da-decisao-de-fachin-que-arquivou-o-inquerito-das-fake-news/",
-   "https://www.cartacapital.com.br/justica/os-recados-de-fachin-a-moraes-na-decisao-que-arquivou-o-inquerito-das-fake-news/",
-   "https://www.cartacapital.com.br/justica/fachin-manda-arquivar-inquerito-das-fake-news-apos-7-anos-de-tramitacao/",
-   "https://revistaoeste.com/politica/fachin-arquiva-inquerito-das-fake-news-aberto-ha-mais-de-7-anos-pelo-stf/",
-   "https://g1.globo.com/politica/noticia/2026/11/09/fachin-determina-arquivamento-do-inquerito-das-fake-news.ghtml",
-   "https://www.gazetadopovo.com.br/republica/fachin-arquiva-pedido-de-dino-para-incluir-deltan-no-inquerito-das-fake-news/"
-  ],
-  "tokens": [
-   "7",
-   "aberto",
-   "apos",
-   "arquiv",
-   "bilion",
-   "civil",
-   "codigo",
-   "decisa",
-   "deltan",
-   "determ",
-   "dino",
-   "fachin",
-   "fake",
-   "inclui",
-   "inquer",
-   "integr",
-   "leia",
-   "manda",
-   "moraes",
-   "news",
-   "novo",
-   "pedido",
-   "prejui",
-   "recado",
-   "stf",
-   "tramit",
-   "trara"
-  ],
-  "video_id": "Db1NAxhadzQ",
-  "fotos": [
-   "File:Michel Temer prestigia cerimônia de posse de Alexandre de Moraes no STF.webm",
-   "File:Ministro Edson Fachin (3x4).jpg",
-   "File:Edson Fachin (3x4).jpg",
-   "File:Alexandre de Moraes em Sessão do TSE (14.02.2023).jpg",
-   "File:Alexandre de Moraes 02.jpg"
-  ]
- },
- {
   "data": "2026-11-10T10:10:09.253976+00:00",
   "manchete": "Câmara debate redução da maioridade penal",
   "titulo": "Câmara debate redução da maioridade penal em audiências públicas",
@@ -13123,6 +13071,33 @@
   "fotos": [
    "File:Bradesco em Caetité, frente.jpg",
    "File:Agência do Bradesco em Caetité Bahia.jpg"
+  ]
+ },
+ {
+  "data": "2026-11-27T22:12:33.014101+00:00",
+  "manchete": "Padilha fica na Saúde",
+  "titulo": "Alexandre Padilha sera mantido na Saude no quarto mandato de Lula",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://noticias.uol.com.br/ultimas-noticias/agencia-estado/2026/11/27/padilha-sera-mantido-a-frente-da-saude-no-quarto-mandato-de-lula.htm",
+   "https://www.infomoney.com.br/politica/padilha-sera-mantido-a-frente-da-saude-no-quarto-mandato-de-lula/"
+  ],
+  "tokens": [
+   "frente",
+   "lula",
+   "mandat",
+   "mantid",
+   "padilh",
+   "quarto",
+   "saude",
+   "sera"
+  ],
+  "video_id": "steMNs1NiSs",
+  "fotos": [
+   "File:Mais de 80 mil usuários já se declararam doadores de órgãos no Facebook.webm",
+   "File:COP30 - Alexandre Padilha 03.jpg",
+   "File:Alexandre Padilha (2013).jpg",
+   "File:Confira a mensagem de final de ano do ministro da Saúde.webm"
   ]
  }
 ]
