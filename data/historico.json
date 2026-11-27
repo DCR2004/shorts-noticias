@@ -1,46 +1,5 @@
 [
  {
-  "data": "2026-11-07T17:10:24.397894+00:00",
-  "manchete": "Gonet pede ao STF suspensão de ações sobre bets",
-  "titulo": "Gonet pede ao STF suspensão nacional de processos sobre proibição das bets",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://www.infomoney.com.br/mercados/gonet-stf-suspensao-acoes-proibicao-bets/",
-   "https://www.gazetadopovo.com.br/republica/gonet-pede-que-stf-suspensa-acoes-sobre-bets-em-todo-o-pais/",
-   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/gonet-pede-ao-stf-que-suspenda-todas-as-acoes-sobre-bets-no-brasil.shtml",
-   "https://g1.globo.com/politica/noticia/2026/11/07/gonet-pede-ao-stf-suspensao-de-acoes-contra-mp-do-fim-das-bets-ate-corte-decidir-sobre-proibicao.ghtml"
-  ],
-  "tokens": [
-   "acoes",
-   "ate",
-   "barrar",
-   "bets",
-   "brasil",
-   "corte",
-   "decidi",
-   "decisa",
-   "defini",
-   "fim",
-   "gonet",
-   "pais",
-   "pede",
-   "proibi",
-   "quer",
-   "stf",
-   "suspen",
-   "todas",
-   "todo"
-  ],
-  "video_id": "dnDGmxb3-IE",
-  "fotos": [
-   "File:Mensagem do presidente do STF, Luiz Fux - 9º Prêmio AMAERJ Patrícia Acioli de Direitos Humanos.webm",
-   "File:Paulo Gonet em sessão do TSE no dia 14.02.2023.jpg",
-   "File:Paulo Gonet, Ricardo Lewandowski e Alexandre de Moraes em Sessão do TSE (14.02.2023).jpg",
-   "File:I Jornada de Direito Processual Civil.jpg",
-   "File:Entrevistas Diversas (15427640734).jpg"
-  ]
- },
- {
   "data": "2026-11-07T17:41:28.578816+00:00",
   "manchete": "Decreto obriga atendimento humano em SACs",
   "titulo": "Decreto obriga atendimento humano em SACs de setores regulados",
@@ -13117,6 +13076,33 @@
    "File:Presidente Jair Bolsonaro faz visita oficial ao Suriname.webm",
    "File:Jair Bolsonaro pela EC 77 - Médico Militar no SUS (cropped).jpg",
    "File:2020-03-24 Pronunciamento do Presidente da República, Jair Bolsonaro em Rede Nacional de Rádio e Televisão - 49695919452 (cropped 2).jpg"
+  ]
+ },
+ {
+  "data": "2026-11-27T02:10:03.775714+00:00",
+  "manchete": "PSD quer três ministérios no governo Lula",
+  "titulo": "PSD quer três ministérios no governo Lula e disputa Cidades com MDB",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://www.poder360.com.br/partidos-politicos/psd-quer-manter-agricultura-retomar-pesca-e-ficar-com-cidades-no-lula-4/"
+  ],
+  "tokens": [
+   "4",
+   "agricu",
+   "cidade",
+   "ficar",
+   "lula",
+   "manter",
+   "pesca",
+   "psd",
+   "quer",
+   "retoma"
+  ],
+  "video_id": "GtYVJXMmJDU",
+  "fotos": [
+   "File:Inércia de Kassab suja calçada em frente à UBS.webm",
+   "File:Gilberto Kassab (2007).jpg",
+   "File:Gilberto Kassab (25000936617).jpg"
   ]
  }
 ]
