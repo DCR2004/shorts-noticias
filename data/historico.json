@@ -1,39 +1,5 @@
 [
  {
-  "data": "2026-11-07T19:39:16.085264+00:00",
-  "manchete": "MPT pede R$ 1 milhão de deputada eleita",
-  "titulo": "MPT pede R$ 1 milhão de deputada eleita no Paraná por assédio eleitoral",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://www.poder360.com.br/poder-justica/mpt-pede-r-1-milhao-de-deputada-eleita-no-parana-por-assedio-eleitoral/",
-   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/deputada-estadual-mais-votada-do-parana-pode-ser-condenada-a-pagar-r-1-milhao-por-assedio-eleitoral.shtml"
-  ],
-  "tokens": [
-   "1",
-   "assedi",
-   "conden",
-   "deputa",
-   "eleita",
-   "eleito",
-   "estadu",
-   "milhao",
-   "mpt",
-   "pagar",
-   "parana",
-   "pede",
-   "pode",
-   "votada"
-  ],
-  "video_id": "pazoOq5u7wk",
-  "fotos": [
-   "File:Hospital do Câncer de Londrina - Vídeo Institucional.webm",
-   "File:10.03.2026 Sessão Plenária Assembleia Legislativa do Paraná (ALEP) 65.jpg",
-   "File:10.03.2026 Sessão Plenária Assembleia Legislativa do Paraná (ALEP) 154.jpg",
-   "File:Correios (Londrina, Brasil).jpg",
-   "File:Rodoviária de Londrina 0.jpg"
-  ]
- },
- {
   "data": "2026-11-07T20:13:22.435128+00:00",
   "manchete": "Milton Leite é indiciado em SP",
   "titulo": "Milton Leite e outros suspeitos são indiciados em investigação sobre PCC",
@@ -13167,6 +13133,29 @@
   "fotos": [
    "File:01.01.2023 - Posse de Flávio Dino, Ministro de Estado da Justiça (52626792053).jpg",
    "File:01.01.2023 - Posse de Flávio Dino, Ministro de Estado da Justiça (52626564889).jpg"
+  ]
+ },
+ {
+  "data": "2026-11-27T11:10:11.855286+00:00",
+  "manchete": "Alcolumbre e Lula tratam de STF",
+  "titulo": "Alcolumbre e Lula devem se reunir para definir ministro do STF e ministérios",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://g1.globo.com/politica/blog/valdo-cruz/post/2026/11/27/alcolumbre-deve-se-reunir-com-lula-para-bater-martelo-sobre-ministro-do-stf.ghtml"
+  ],
+  "tokens": [
+   "alcolu",
+   "bater",
+   "deve",
+   "lula",
+   "martel",
+   "minist",
+   "reunir",
+   "stf"
+  ],
+  "video_id": "wd41rA5PpqA",
+  "fotos": [
+   "File:Foto oficial 2 de Davi Alcolumbre (recorte).jpg"
   ]
  }
 ]
