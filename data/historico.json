@@ -1,33 +1,5 @@
 [
  {
-  "data": "2026-11-08T19:39:48.232449+00:00",
-  "manchete": "Presidente do PT propõe voto em lista",
-  "titulo": "Presidente do PT propoem voto em lista partidaria e cotas para LGBT",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://www.gazetadopovo.com.br/republica/presidente-do-pt-propoe-voto-em-lista-partidaria-com-cotas-para-candidatos-lgbt/"
-  ],
-  "tokens": [
-   "candid",
-   "cotas",
-   "lgbt",
-   "lista",
-   "partid",
-   "presid",
-   "propoe",
-   "voto"
-  ],
-  "video_id": "9Haiiz2KzQY",
-  "fotos": [
-   "File:Pazuello vai ao Congresso para falar sobre o combate à pandemia.webm",
-   "File:Processo de Eleição Direta (PED) do Partidos dos Trabalhadores (PT) em Botucatu.07.07.25.2.jpg",
-   "File:Deputados pedem ao STF para suspender tramitação da Reforma da Previdência.webm",
-   "File:Processo de Eleição Direta (PED) do Partidos dos Trabalhadores (PT) em Botucatu.07.07.25.3.jpg",
-   "File:Congresso do Brasil.jpg",
-   "File:Congresso Nacional (29532228922).jpg"
-  ]
- },
- {
   "data": "2026-11-08T20:10:06.981044+00:00",
   "manchete": "PSOL avalia lançar Erika Hilton em São Paulo",
   "titulo": "PSOL avalia lançar Erika Hilton à Prefeitura de São Paulo em 2028",
@@ -13150,6 +13122,35 @@
    "File:Geraldo Alckmin 2016.jpg",
    "File:Ministério da Justiça, Dili, 2018 (03).jpg",
    "File:Ministério da Justiça, Dili, 2018 (01).jpg"
+  ]
+ },
+ {
+  "data": "2026-11-27T16:09:35.954105+00:00",
+  "manchete": "Camilo Santana é escolhido para a Casa Civil",
+  "titulo": "Lula escolhe Camilo Santana para comandar a Casa Civil",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://www1.folha.uol.com.br/poder/2026/11/lula-define-camilo-santana-para-comandar-casa-civil-dizem-aliados.shtml",
+   "https://g1.globo.com/economia/blog/ana-flor/post/2026/11/27/lula-convida-camilo-santana-para-ser-ministro-da-casa-civil.ghtml",
+   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/poder/2026/11/lula-define-camilo-santana-para-comandar-casa-civil-dizem-aliados.shtml",
+   "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/lula-define-camilo-santana-para-comandar-casa-civil-dizem-aliados.shtml"
+  ],
+  "tokens": [
+   "aliado",
+   "camilo",
+   "casa",
+   "civil",
+   "comand",
+   "convid",
+   "define",
+   "lula",
+   "minist",
+   "santan"
+  ],
+  "video_id": "s2eZTQp7MLs",
+  "fotos": [
+   "File:Lula, Elmano e Camilo Santana em 2022.jpg",
+   "File:21-11-2024 Reunião com Camilo Santana, Ministro da Educação (54155746245).jpg"
   ]
  }
 ]
