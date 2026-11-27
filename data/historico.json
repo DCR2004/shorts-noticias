@@ -1,38 +1,5 @@
 [
  {
-  "data": "2026-11-07T21:40:10.322671+00:00",
-  "manchete": "STJ decreta prisão de desembargadora da Bahia",
-  "titulo": "STJ decreta prisão de desembargadora da Bahia e do filho",
-  "categoria": "JUSTIÇA",
-  "links": [
-   "https://www1.folha.uol.com.br/poder/2026/11/ministro-do-stj-decreta-prisao-de-desembargadora-condenada-apos-procuradoria-relatar-saida-do-pais.shtml",
-   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/poder/2026/11/ministro-do-stj-decreta-prisao-de-desembargadora-condenada-apos-procuradoria-relatar-saida-do-pais.shtml",
-   "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/ministro-do-stj-decreta-prisao-de-desembargadora-condenada-apos-procuradoria-relatar-saida-do-pais.shtml"
-  ],
-  "tokens": [
-   "apos",
-   "conden",
-   "decret",
-   "desemb",
-   "minist",
-   "pais",
-   "prisao",
-   "procur",
-   "relata",
-   "saida",
-   "stj"
-  ],
-  "video_id": "gA1pnd1I73E",
-  "fotos": [
-   "File:Suspensa ordem para que TV Record revele editores do Cidade Alerta em inquérito sobre calúnia.webm",
-   "File:Superior Tribunal de Justiça (51178085712).jpg",
-   "File:Presidente do STJ mantém prisão preventiva de magistrados da Bahia 11.1.21.webm",
-   "File:Brasilia DF Brasil - STJ - Superior Tribunal de Justiça - panoramio.jpg",
-   "File:Alexius Salvador Tribunal de Justiça.jpg",
-   "File:Tribunal de Justiça da Bahia Bahia State Supreme Court (18426082468).jpg"
-  ]
- },
- {
   "data": "2026-11-08T17:09:43.262693+00:00",
   "manchete": "PT pede R$ 7 milhões em vaquinha para Lula",
   "titulo": "PT pede vaquinha de R$ 7 milhões para quitar dívidas da campanha de Lula",
@@ -13148,6 +13115,47 @@
    "File:Ronaldo Caiado e Rodrigo Pacheco em julho de 2024.jpg",
    "File:24.09.2024 - Encontro com o Secretário-Geral das Nações Unidas, António Guterres (54018352041) (Rodrigo Pacheco).jpg",
    "File:2025-11-06, Senado Federal do Brasil - 202.jpg"
+  ]
+ },
+ {
+  "data": "2026-11-27T13:11:09.614086+00:00",
+  "manchete": "Desemprego cai para 5,1% até outubro, diz IBGE",
+  "titulo": "Desemprego no Brasil cai para 5,1% no trimestre até outubro, aponta IBGE",
+  "categoria": "ECONOMIA",
+  "links": [
+   "https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2026-11/taxa-de-desemprego-fica-em-51-no-trimestre-encerrado-em-outubro",
+   "https://www.infomoney.com.br/economia/brasil-tem-desemprego-de-51-no-tri-ate-outubro-em-linha-com-o-esperado/",
+   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/desemprego-fica-em-51-ate-outubro-segundo-ibge.shtml",
+   "https://www.cnnbrasil.com.br/economia/money/macroeconomia/taxa-desemprego-pnad-hoje-27-novembro-2026/",
+   "https://www.poder360.com.br/poder-economia/desemprego-cai-para-51-no-trimestre-encerrado-em-outubro-diz-ibge/"
+  ],
+  "tokens": [
+   "1",
+   "5",
+   "ate",
+   "brasil",
+   "cai",
+   "desemp",
+   "encerr",
+   "espera",
+   "fica",
+   "ibge",
+   "iguala",
+   "linha",
+   "menor",
+   "nivel",
+   "numero",
+   "outubr",
+   "repete",
+   "serie",
+   "taxa",
+   "tri",
+   "trimes"
+  ],
+  "video_id": "-4KeoMvkCjc",
+  "fotos": [
+   "File:Balanço do IBGE.webm",
+   "File:População residente do munícipio de Condeúba - BA de acordo com os censos do IBGE- Brasil.png"
   ]
  }
 ]
