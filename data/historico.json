@@ -1,36 +1,5 @@
 [
  {
-  "data": "2026-11-08T18:39:52.772188+00:00",
-  "manchete": "Justiça manda Zé Trovão apagar vídeo",
-  "titulo": "Justiça manda deputado apagar vídeo que incentiva demissão de eleitores",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://tnonline.uol.com.br/noticias/politica/justica-do-trabalho-manda-deputado-apagar-video-que-incentiva-demissao-de-eleitores-do-pt-1172089",
-   "https://revistaoeste.com/politica/justica-manda-deputado-apagar-video-em-que-defende-demitir-eleitores-do-pt/"
-  ],
-  "tokens": [
-   "apagar",
-   "defend",
-   "demiss",
-   "demiti",
-   "deputa",
-   "eleito",
-   "incent",
-   "justic",
-   "manda",
-   "trabal"
-  ],
-  "video_id": "8Uce4tf4Hag",
-  "fotos": [
-   "File:Vozes ancestrais- justiça e povos originários.webm",
-   "File:Zé Trovão.jpg",
-   "File:Brasília foi inaugurada em 21 de abril de 1960.webm",
-   "File:Zé Trovão (cropped 3x4).jpg",
-   "File:Justiça do Trabalho em Iguatu.jpg",
-   "File:Justiça do Trabalho de Pacajus.jpg"
-  ]
- },
- {
   "data": "2026-11-08T19:11:39.074087+00:00",
   "manchete": "Tema da redacao do Enem 2026 e o SUS",
   "titulo": "Tema da redacao do Enem 2026 aborda a valorizacao do SUS",
@@ -13163,6 +13132,38 @@
    "File:Tesouro Nacional apresenta o resultado de dezembro de 2015 (24577030101).jpg",
    "File:Ministério da Fazenda Aracaju Sergipe 20220424-6108.jpg",
    "File:Ministerio da fazenda-7534.jpg"
+  ]
+ },
+ {
+  "data": "2026-11-27T15:11:34.936964+00:00",
+  "manchete": "Haddad deseja sorte a Trabuco na Fazenda",
+  "titulo": "Fernando Haddad parabeniza Luiz Carlos Trabuco na Fazenda",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/haddad-deseja-sorte-e-serenidade-a-trabuco-e-diz-que-fazenda-deve-mirar-programa-eleito-nas-ruas.shtml",
+   "https://www.cnnbrasil.com.br/politica/haddad-parabeniza-trabuco-fazenda-deve-mirar-programa-eleito-pelas-ruas/"
+  ],
+  "tokens": [
+   "deseja",
+   "deve",
+   "eleito",
+   "fazend",
+   "haddad",
+   "mirar",
+   "parabe",
+   "progra",
+   "ruas",
+   "sereni",
+   "sorte",
+   "trabuc"
+  ],
+  "video_id": "RXksJZLqp6U",
+  "fotos": [
+   "File:Haddad (PT) ignora calçada molhada 24h-dia.webm",
+   "File:01.01.2023 - Posse de Fernando Haddad, Ministro de Estado da Fazenda (52626557684).jpg",
+   "File:01.01.2023 - Posse de Fernando Haddad, Ministro de Estado da Fazenda (52626557519).jpg",
+   "File:Ministério da Fazenda Aracaju Sergipe 20220411-8742.jpg",
+   "File:Ministério da Fazenda Aracaju Sergipe 20220424-6101.jpg"
   ]
  }
 ]
