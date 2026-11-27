@@ -1,36 +1,5 @@
 [
  {
-  "data": "2026-11-07T21:09:08.026840+00:00",
-  "manchete": "AGU pede ao STF rumos sobre R$ 533 milhões",
-  "titulo": "AGU leva ao STF pedido de R$ 533 milhões para pagamento de penduricalhos",
-  "categoria": "JUSTIÇA",
-  "links": [
-   "https://www.poder360.com.br/poder-justica/agu-leva-ao-stf-pedido-de-r-533-milhoes-extras-para-judiciario-e-mp/",
-   "https://www.gazetadopovo.com.br/republica/agu-leva-ao-stf-impasse-sobre-533-milhoes-para-penduricalhos/"
-  ],
-  "tokens": [
-   "533",
-   "agu",
-   "consul",
-   "extras",
-   "judici",
-   "leva",
-   "milhoe",
-   "pedido",
-   "pendur",
-   "stf"
-  ],
-  "video_id": "ZymvGwaZkZg",
-  "fotos": [
-   "File:Ministro da Advocacia-Geral da União, José Levi.webm",
-   "File:Líderes de povos e organizações indígenas vão à sede da Advocacia Geral da União.jpg",
-   "File:Procuradoria-Geral tem papel fundamental para garantir estabilidade da democracia.webm",
-   "File:Procuradoria Geral da Republica - panoramio.jpg",
-   "File:Brasilia ProcuradoriaGeral.jpg",
-   "File:CCS - Conselho de Comunicação Social (25290520330).jpg"
-  ]
- },
- {
   "data": "2026-11-07T21:40:10.322671+00:00",
   "manchete": "STJ decreta prisão de desembargadora da Bahia",
   "titulo": "STJ decreta prisão de desembargadora da Bahia e do filho",
@@ -13151,6 +13120,34 @@
    "File:Nikole Ferreira.jpg",
    "File:Ministério da Fazenda Aracaju Sergipe 20220424-5995.jpg",
    "File:Ministério da Fazenda Aracaju Sergipe 20220424-6000.jpg"
+  ]
+ },
+ {
+  "data": "2026-11-27T12:40:02.603359+00:00",
+  "manchete": "Lula e Alcolumbre discutem vaga no STF",
+  "titulo": "Lula e Alcolumbre se reunem para definir ministro do STF e ministérios",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://www.redetv.uol.com.br/jornalismo/geral/davi-alcolumbre-e-lula-se-reunem-para-definir-novo-ministro-do-supremo-trib"
+  ],
+  "tokens": [
+   "alcolu",
+   "davi",
+   "defini",
+   "federa",
+   "lula",
+   "minist",
+   "novo",
+   "reunem",
+   "suprem",
+   "tribun"
+  ],
+  "video_id": "rC1SdeZcqvM",
+  "fotos": [
+   "File:Pacheco não vai ao 7 de setembro e participa de solenidade no Congresso.webm",
+   "File:Ronaldo Caiado e Rodrigo Pacheco em julho de 2024.jpg",
+   "File:24.09.2024 - Encontro com o Secretário-Geral das Nações Unidas, António Guterres (54018352041) (Rodrigo Pacheco).jpg",
+   "File:2025-11-06, Senado Federal do Brasil - 202.jpg"
   ]
  }
 ]
