@@ -1,34 +1,5 @@
 [
  {
-  "data": "2026-11-08T18:11:26.208488+00:00",
-  "manchete": "Marinho mira partidos do Centrão na eleição do Senado",
-  "titulo": "Rogério Marinho busca apoios no Centrão para a disputa da presidência do Senado",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://www1.folha.uol.com.br/colunas/painel/2026/11/marinho-mira-partidos-do-centrao-rachados-em-disputa-com-alcolumbre.shtml",
-   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/11/marinho-mira-partidos-do-centrao-rachados-em-disputa-com-alcolumbre.shtml",
-   "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/11/marinho-mira-partidos-do-centrao-rachados-em-disputa-com-alcolumbre.shtml"
-  ],
-  "tokens": [
-   "alcolu",
-   "centra",
-   "disput",
-   "marinh",
-   "mira",
-   "partid",
-   "rachad"
-  ],
-  "video_id": "JuyRTs2FwuQ",
-  "fotos": [
-   "File:Andre Esteves Painel com André Jakurski e Rogério Xavier.webm",
-   "File:2025-11-06, Senado Federal do Brasil - 009.jpg",
-   "File:Oito fatos no Senado em 2016.webm",
-   "File:2025-11-06, Senado Federal do Brasil - 244.jpg",
-   "File:National Congress of Brazil, Brasilia.jpg",
-   "File:National Congress of Brazil.jpg"
-  ]
- },
- {
   "data": "2026-11-08T18:39:52.772188+00:00",
   "manchete": "Justiça manda Zé Trovão apagar vídeo",
   "titulo": "Justiça manda deputado apagar vídeo que incentiva demissão de eleitores",
@@ -13149,6 +13120,49 @@
    "File:Dilma Rousseff and Barack Obama.jpg",
    "File:Ministério da Fazenda Aracaju Sergipe 20220424-6095.jpg",
    "File:Ministério da Fazenda Aracaju Sergipe 20220424-6106.jpg"
+  ]
+ },
+ {
+  "data": "2026-11-27T14:39:59.420875+00:00",
+  "manchete": "Governo tem superavit de R$ 52,2 bi em outubro",
+  "titulo": "Governo registra superavit de R$ 52 bi em outubro",
+  "categoria": "ECONOMIA",
+  "links": [
+   "https://www1.folha.uol.com.br/mercado/2026/11/governo-tem-superavit-de-r-522-bilhoes-em-outubro-segundo-melhor-resultado-do-mes-na-serie-historica.shtml",
+   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/governo-tem-superavit-de-r-522-bilhoes-em-outubro-segundo-melhor-resultado-do-mes-na-serie-historica.shtml",
+   "https://www.cnnbrasil.com.br/economia/money/macroeconomia/contas-do-governo-registram-superavit-de-r-523-bilhoes-em-outubro/",
+   "https://www.poder360.com.br/poder-economia/governo-central-registra-superavit-primario-de-r-523-bilhoes-em-outubro/",
+   "https://g1.globo.com/economia/noticia/2026/11/27/contas-do-governo-tem-superavit-de-r-52-bilhoes-em-outubro-melhor-saldo-para-o-mes-em-dez-anos.ghtml"
+  ],
+  "tokens": [
+   "2",
+   "3",
+   "52",
+   "bilhoe",
+   "centra",
+   "contas",
+   "dez",
+   "govern",
+   "histor",
+   "melhor",
+   "mes",
+   "outubr",
+   "primar",
+   "regist",
+   "result",
+   "saldo",
+   "segund",
+   "serie",
+   "supera"
+  ],
+  "video_id": "BsMexnlu8-o",
+  "fotos": [
+   "File:Semana Nacional de Museus - Visita ao Museu de Pesca.webm",
+   "File:Tesouro Nacional apresenta o resultado de dezembro de 2015 (24375026310).jpg",
+   "File:Presidente Temer assina medida provisória que amplia poder de punição do Banco Central.webm",
+   "File:Tesouro Nacional apresenta o resultado de dezembro de 2015 (24577030101).jpg",
+   "File:Ministério da Fazenda Aracaju Sergipe 20220424-6108.jpg",
+   "File:Ministerio da fazenda-7534.jpg"
   ]
  }
 ]
