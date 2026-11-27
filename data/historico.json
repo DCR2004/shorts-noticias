@@ -1,40 +1,5 @@
 [
  {
-  "data": "2026-11-10T01:50:03.614630+00:00",
-  "manchete": "Governo pede queda de 348 perfis de bets",
-  "titulo": "Governo pede derrubada de 348 perfis de influenciadores de bets",
-  "categoria": "SEGURANÇA",
-  "links": [
-   "https://www.cnnbrasil.com.br/nacional/brasil/governo-pede-derrubada-de-348-perfis-de-influenciadores-de-bets/",
-   "https://g1.globo.com/politica/noticia/2026/11/09/ministerio-pede-derrubada-de-348-perfis-de-influenciadores-que-divulgam-bets-ilegais.ghtml",
-   "https://www.metropoles.com/brasil/governo-lula-pede-retirada-do-ar-de-348-perfis-que-divulgam-bets-ilegais",
-   "https://www.cartacapital.com.br/justica/governo-lula-pede-a-derrubada-de-348-perfis-de-influenciadores-que-divulgam-bets-ilegais/"
-  ],
-  "tokens": [
-   "348",
-   "bets",
-   "derrub",
-   "divulg",
-   "govern",
-   "ilegai",
-   "influe",
-   "lula",
-   "minist",
-   "pede",
-   "perfis",
-   "retira"
-  ],
-  "video_id": "4mtkNboR_wM",
-  "fotos": [
-   "File:Ministério da Justiça lança plataforma com dados oficiais de segurança pública.webm",
-   "File:Ministério da Justiça, Guiné-Bissau.jpg",
-   "File:Alan Peter Cayetano --- Facebook Live 2026-05-13.webm",
-   "File:Sede do Ministério da Justiça, Bissau, Guiné-Bissau (2).jpg",
-   "File:Instagram screenshot.png",
-   "File:Instagram versione (santa fiora, peschiera).jpg"
-  ]
- },
- {
   "data": "2026-11-10T02:10:59.740762+00:00",
   "manchete": "Entidades cobram fim de supersalários",
   "titulo": "Entidades cobram fim de supersalários no funcionalismo público",
@@ -13130,6 +13095,43 @@
    "File:Mauro Cid, 2022.jpg",
    "File:Pallière Niterói 1819 RJ37.jpg",
    "File:Parque de Niterói 02.jpg"
+  ]
+ },
+ {
+  "data": "2026-11-27T20:09:54.006158+00:00",
+  "manchete": "Disputa acirrada pelo comando do Senado",
+  "titulo": "Disputa pela presidência do Senado acende alerta no PL",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://revistaoeste.com/politica/tereza-cristina-promete-independencia-na-presidencia-do-senado/",
+   "https://www.gazetadopovo.com.br/republica/encontro-de-tereza-cristina-com-alcolumbre-acende-alerta-no-pl-sobre-disputa-no-senado/",
+   "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/11/coordenador-da-campanha-de-marinho-sugere-revezamento-com-tereza-na-presidencia-do-senado.shtml"
+  ],
+  "tokens": [
+   "acende",
+   "alcolu",
+   "alerta",
+   "campan",
+   "coorde",
+   "cristi",
+   "disput",
+   "encont",
+   "indepe",
+   "marinh",
+   "presid",
+   "promet",
+   "reveza",
+   "senado",
+   "sugere",
+   "tereza"
+  ],
+  "video_id": "_6PvBCI1wMw",
+  "fotos": [
+   "File:Entrevista com o novo Ministro do Desenvolvimento Regional, Rogério Marinho.webm",
+   "File:Tereza Cristina Corrêa da Costa Dias.jpg",
+   "File:Reunião com a Ministra Tereza Cristina (50955828058).jpg",
+   "File:Senador Rogerio Marinho (PL-RN) (52794804177).jpg",
+   "File:2025-11-06, Senado Federal do Brasil - 038.jpg"
   ]
  }
 ]
