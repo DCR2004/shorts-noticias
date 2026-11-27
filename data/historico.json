@@ -1,37 +1,5 @@
 [
  {
-  "data": "2026-11-06T21:11:20.976158+00:00",
-  "manchete": "Governo lança transição energética",
-  "titulo": "Governo federal lança Plano Nacional de Transição Energética",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/ambiente/2026/11/governo-lula-lanca-plano-de-transicao-energetica-e-diretrizes-para-reduzir-combustiveis-fosseis.shtml",
-   "https://www.cnnbrasil.com.br/infra/governo-aprova-plano-de-transicao-energetica/"
-  ],
-  "tokens": [
-   "aprova",
-   "combus",
-   "diretr",
-   "energe",
-   "fossei",
-   "govern",
-   "lanca",
-   "lula",
-   "plano",
-   "reduzi",
-   "transi"
-  ],
-  "video_id": "-EMbRIHDvUI",
-  "fotos": [
-   "File:Conselho de política energética aprova contratação da Petrobras para exploração de óleo excedente.webm",
-   "File:06.11.2026 - Reunião Extraordinária do Conselho Nacional de Política Energética (CNPE) - 55636398803.jpg",
-   "File:Amapá tem novo apagão.webm",
-   "File:06.11.2026 - Reunião Extraordinária do Conselho Nacional de Política Energética (CNPE) - 55636836030.jpg",
-   "File:Fotos produzidas pelo Senado (37172081605).jpg",
-   "File:Imagens de Brasília (52653040918).jpg"
-  ]
- },
- {
   "data": "2026-11-06T21:39:13.275949+00:00",
   "manchete": "Fachin homologa delação no caso Master",
   "titulo": "STF homologa delacao premiada de fundador da Reag no caso Master",
@@ -13123,6 +13091,34 @@
    "File:2020 Solenidade de Posse do Senhor Kassio Nunes Marques, no cargo de Ministro do Supremo Tribunal Federal - 50570857236.jpg",
    "File:Viatura da Guarda Municipal de Marabá.jpg",
    "File:Guarda Municipal de limeira.png"
+  ]
+ },
+ {
+  "data": "2026-11-27T00:40:04.414660+00:00",
+  "manchete": "STF julgará recurso sobre eleição no Rio",
+  "titulo": "STF julga em dezembro recurso sobre impasse eleitoral no Rio de Janeiro",
+  "categoria": "JUSTIÇA",
+  "links": [
+   "https://www.cnnbrasil.com.br/politica/stf-decidira-sobre-impasse-eleitoral-no-rio-antes-da-diplomacao-de-ruas/"
+  ],
+  "tokens": [
+   "antes",
+   "decidi",
+   "diplom",
+   "eleito",
+   "impass",
+   "rio",
+   "ruas",
+   "stf"
+  ],
+  "video_id": "2es26LTHMuw",
+  "fotos": [
+   "File:Praia Grumari Plage de Grumari Rio de Janeiro Brésil Mavic 2 Pro 4k.webm",
+   "File:Posse do Doutor Cristiano Zanin Martins no STF (53091775296).jpg",
+   "File:President Obama Speaks to the People of Brazil.webm",
+   "File:Eduardo Paes e Michel Temer em 2016.jpg",
+   "File:Eduardo Paes de cadeira de rodas inaugura a Arena Carioca 1 (foto 2).jpg",
+   "File:Living room in apartment of Condomínio do Edifício Zaher, Le Blond, Rio de Janeiro, Brazil.jpg"
   ]
  }
 ]
