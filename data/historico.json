@@ -1,37 +1,5 @@
 [
  {
-  "data": "2026-11-10T02:41:40.656751+00:00",
-  "manchete": "Governo prorroga desoneração de combustíveis",
-  "titulo": "Governo prorroga desoneração da gasolina e do etanol por mais 30 dias",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://www.cnnbrasil.com.br/economia/money/macroeconomia/governo-prorroga-desoneracao-de-gasolina-e-etanol-por-30-dias/",
-   "https://g1.globo.com/economia/noticia/2026/11/09/governo-prorroga-deseneracao-da-gasolina-e-do-etanol-por-mais-30-dias.ghtml",
-   "https://www.metropoles.com/brasil/governo-prorroga-desoneracao-da-gasolina-e-do-etanol-ate-dezembro",
-   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/governo-lula-vai-prorrogar-desoneracao-da-gasolina-e-do-etanol-por-mais-30-dias.shtml"
-  ],
-  "tokens": [
-   "30",
-   "ate",
-   "desone",
-   "dezemb",
-   "etanol",
-   "gasoli",
-   "govern",
-   "lula",
-   "prorro"
-  ],
-  "video_id": "f7kkiV4hS44",
-  "fotos": [
-   "File:Filho do governador de São Paulo é sepultado em Pindamonhangaba.webm",
-   "File:Geraldo Alckmin (8533452842).jpg",
-   "File:Chefes de estado e de governo são recebidos no Palácio do Planalto durante Fórum Mundial da Água.webm",
-   "File:Geraldo Alckmin novos Trens.jpg",
-   "File:Construção de Brasília 1959-18.jpg",
-   "File:Brasília Souvenir 01.jpg"
-  ]
- },
- {
   "data": "2026-11-10T09:10:27.362622+00:00",
   "manchete": "STF debate escala 6x1 e governo adia decreto",
   "titulo": "STF debate fim da escala 6x1 e governo adia decreto",
@@ -13129,6 +13097,45 @@
    "File:Ministério da Justiça coordena operação integrada entre as policias do estados no combate ao crime.webm",
    "File:DSCI2814 Ministerio da Justica.jpg",
    "File:Ministerio da Justiça, Bissau.jpg"
+  ]
+ },
+ {
+  "data": "2026-11-27T21:11:24.652274+00:00",
+  "manchete": "Moraes usou aviões da FAB 241 vezes",
+  "titulo": "Alexandre de Moraes usou jatos da FAB 241 vezes desde 2023",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://www.gazetadopovo.com.br/gazeta-agora/gazeta-agora-levantamento-revela-241-viagens-de-moraes-em-avioes-da-fab/",
+   "https://www.gazetadopovo.com.br/republica/moraes-usou-avioes-da-fab-241-vezes-em-menos-de-quatro-anos/",
+   "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/alexandre-de-moraes-usou-jatos-da-fab-241-vezes-desde-2023-a-maioria-entre-brasilia-e-sao-paulo.shtml"
+  ],
+  "tokens": [
+   "2023",
+   "241",
+   "agora",
+   "alexan",
+   "avioes",
+   "brasil",
+   "desde",
+   "fab",
+   "gazeta",
+   "jatos",
+   "levant",
+   "maiori",
+   "moraes",
+   "paulo",
+   "quatro",
+   "revela",
+   "sao",
+   "usou",
+   "vezes",
+   "viagen"
+  ],
+  "video_id": "Vs8uEMWnQeQ",
+  "fotos": [
+   "File:Forças Armadas realizam transporte de guerra- MANAUS - AM.webm",
+   "File:Brinquedo - Avião Força Aérea Brasileira, Acervo do Museu Paulista da USP (1).jpg",
+   "File:Brinquedo - Avião Força Aérea Brasileira, Acervo do Museu Paulista da USP (10).jpg"
   ]
  }
 ]
