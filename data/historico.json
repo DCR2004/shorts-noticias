@@ -1,36 +1,5 @@
 [
  {
-  "data": "2026-11-07T18:09:08.923881+00:00",
-  "manchete": "PT tenta barrar o PL em bloco de Hugo Motta",
-  "titulo": "PT tenta barrar entrada do PL em bloco de apoio a Hugo Motta na Câmara",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://www.poder360.com.br/poder-congresso/pt-quer-excluir-pl-do-bloco-de-apoio-a-reeleicao-de-motta-na-camara/",
-   "https://revistaoeste.com/politica/acordos-reeleicao-hugo-motta/"
-  ],
-  "tokens": [
-   "acordo",
-   "apoio",
-   "bloco",
-   "camara",
-   "exclui",
-   "hugo",
-   "motta",
-   "quer",
-   "reelei",
-   "susten"
-  ],
-  "video_id": "_heUTTEw4yE",
-  "fotos": [
-   "File:ONLINE COMERCIAL PCDOB D JANDIRA 30.webm",
-   "File:26.10.2026 - Davi Alcolumbre e Hugo Motta - 55614489969.jpg",
-   "File:Presidente Michel Temer se reuniu com líderes da base aliada da Câmara dos Deputados.webm",
-   "File:26.08.2026 - Quebra-Queixo com Davi Alcolumbre e Hugo Motta - 55490146224.jpg",
-   "File:Pedro Uczai 03.jpg",
-   "File:Pedro Uczai 02.jpg"
-  ]
- },
- {
   "data": "2026-11-07T18:41:57.282422+00:00",
   "manchete": "Derrite critica disputa por gabinetes no Senado",
   "titulo": "Guilherme Derrite critica disputa por gabinetes e apia Rogério Marinho no Senado",
@@ -13167,6 +13136,36 @@
    "File:Lançamento do livro 100 vozes pela Democracia (Geraldo Alckmin).jpg",
    "File:01.01.2023 - Posse de Geraldo Alckmin, Ministro de Estado do Desenvolvimento, Indústria e Comércio (52626328956).jpg",
    "File:Entrevistas Diversas (52068540141) (cropped).jpg"
+  ]
+ },
+ {
+  "data": "2026-11-27T09:12:56.549433+00:00",
+  "manchete": "Centrão cobra cargos e Lula estuda ministério",
+  "titulo": "Governo Lula negocia com o Centrão e avalia criar ministério digital",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://www.metropoles.com/brasil/centrao-quer-mais-poder-no-governo-lula-e-disputa-ministerios-estrategicos",
+   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/lula-avalia-criar-ministerio-com-foco-em-governo-digital-para-centralizar-politicas-de-tecnologia.shtml"
+  ],
+  "tokens": [
+   "avalia",
+   "centra",
+   "criar",
+   "digita",
+   "disput",
+   "estrat",
+   "foco",
+   "govern",
+   "lula",
+   "minist",
+   "poder",
+   "politi",
+   "quer",
+   "tecnol"
+  ],
+  "video_id": "pW4by87ie34",
+  "fotos": [
+   "File:Transmissão de cargo no Ministério da Gestão e Inovação em Serviços Públicos.webm"
   ]
  }
 ]
