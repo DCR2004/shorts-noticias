@@ -1,34 +1,5 @@
 [
  {
-  "data": "2026-11-07T18:41:57.282422+00:00",
-  "manchete": "Derrite critica disputa por gabinetes no Senado",
-  "titulo": "Guilherme Derrite critica disputa por gabinetes e apia Rogério Marinho no Senado",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://www1.folha.uol.com.br/colunas/painel/2026/11/derrite-critica-disputa-por-gabinetes-no-senado-e-diz-que-ela-so-ajuda-alcolumbre.shtml",
-   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/11/derrite-critica-disputa-por-gabinetes-no-senado-e-diz-que-ela-so-ajuda-alcolumbre.shtml",
-   "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/11/derrite-critica-disputa-por-gabinetes-no-senado-e-diz-que-ela-so-ajuda-alcolumbre.shtml"
-  ],
-  "tokens": [
-   "ajuda",
-   "alcolu",
-   "critic",
-   "derrit",
-   "disput",
-   "gabine",
-   "senado"
-  ],
-  "video_id": "ec-0DOIQdxs",
-  "fotos": [
-   "File:Entrevista com o novo Ministro do Desenvolvimento Regional, Rogério Marinho.webm",
-   "File:Capitão Derrite.jpg",
-   "File:Esquecida pela história, Guerra do Contestado terminou há 100 anos - Senado Federal.webm",
-   "File:Retratos Oficiais - Secretários de Estado de São Paulo em 2023 02.jpg",
-   "File:Foto oficial de Davi Alcolumbre (v. Flickr).jpg",
-   "File:Foto oficial 2 de Davi Alcolumbre (recorte).jpg"
-  ]
- },
- {
   "data": "2026-11-07T19:11:07.925680+00:00",
   "manchete": "Senadores planejam limitar mandatos no STF",
   "titulo": "Senado articula projeto para limitar poderes e mandatos no STF",
@@ -13166,6 +13137,42 @@
   "video_id": "pW4by87ie34",
   "fotos": [
    "File:Transmissão de cargo no Ministério da Gestão e Inovação em Serviços Públicos.webm"
+  ]
+ },
+ {
+  "data": "2026-11-27T09:39:53.875966+00:00",
+  "manchete": "Congresso argentino aprova reforma do Banco Central",
+  "titulo": "Congresso da Argentina aprova reforma que proíbe Banco Central de emitir dinheiro",
+  "categoria": "MUNDO",
+  "links": [
+   "https://www.gazetadopovo.com.br/mundo/argentina-aprova-reforma-de-milei-que-proibe-banco-central-de-emitir-dinheiro-para-financiar-o-governo/",
+   "https://www.cartacapital.com.br/mundo/congresso-argentino-aprova-reforma-que-impede-banco-central-de-financiar-setor-publico/"
+  ],
+  "tokens": [
+   "aprova",
+   "argent",
+   "banco",
+   "centra",
+   "congre",
+   "dinhei",
+   "emitir",
+   "financ",
+   "govern",
+   "impede",
+   "milei",
+   "proibe",
+   "public",
+   "reform",
+   "setor"
+  ],
+  "video_id": "3Q7-JXfUZpw",
+  "fotos": [
+   "File:2024-09-18 FGR Tarek William Saab anunció orden de aprehensión contra presidente Javier Milei por robo de avión.webm",
+   "File:Javier Milei VIVA 24 (6).jpg",
+   "File:Buenos Aires - Argentina.webm",
+   "File:Nayib Bukele with Javier Milei, September 2024.jpg",
+   "File:Banco Central argentina.JPG",
+   "File:Banco Central de la Nación Argentina 01.JPG"
   ]
  }
 ]
