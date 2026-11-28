@@ -1,35 +1,5 @@
 [
  {
-  "data": "2026-11-12T21:15:36.390582+00:00",
-  "manchete": "STF derruba isenção de pena por violência patrimonial",
-  "titulo": "STF proíbe isenção de pena em crimes patrimoniais contra mulheres",
-  "categoria": "JUSTIÇA",
-  "links": [
-   "https://www.metropoles.com/colunas/manoela-alcantara/stf-derruba-isencao-de-pena-para-crimes-patrimoniais-contra-mulheres",
-   "https://agenciabrasil.ebc.com.br/justica/noticia/2026-11/stf-derruba-imunidade-para-punir-violencia-patrimonial-contra-mulheres"
-  ],
-  "tokens": [
-   "crimes",
-   "derrub",
-   "imunid",
-   "isenca",
-   "mulher",
-   "patrim",
-   "pena",
-   "punir",
-   "stf",
-   "violen"
-  ],
-  "video_id": "JQEv84BzwKo",
-  "fotos": [
-   "File:Conversa com Roseann Kennedy - Ministra Cármen Lúcia.webm",
-   "File:Toffoli aniversario da constituição.jpg",
-   "File:Dias Toffoli em setembro de 2018.jpg",
-   "File:Cármen Lúcia em 2016 01.jpg",
-   "File:Cármen Lúcia abre em novembro.jpg"
-  ]
- },
- {
   "data": "2026-11-12T21:39:28.326510+00:00",
   "manchete": "Senado vota urgência de ajuste fiscal",
   "titulo": "Senado inicia votação do plano de ajuste fiscal do governo",
@@ -12834,6 +12804,30 @@
    "File:Kim Kataguiri - Allan dos Santos e Olavo de Carvalho são infiltrados comunistas.webm",
    "File:Dilma faz sua defesa no plenário do Senado 1040836-29-08-2016 dsc1228.jpg",
    "File:Renan Santos e Kim Kataguiri em Live.png"
+  ]
+ },
+ {
+  "data": "2026-11-28T19:39:09.309273+00:00",
+  "manchete": "Valdemar Costa Neto se reúne com Lula",
+  "titulo": "Valdemar Costa Neto vai se reunir com Lula na terça-feira no Planalto",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://g1.globo.com/politica/blog/andreia-sadi/post/2026/11/28/encontro-presidente-pl-valdemar-lula.ghtml"
+  ],
+  "tokens": [
+   "feira",
+   "lula",
+   "presid",
+   "reunir",
+   "terca"
+  ],
+  "video_id": "e_-2StIRYgs",
+  "fotos": [
+   "File:PM Modi holds bilateral meeting with President Luiz Inácio Lula da Silva of Brazil.webm",
+   "File:Valdemar131895.jpg",
+   "File:Valdemar Costa Neto 7 de Junho de 2005.jpg",
+   "File:Luiz Inácio Lula da Silva and George W. Bush 20080709.jpg",
+   "File:President Tarja Halonen and President Luiz Inácio Lula da Silva in 2003.jpg"
   ]
  }
 ]
