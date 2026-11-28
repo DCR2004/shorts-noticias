@@ -1,36 +1,5 @@
 [
  {
-  "data": "2026-11-11T17:42:35.159861+00:00",
-  "manchete": "Comissão aprova convite a Mauro Vieira",
-  "titulo": "Camara convida Mauro Vieira para explicar ajuda a Lulinha na Espanha",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://www.metropoles.com/brasil/comissao-convida-mauro-vieira-para-explicar-ajuda-de-embaixada-a-lulinha",
-   "https://www.cnnbrasil.com.br/politica/comissao-convida-chanceler-a-explicar-sobre-embaixada-ter-ajudado-lulinha/"
-  ],
-  "tokens": [
-   "ajuda",
-   "aprova",
-   "camara",
-   "comiss",
-   "convit",
-   "embaix",
-   "explic",
-   "lulinh",
-   "minist",
-   "vieira"
-  ],
-  "video_id": "WVjI8a1tQnI",
-  "fotos": [
-   "File:Discurso do Ministro Mauro Vieira durante almoço com Embaixadores do Grupo Africano.webm",
-   "File:Mauro Vieira e Julie Bishop.jpg",
-   "File:Abertura da exposição \"Centenário Mandela\" no palácio Itamaraty.webm",
-   "File:Mauro Vieira, Minister of External Relations, Brazil at the Supporting Syria conference (24189260243).jpg",
-   "File:07.07.2023 - Reunião com parlamentares (53031918153).jpg",
-   "File:07.07.2023 - Reunião com parlamentares (53030854267).jpg"
-  ]
- },
- {
   "data": "2026-11-11T18:09:41.425817+00:00",
   "manchete": "Crise interna ameaça comando da Polícia Federal",
   "titulo": "Crise na Polícia Federal coloca permanência de Andrei Rodrigues em risco",
@@ -12973,6 +12942,27 @@
   "video_id": "tJKP8Nw7s9k",
   "fotos": [
    "File:Marcha da Maconha (Brasilia 2013).jpg"
+  ]
+ },
+ {
+  "data": "2026-11-28T11:10:43.796178+00:00",
+  "manchete": "Câmara aprova regras contra bullying",
+  "titulo": "Comissão da Câmara aprova regras de enfrentamento ao bullying",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://www.poder360.com.br/poder-congresso/comissao-da-camara-aprova-regras-de-enfrentamento-ao-bullying/"
+  ],
+  "tokens": [
+   "aprova",
+   "bullyi",
+   "camara",
+   "comiss",
+   "enfren",
+   "regras"
+  ],
+  "video_id": "8nAj8MAkhfg",
+  "fotos": [
+   "File:Discurso de Nikolas Ferreira (PL-MG) sobre mulheres trans no Dia Internacional da Mulher - Plenário da Câmara dos Deputados - 2023-03-08.webm"
   ]
  }
 ]
