@@ -1,36 +1,5 @@
 [
  {
-  "data": "2026-11-12T21:39:28.326510+00:00",
-  "manchete": "Senado vota urgência de ajuste fiscal",
-  "titulo": "Senado inicia votação do plano de ajuste fiscal do governo",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/senado-inicia-votacao-do-plano-moretti-de-ajuste-fiscal-apesar-de-protesto-da-oposicao.shtml",
-   "https://g1.globo.com/politica/ao-vivo/senado-pacote-medidas-fiscais.ghtml"
-  ],
-  "tokens": [
-   "ajuste",
-   "apesar",
-   "assist",
-   "discus",
-   "fiscal",
-   "inicia",
-   "morett",
-   "oposic",
-   "plano",
-   "projet",
-   "protes",
-   "senado",
-   "votaca"
-  ],
-  "video_id": "PP8chJhpQ6U",
-  "fotos": [
-   "File:2025-11-06, Senado Federal do Brasil - 038.jpg",
-   "File:Luiz Inácio Lula da Silva visit to Antarctica, February 2008 17022008G00002.jpg",
-   "File:Luiz Inácio Lula da Silva visit to Antarctica, February 2008 17022008G00011 (1).jpg"
-  ]
- },
- {
   "data": "2026-11-13T17:10:40.452446+00:00",
   "manchete": "Senado aprova ajuste fiscal",
   "titulo": "Senado aprova pacote fiscal do governo em votação apertada",
@@ -12828,6 +12797,33 @@
    "File:Valdemar Costa Neto 7 de Junho de 2005.jpg",
    "File:Luiz Inácio Lula da Silva and George W. Bush 20080709.jpg",
    "File:President Tarja Halonen and President Luiz Inácio Lula da Silva in 2003.jpg"
+  ]
+ },
+ {
+  "data": "2026-11-28T20:09:20.003330+00:00",
+  "manchete": "Projeto proíbe ministros do STF em voos da FAB",
+  "titulo": "Nikolas Ferreira apresenta projeto para proibir ministros do STF em voos da FAB",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://www.cartacapital.com.br/cartaexpressa/a-ofensiva-de-nikolas-ferreira-para-proibir-ministros-do-stf-em-voos-da-fab/"
+  ],
+  "tokens": [
+   "fab",
+   "ferrei",
+   "minist",
+   "nikola",
+   "ofensi",
+   "proibi",
+   "stf",
+   "voos"
+  ],
+  "video_id": "AkspSM1Nfho",
+  "fotos": [
+   "File:O Segredo das Asas (1944)- A Força da Aviação Brasileira.webm",
+   "File:20250404 crowd waiting for Nikolas Ferreira in Fórum da Liberdade in 2025.jpg",
+   "File:21.05.2025 - Nikolas Ferreira.jpg",
+   "File:Brinquedo - Avião Força Aérea Brasileira, Acervo do Museu Paulista da USP (17).jpg",
+   "File:Brinquedo - Avião Força Aérea Brasileira, Acervo do Museu Paulista da USP (22).jpg"
   ]
  }
 ]
