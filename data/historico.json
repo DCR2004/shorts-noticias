@@ -1,42 +1,5 @@
 [
  {
-  "data": "2026-11-12T01:10:23.121802+00:00",
-  "manchete": "Governo quer tirar subsídio do diesel da meta",
-  "titulo": "Governo propõe retirar R$ 10,5 bilhões em subsídios ao diesel da meta fiscal",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://www.poder360.com.br/poder-infra/governo-propoe-tirar-r-105-bi-em-diesel-da-meta-fiscal/",
-   "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/projeto-quer-retirar-r-105-bi-em-subsidios-ao-diesel-da-meta-fiscal",
-   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/projeto-de-ajuste-fiscal-autoriza-tirar-ate-r-105-bi-de-subvencao-ao-diesel-da-meta-de-2026.shtml"
-  ],
-  "tokens": [
-   "10",
-   "2026",
-   "5",
-   "ajuste",
-   "ate",
-   "autori",
-   "diesel",
-   "fiscal",
-   "govern",
-   "meta",
-   "projet",
-   "propoe",
-   "quer",
-   "retira",
-   "subsid",
-   "subven",
-   "tirar"
-  ],
-  "video_id": "gPzLOaDdN_c",
-  "fotos": [
-   "File:Conselho de Desenvolvimento Econômico e Social promove diálogo social, afirma Jaques Wagner.webm",
-   "File:Governador Jaques Wagner recebe Deputados Luis Bassuma, Fátima Nunes e Paulo Rangel - 3526426114.jpg",
-   "File:Conheça o Palácio do Jaburu, residência oficial do vice-presidente da República Federativa do Brasil.webm",
-   "File:Governador Jaques Wagner recebe Deputados Luis Bassuma, Fátima Nunes e Paulo Rangel - 3525620223.jpg"
-  ]
- },
- {
   "data": "2026-11-12T01:39:42.215743+00:00",
   "manchete": "Câmara convida chanceler para falar sobre Lulinha",
   "titulo": "Câmara convida Mauro Vieira para explicar apoio da embaixada a Lulinha",
@@ -12895,5 +12858,39 @@
   ],
   "video_id": "qG041TkDEvo",
   "fotos": []
+ },
+ {
+  "data": "2026-11-28T14:42:22.930997+00:00",
+  "manchete": "Governo prorroga subvenção ao diesel",
+  "titulo": "Governo renova subvencao ao diesel por mais trinta dias",
+  "categoria": "ECONOMIA",
+  "links": [
+   "https://www1.folha.uol.com.br/mercado/2026/11/governo-federal-renova-subvencao-ao-diesel-por-mais-30-dias-com-custo-de-ate-r-105-bi.shtml",
+   "https://www.infomoney.com.br/brasil/governo-renova-subsidio-do-diesel-por-mais-um-mes-a-custo-de-r-105-bilhoes/",
+   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/governo-federal-renova-subvencao-ao-diesel-por-mais-30-dias-com-custo-de-ate-r-105-bi.shtml",
+   "https://www.poder360.com.br/poder-economia/governo-publica-portaria-que-renova-auxilio-ao-diesel/"
+  ],
+  "tokens": [
+   "10",
+   "30",
+   "5",
+   "ate",
+   "auxili",
+   "bilhoe",
+   "custo",
+   "diesel",
+   "federa",
+   "govern",
+   "mes",
+   "portar",
+   "public",
+   "renova",
+   "subsid",
+   "subven"
+  ],
+  "video_id": "n7idtzyff7o",
+  "fotos": [
+   "File:Ministério da Fazenda Aracaju Sergipe 20220424-6110.jpg"
+  ]
  }
 ]
