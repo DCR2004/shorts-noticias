@@ -1,38 +1,5 @@
 [
  {
-  "data": "2026-11-12T18:39:37.874447+00:00",
-  "manchete": "STF prorroga investigação sobre Ciro Nogueira",
-  "titulo": "STF prorroga investigação da PF sobre Ciro Nogueira no caso Master",
-  "categoria": "JUSTIÇA",
-  "links": [
-   "https://revistaoeste.com/politica/fachin-da-mais-60-dias-a-pf-para-investigar-ciro-nogueira-no-caso-master/",
-   "https://www.gazetadopovo.com.br/republica/fachin-prorroga-investigacao-sobre-envolvimento-de-ciro-nogueira-com-vorcaro/",
-   "https://g1.globo.com/politica/noticia/2026/11/12/caso-master-a-pedido-da-pf-fachin-prorroga-por-60-dias-inquerito-que-investiga-ciro-nogueira.ghtml"
-  ],
-  "tokens": [
-   "60",
-   "caso",
-   "ciro",
-   "envolv",
-   "fachin",
-   "invest",
-   "master",
-   "noguei",
-   "pedido",
-   "prorro",
-   "vorcar"
-  ],
-  "video_id": "UeUFgNxRrBE",
-  "fotos": [
-   "File:Chuvas no Piauí.webm",
-   "File:Senado Federal do Brasil Entrevistas Diversas (15006005087).jpg",
-   "File:Policia Nacional atrasa homenagem a Jonas Savimbi acusa UNITA em Malanje.webm",
-   "File:Ciro Nogueira Filho 2013.jpg",
-   "File:Policia Rodoviaria Federal.jpg",
-   "File:Policia-federal-arg.JPG"
-  ]
- },
- {
   "data": "2026-11-12T19:10:04.024201+00:00",
   "manchete": "Grupo discute propaganda eleitoral na internet",
   "titulo": "Camara cria grupo para discutir propaganda eleitoral nas redes sociais",
@@ -12861,6 +12828,35 @@
    "File:26.11.2026 - Reunião com o Governador eleito de Minas Gerais, Senador Cleitinho (55675273786).jpg",
    "File:Kunzite, Minas Gerais, Brazil-8801.jpg",
    "File:Titanite, Albite, Epidote, Minas Gerais, Brazil-8799.jpg"
+  ]
+ },
+ {
+  "data": "2026-11-28T17:09:20.242851+00:00",
+  "manchete": "Dino suspende emendas de Flávio Bolsonaro",
+  "titulo": "STF suspende emendas parlamentares de Flavio Bolsonaro",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://www.cnnbrasil.com.br/politica/flavio-critica-dino-e-diz-que-suspensao-de-emendas-e-malandragem-juridica/",
+   "https://www.cartacapital.com.br/politica/em-fuga-nos-eua-flavio-bolsonaro-ataca-dino-por-suspender-suas-emendas/"
+  ],
+  "tokens": [
+   "ataca",
+   "bolson",
+   "critic",
+   "dino",
+   "emenda",
+   "eua",
+   "flavio",
+   "fuga",
+   "juridi",
+   "maland",
+   "suspen"
+  ],
+  "video_id": "s0I-G4kLxB0",
+  "fotos": [
+   "File:África Agora- \"O Tribunal Supremo parece uma casa de gangsters\", diz Rafael Marques.webm",
+   "File:Supremo Tribunal Federal por Henrique Goldenstein (01).jpg",
+   "File:Supreme Federal Court - Statue.jpg"
   ]
  }
 ]
