@@ -1,41 +1,5 @@
 [
  {
-  "data": "2026-11-11T20:11:46.127202+00:00",
-  "manchete": "PL adia decisao sobre apoio a Hugo Motta",
-  "titulo": "PL adia decisao sobre apoio a Hugo Motta na Camara",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://revistaoeste.com/no-ponto/sem-consenso-pl-adia-por-15-dias-decisao-sobre-apoio-a-motta/",
-   "https://www.gazetadopovo.com.br/republica/pl-adia-decisao-sobre-apoio-a-reconducao-de-hugo-motta-a-presidencia-da-camara/",
-   "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/pl-mantem-indefinicao-sobre-presidencia-da-camara-em-meio-a-racha-sobre-apoio-a-motta.shtml"
-  ],
-  "tokens": [
-   "15",
-   "adia",
-   "apoio",
-   "camara",
-   "consen",
-   "decisa",
-   "hugo",
-   "indefi",
-   "mantem",
-   "meio",
-   "motta",
-   "presid",
-   "racha",
-   "recond"
-  ],
-  "video_id": "ISWl5Ec9k88",
-  "fotos": [
-   "File:PSD-Congresso- Reações dos partidos.webm",
-   "File:Fundadores del Partido Liberal Paraguayo.jpg",
-   "File:Temer faz primeira reunião com líderes aliados do governo na Câmara.webm",
-   "File:Logo del Partido Liberal Colombiano.jpg",
-   "File:26.08.2026 - Quebra-Queixo com Davi Alcolumbre e Hugo Motta - 55490090018.jpg",
-   "File:26.08.2026 - Quebra-Queixo com Davi Alcolumbre e Hugo Motta - 55490090078.jpg"
-  ]
- },
- {
   "data": "2026-11-12T01:06:11.779949+00:00",
   "manchete": "Governo envia projeto de ajuste fiscal ao Senado",
   "titulo": "Senado vota projeto de ajuste fiscal com corte de benefícios",
@@ -12966,6 +12930,33 @@
    "File:Plenárias - Voto impresso nas eleições de 2014 (3-4).webm",
    "File:Julgamento de demarcação contínua da Terra Indígena Raposa Serra do Sol, 19-03-2009 Gilmar Mendes 1.jpg",
    "File:ADPF 153 - Presidente do STF Cezar Peluso e ministro Gilmar Mendes.jpg"
+  ]
+ },
+ {
+  "data": "2026-11-28T13:39:46.988294+00:00",
+  "manchete": "Trabuco no comando da Fazenda",
+  "titulo": "Lula escolhe Luiz Carlos Trabuco para o Ministério da Fazenda",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://www.metropoles.com/colunas/manoela-alcantara/gilmar-elogia-escolha-de-trabuco-para-a-fazenda-muito-respeitado",
+   "https://www.cnnbrasil.com.br/politica/escolha-de-trabuco-para-a-fazenda-remete-ao-1o-mandato-de-lula-entenda/"
+  ],
+  "tokens": [
+   "elogia",
+   "entend",
+   "escolh",
+   "fazend",
+   "gilmar",
+   "lula",
+   "mandat",
+   "remete",
+   "respei",
+   "trabuc"
+  ],
+  "video_id": "1I_l3umsPGc",
+  "fotos": [
+   "File:Arrival Honors for President Luiz Inácio Lula da Silva of Brazil in the Philippines - hosted by President Bongbong Marcos - 14 November 2026.webm",
+   "File:Ministério da Fazenda Aracaju Sergipe 20220424-6090.jpg"
   ]
  }
 ]
