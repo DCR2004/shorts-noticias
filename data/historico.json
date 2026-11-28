@@ -1,35 +1,5 @@
 [
  {
-  "data": "2026-11-13T17:39:58.805173+00:00",
-  "manchete": "STF julgará recurso de Flávio Bolsonaro",
-  "titulo": "STF vai julgar recurso de Flavio Bolsonaro sobre passaporte",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://noticias.uol.com.br/politica/ultimas-noticias/2026/11/13/carmen-marca-julgamento-de-recurso-de-flavio-sobre-passaporte.ghtm",
-   "https://revistaoeste.com/politica/carmen-pauta-recurso-de-flavio-contra-apreensao-de-passaporte-por-moraes/"
-  ],
-  "tokens": [
-   "apreen",
-   "carmen",
-   "flavio",
-   "julgam",
-   "marca",
-   "moraes",
-   "passap",
-   "pauta",
-   "recurs"
-  ],
-  "video_id": "5nn2U8VZisE",
-  "fotos": [
-   "File:Cármen Lúcia assume presidência do STF para mandato de dois anos.webm",
-   "File:Ato pró-Flávio Bolsonaro em Campinas - 24.10.2026.6.jpg",
-   "File:Sociedade ganha muito com Grace Mendonça na AGU, diz Alexandre de Moraes.webm",
-   "File:Cármen Lúcia em 2016 02.jpg",
-   "File:STF - Julgamento das algemas, 7-8-2008 - Carmem Lúcia, Eros Grau, Ayres Britto e Ellen Gracie.jpg",
-   "File:Alexandre de Moraes 03.jpg"
-  ]
- },
- {
   "data": "2026-11-13T18:13:28.088630+00:00",
   "manchete": "Governo articula pacote fiscal na Câmara",
   "titulo": "Governo pede pressa à Câmara para votar pacote fiscal de ajuste",
@@ -12826,6 +12796,36 @@
    "File:Madrid snowbound.jpg",
    "File:Madrid (38624991251).jpg",
    "File:Pedro Sánchez anuncia la convocatoria de elecciones generales para el 29 de noviembre.webm"
+  ]
+ },
+ {
+  "data": "2026-11-28T21:09:48.429852+00:00",
+  "manchete": "Podemos negocia espaço no governo Lula",
+  "titulo": "Podemos negocia espaço e quer indicar deputado para governo Lula",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://www1.folha.uol.com.br/colunas/painel/2026/11/podemos-conversa-com-emissarios-de-lula-e-quer-indicar-deputado-para-o-governo.shtml",
+   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/11/podemos-conversa-com-emissarios-de-lula-e-quer-indicar-deputado-para-o-governo.shtml",
+   "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/11/podemos-conversa-com-emissarios-de-lula-e-quer-indicar-deputado-para-o-governo.shtml"
+  ],
+  "tokens": [
+   "conver",
+   "deputa",
+   "emissa",
+   "govern",
+   "indica",
+   "lula",
+   "podemo",
+   "quer"
+  ],
+  "video_id": "oIpb5BJaREk",
+  "fotos": [
+   "File:Irene Montero- “Unidas Podemos gobernando es una garantía para Catalunya”.webm",
+   "File:Unidos Podemos, 2016.jpg",
+   "File:-AoVivo- Lançamento do Crédito CAIXA Tem.webm",
+   "File:Podemos logo DDC1888.jpg",
+   "File:Agência da Caixa Econômica Federal em Paratinga, janeiro de 2023.jpg",
+   "File:Agência da Caixa Econômica Federal na Universidade Federal de Goiás, Goiânia, dezembro de 2022 (2).jpg"
   ]
  }
 ]
