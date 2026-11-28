@@ -1,44 +1,5 @@
 [
  {
-  "data": "2026-11-12T20:10:13.268368+00:00",
-  "manchete": "Lula cobra desculpa da imprensa por triplex",
-  "titulo": "Lula cobra pedido de desculpas da imprensa após decisão sobre triplex",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/poder/2026/11/lula-cobra-pedido-de-desculpas-da-imprensa-sobre-triplex-de-guaruja.shtml",
-   "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/lula-cobra-pedido-de-desculpas-da-imprensa-sobre-triplex-de-guaruja.shtml",
-   "https://www.gazetadopovo.com.br/republica/lula-manda-exercito-cobrar-pedido-de-desculpas-da-imprensa-apos-decisao-sobre-triplex/",
-   "https://www.cartacapital.com.br/politica/lula-cobra-retratacao-da-imprensa-por-caso-do-triplex-fiquei-580-dias-preso/"
-  ],
-  "tokens": [
-   "580",
-   "apos",
-   "caso",
-   "cobra",
-   "cobrar",
-   "decisa",
-   "descul",
-   "exerci",
-   "fiquei",
-   "guaruj",
-   "impren",
-   "lula",
-   "manda",
-   "pedido",
-   "preso",
-   "retrat",
-   "triple"
-  ],
-  "video_id": "0-gFgnLSALo",
-  "fotos": [
-   "File:FORÇA NACIONAL VAI AJUDAR NAS BUSCAS POR FUGITIVOS DE PENITENCIÁRIA FEDERAL.webm",
-   "File:Anuncio Rio2016.jpg",
-   "File:Luiz Inácio Lula da Silva visit to Antarctica, February 2008 17022008G00012.jpg",
-   "File:05.11.2026 - Presidente Lula e Janones participam da Live da Vitória.jpg",
-   "File:Prédio da Justiça Federal - Goiania.jpg"
-  ]
- },
- {
   "data": "2026-11-12T20:40:55.872314+00:00",
   "manchete": "Aliados de Lula preparam ajuste alternativo",
   "titulo": "PT e aliados preparam projeto alternativo ao ajuste fiscal do governo Lula",
@@ -12850,6 +12811,30 @@
    "File:Vem Comigo - Visita Alckmin.webm",
    "File:Geraldo Alckmin 2016 foto 2.jpg",
    "File:Geraldo Alckmin 2011-1.jpg"
+  ]
+ },
+ {
+  "data": "2026-11-28T18:39:43.454620+00:00",
+  "manchete": "Nova lei pode anistiar cursos de Medicina",
+  "titulo": "Governo sanciona lei que pode anistiar cursos de Medicina com nota baixa",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://www.gazetadopovo.com.br/vida-e-cidadania/governo-lula-sanciona-lei-que-favorece-cursos-de-medicina-com-baixa-qualidade/"
+  ],
+  "tokens": [
+   "baixa",
+   "cursos",
+   "favore",
+   "govern",
+   "lei",
+   "lula",
+   "medici",
+   "qualid",
+   "sancio"
+  ],
+  "video_id": "uuX9dFP12_U",
+  "fotos": [
+   "File:-AoVivo- MEC e Ministério da Saúde assinam portaria para retorno às aulas presenciais.webm"
   ]
  }
 ]
