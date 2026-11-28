@@ -1,29 +1,5 @@
 [
  {
-  "data": "2026-11-11T18:39:55.001413+00:00",
-  "manchete": "Ajuste fiscal tera impacto de ate R$ 60 bi",
-  "titulo": "Medidas de ajuste fiscal do governo preveem impacto de ate 60 bilhoes",
-  "categoria": "ECONOMIA",
-  "links": [
-   "https://www1.folha.uol.com.br/mercado/2026/11/medidas-fiscais-terao-impacto-de-cerca-de-r-60-bi-e-podem-ser-votadas-hoje-diz-ministro-do-planejamento.shtml",
-   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/medidas-fiscais-terao-impacto-de-cerca-de-r-60-bi-e-podem-ser-votadas-hoje-diz-ministro-do-planejamento.shtml"
-  ],
-  "tokens": [
-   "60",
-   "cerca",
-   "fiscai",
-   "impact",
-   "medida",
-   "minist",
-   "planej",
-   "podem",
-   "terao",
-   "votada"
-  ],
-  "video_id": "g3TdO_bvITk",
-  "fotos": []
- },
- {
   "data": "2026-11-11T19:11:45.536221+00:00",
   "manchete": "Tarcísio nomeia Ricardo Salles",
   "titulo": "Tarcísio oficializa Ricardo Salles como secretário de Justiça em São Paulo",
@@ -12957,6 +12933,39 @@
    "File:Metrô BH Vila Oeste Station.jpg",
    "File:Recorrido por el oeste de Caracas evidencia daños de consideración.webm",
    "File:Delírio da Zona Oeste - 2019 (17).jpg"
+  ]
+ },
+ {
+  "data": "2026-11-28T12:11:07.331747+00:00",
+  "manchete": "Fachin libera R$ 316 mi do Master para o BRB",
+  "titulo": "STF libera R$ 316 milhões do Banco Master para o Banco de Brasília",
+  "categoria": "JUSTIÇA",
+  "links": [
+   "https://www.cartacapital.com.br/economia/fachin-libera-o-pagamento-de-r-3165-milhoes-da-liquidacao-do-banco-master-ao-brb/",
+   "https://www.gazetadopovo.com.br/economia/fachin-libera-r-316-milhoes-do-master-ao-brb/",
+   "https://www.cnnbrasil.com.br/politica/fachin-libera-r-316-milhoes-da-liquidacao-do-master-para-socorrer-brb/"
+  ],
+  "tokens": [
+   "316",
+   "5",
+   "banco",
+   "bloque",
+   "brb",
+   "fachin",
+   "libera",
+   "liquid",
+   "mantem",
+   "mas",
+   "master",
+   "milhoe",
+   "outros",
+   "pagame",
+   "socorr",
+   "valore"
+  ],
+  "video_id": "sU8NB27ZNYc",
+  "fotos": [
+   "File:Novo presidente do Banco Central toma posse.webm"
   ]
  }
 ]
