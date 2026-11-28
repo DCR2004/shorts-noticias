@@ -1,41 +1,5 @@
 [
  {
-  "data": "2026-11-12T17:10:56.556763+00:00",
-  "manchete": "Disputa pela presidência do Senado agita direita",
-  "titulo": "Disputa no Senado divide direita e movimenta articulações",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://www.gazetadopovo.com.br/republica/mobilizacao-de-senadoras-de-direita-pro-tereza-perturba-a-candidatura-de-marinho/",
-   "https://www.cartacapital.com.br/politica/pelo-senado-marinho-mobiliza-bolsonaristas-alcolumbre-busca-governo-e-tereza-aposta-na-bancada-feminina/"
-  ],
-  "tokens": [
-   "alcolu",
-   "aposta",
-   "bancad",
-   "bolson",
-   "busca",
-   "candid",
-   "direit",
-   "femini",
-   "govern",
-   "marinh",
-   "mobili",
-   "pertur",
-   "pro",
-   "senado",
-   "tereza"
-  ],
-  "video_id": "_jnDZowrs_U",
-  "fotos": [
-   "File:Traficante Rogério 157 é preso no Rio de Janeiro.webm",
-   "File:Tereza Cristina - 2019.jpg",
-   "File:Direitos Humanos - Ministra Damares Alves discursa na ONU (2022).webm",
-   "File:Tereza Cristina Corrêa da Costa Dias.jpg",
-   "File:Damares Alves 2025.jpg",
-   "File:Ministra Damares no MCTI (50567935507).jpg"
-  ]
- },
- {
   "data": "2026-11-12T17:41:19.408912+00:00",
   "manchete": "Congresso aprova 149 bi para benefícios sociais",
   "titulo": "Congresso aprova R$ 149,4 bilhões para Bolsa Família e Previdência Social",
@@ -12884,6 +12848,38 @@
    "File:Governador Jaques Wagner recebe Deputados Luis Bassuma, Fátima Nunes e Paulo Rangel - 3525619519.jpg",
    "File:Novo diretor-geral da Polícia Federal ressalta trabalho em conjunto para combater crime organizado.webm",
    "File:Governador Jaques Wagner recebe Deputados Luis Bassuma, Fátima Nunes e Paulo Rangel.jpg"
+  ]
+ },
+ {
+  "data": "2026-11-28T15:40:08.091340+00:00",
+  "manchete": "Milei volta a criticar Lula e rejeita convite",
+  "titulo": "Milei volta a atacar Lula e diz que nao quer convite para posse em Brasilia",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://www.metropoles.com/mundo/milei-volta-a-chamar-lula-de-ladrao-e-diz-nao-querer-convite-para-posse",
+   "https://www.cnnbrasil.com.br/internacional/a-cnn-milei-volta-a-criticar-lula-e-diz-nao-querer-convite-para-posse/"
+  ],
+  "tokens": [
+   "chamar",
+   "cnn",
+   "convit",
+   "critic",
+   "ladrao",
+   "lula",
+   "milei",
+   "nao",
+   "posse",
+   "querer",
+   "volta"
+  ],
+  "video_id": "CHIoDDozVoM",
+  "fotos": [
+   "File:2024-09-24 FGR Tarek William Saab informó que fue solicitada alerta roja de Interpol contra Javier Milei.webm",
+   "File:Visitas oficiales de Milei a mayo de 2024.jpg",
+   "File:Vladimir Putin and Cristina Kirchner - conference in Casa Rosada.ogv",
+   "File:Javier Milei VIVA 24 (4).jpg",
+   "File:Sérgio Cabral Filho e Lula no Cristo - 14jun2007.jpg",
+   "File:Casa Rosada, Buenos Aires, Argentina.jpg"
   ]
  }
 ]
