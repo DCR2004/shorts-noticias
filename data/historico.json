@@ -1,43 +1,5 @@
 [
  {
-  "data": "2026-11-13T17:10:40.452446+00:00",
-  "manchete": "Senado aprova ajuste fiscal",
-  "titulo": "Senado aprova pacote fiscal do governo em votação apertada",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://www.infomoney.com.br/politica/veja-os-pontos-principais-do-projeto-de-ajuste-fiscal-aprovado-pelo-senado/",
-   "https://g1.globo.com/politica/blog/valdo-cruz/post/2026/11/13/placar-do-ajuste-fiscal-no-senado-indica-que-o-governo-tera-dificuldades-para-aprovar-pecs-em-2027.ghtml",
-   "https://www.gazetadopovo.com.br/opiniao/bom-dia/senado-ajuste-fiscal-pgr-revisao-bolsonaro/"
-  ],
-  "tokens": [
-   "2027",
-   "ajuste",
-   "aprova",
-   "bolson",
-   "dificu",
-   "fiscal",
-   "indica",
-   "lula",
-   "pacote",
-   "pecs",
-   "pgr",
-   "placar",
-   "pontos",
-   "princi",
-   "projet",
-   "revisa",
-   "senado",
-   "tera"
-  ],
-  "video_id": "oTiu0g0KAp8",
-  "fotos": [
-   "File:Em reunião no Planalto, senadores do PMDB reafirmam apoio a Temer.webm",
-   "File:2025-11-06, Senado Federal do Brasil - 160.jpg",
-   "File:2025-11-06, Senado Federal do Brasil - 213.jpg",
-   "File:Renan diz a Lula que ajuste fiscal precisa ser ampliado.webm"
-  ]
- },
- {
   "data": "2026-11-13T17:39:58.805173+00:00",
   "manchete": "STF julgará recurso de Flávio Bolsonaro",
   "titulo": "STF vai julgar recurso de Flavio Bolsonaro sobre passaporte",
@@ -12824,6 +12786,46 @@
    "File:21.05.2025 - Nikolas Ferreira.jpg",
    "File:Brinquedo - Avião Força Aérea Brasileira, Acervo do Museu Paulista da USP (17).jpg",
    "File:Brinquedo - Avião Força Aérea Brasileira, Acervo do Museu Paulista da USP (22).jpg"
+  ]
+ },
+ {
+  "data": "2026-11-28T20:42:57.066025+00:00",
+  "manchete": "Eleição na Espanha gera apreensão entre brasileiros",
+  "titulo": "Eleicao na Espanha pode colocar direita radical no governo e afetar imigrantes",
+  "categoria": "MUNDO",
+  "links": [
+   "https://noticias.uol.com.br/ultimas-noticias/rfi/2026/11/28/espanha-vai-as-urnas-em-eleicao-legislativa-que-pode-fortalecer-a-guinada-a-direita-na-europa.htm",
+   "https://g1.globo.com/mundo/noticia/2026/11/28/saiba-o-que-esta-em-jogo-para-brasileiros-na-eleicao-da-espanha.ghtml",
+   "https://www.bbc.com/portuguese/articles/cm894ejjld27o?at_medium=RSS&at_campaign=rss"
+  ],
+  "tokens": [
+   "brasil",
+   "direit",
+   "eleica",
+   "entrar",
+   "espanh",
+   "europa",
+   "fortal",
+   "govern",
+   "guinad",
+   "jogo",
+   "legisl",
+   "muda",
+   "pode",
+   "primei",
+   "radica",
+   "urnas",
+   "vez"
+  ],
+  "video_id": "EqV53nfHpGk",
+  "fotos": [
+   "File:2026-09-23 Mayor Mamdani Joins the “Building an Economy for the Many” Breakfast.webm",
+   "File:Pedro Sánchez Pérez-Castejón (Oficial).jpg",
+   "File:Visita dos Reis de Espanha a Angola.webm",
+   "File:Pedro Sánchez Pérez-Castejón 2021.jpg",
+   "File:Madrid snowbound.jpg",
+   "File:Madrid (38624991251).jpg",
+   "File:Pedro Sánchez anuncia la convocatoria de elecciones generales para el 29 de noviembre.webm"
   ]
  }
 ]
