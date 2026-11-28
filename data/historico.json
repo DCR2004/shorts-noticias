@@ -1,47 +1,5 @@
 [
  {
-  "data": "2026-11-10T19:09:34.485005+00:00",
-  "manchete": "Dino rebate Marinho sobre atuação do STF",
-  "titulo": "Flávio Dino rebate críticas de Luiz Marinho sobre atuação do STF na escala 6x1",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://www.gazetadopovo.com.br/republica/dino-rebate-critica-de-ministro-de-lula-a-atuacao-do-stf-no-debate-sobre-escala-6x1/",
-   "https://www.cnnbrasil.com.br/politica/stf-nao-quer-substituir-congresso-e-governo-em-debate-sobre-6x1-diz-dino/",
-   "https://www.gazetadopovo.com.br/republica/ministro-de-lula-critica-stf-por-acao-que-tenta-adiar-fim-da-escala-6x1/"
-  ],
-  "tokens": [
-   "1",
-   "6",
-   "acao",
-   "adiar",
-   "atuaca",
-   "congre",
-   "critic",
-   "debate",
-   "dino",
-   "escala",
-   "fim",
-   "govern",
-   "lula",
-   "minist",
-   "nao",
-   "quer",
-   "rebate",
-   "stf",
-   "substi",
-   "tenta"
-  ],
-  "video_id": "A0uvmDlmMME",
-  "fotos": [
-   "File:Dino no STF e criminalização do bullying são destaques - Senado Aprova (11-12 a 15-12).webm",
-   "File:01.01.2023 - Posse de Flávio Dino, Ministro de Estado da Justiça (52626565309).jpg",
-   "File:Na Semana Nacional de Museus, conheça tesouros em exposição no Senado.webm",
-   "File:Entrevistas - Senador Flávio Dino (PSB-MA) (53539757383).jpg",
-   "File:2025-11-06, Senado Federal do Brasil - 112.jpg",
-   "File:2025-11-06, Senado Federal do Brasil - 039.jpg"
-  ]
- },
- {
   "data": "2026-11-10T19:39:25.250093+00:00",
   "manchete": "Senado prevê gastar R$ 6 mi em celulares",
   "titulo": "Senado prevê gastar 6 milhões de reais com novos celulares e iPhones",
@@ -13074,6 +13032,42 @@
   "video_id": "IgekzxQybOc",
   "fotos": [
    "File:Andre Esteves Painel com André Jakurski e Rogério Xavier.webm"
+  ]
+ },
+ {
+  "data": "2026-11-28T01:39:33.319809+00:00",
+  "manchete": "PGR é contra União avalizar empréstimo do BRB",
+  "titulo": "PGR é contra obrigar União a dar aval para empréstimo do BRB",
+  "categoria": "JUSTIÇA",
+  "links": [
+   "https://www.poder360.com.br/poder-justica/pgr-e-contra-obrigar-uniao-a-aprovar-emprestimo-ao-brb/",
+   "https://www.cartacapital.com.br/justica/gonet-e-contra-obrigar-uniao-a-dar-aval-a-emprestimo-bilionario-para-socorrer-o-brb/",
+   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/pgr-opina-contra-obrigar-governo-lula-a-avalizar-emprestimo-para-salvar-brb.shtml"
+  ],
+  "tokens": [
+   "aprova",
+   "aval",
+   "avaliz",
+   "bilion",
+   "brb",
+   "dar",
+   "empres",
+   "gonet",
+   "govern",
+   "lula",
+   "obriga",
+   "opina",
+   "pgr",
+   "salvar",
+   "socorr",
+   "uniao"
+  ],
+  "video_id": "MoDq3SfN1ak",
+  "fotos": [
+   "File:Paulo Gonet em sessão do TSE no dia 14.02.2023.jpg",
+   "File:Paulo Gonet, Ricardo Lewandowski e Alexandre de Moraes em Sessão do TSE (14.02.2023).jpg",
+   "File:Imagens de Brasília Banco Central do Brasil (52781202542).jpg",
+   "File:Imagens de Brasília Banco Central do Brasil (52781989814).jpg"
   ]
  }
 ]
