@@ -1,37 +1,5 @@
 [
  {
-  "data": "2026-11-12T01:39:42.215743+00:00",
-  "manchete": "Câmara convida chanceler para falar sobre Lulinha",
-  "titulo": "Câmara convida Mauro Vieira para explicar apoio da embaixada a Lulinha",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://noticias.uol.com.br/ultimas-noticias/agencia-estado/2026/11/11/camara-convida-mauro-vieira-para-explicar-apoio-da-embaixada-a-mudanca-de-lulinha-para-espanha.htm",
-   "https://www.gazetadopovo.com.br/republica/comissao-da-camara-convida-mauro-vieira-a-explicar-apoio-da-embaixada-a-lulinha/"
-  ],
-  "tokens": [
-   "apoio",
-   "camara",
-   "comiss",
-   "convid",
-   "embaix",
-   "espanh",
-   "explic",
-   "lulinh",
-   "mauro",
-   "mudanc",
-   "vieira"
-  ],
-  "video_id": "3KdPjOk86SM",
-  "fotos": [
-   "File:Brasil seguirá defendendo seus interesses comerciais, afirma embaixador Mauro Vieira.webm",
-   "File:Επίσκεψη ΥΠΕΞ Ν. Δένδια στη Βραζιλία - Συνάντηση με ΥΠΕΞ Βραζιλίας Mauro Vieira (06.02.2023) - 52673610198.jpg",
-   "File:Discurso de posse do novo Secretário-Geral das Relações Exteriores, Emb. Fernando Simas Magalhães.webm",
-   "File:Secretary Blinken Meets with Brazilian Foreign Minister Mauro Vieira (52721863288).jpg",
-   "File:Eduardo Paes na Câmara dos Deputados (2).jpg",
-   "File:Itamaraty.jpg"
-  ]
- },
- {
   "data": "2026-11-12T17:10:56.556763+00:00",
   "manchete": "Disputa pela presidência do Senado agita direita",
   "titulo": "Disputa no Senado divide direita e movimenta articulações",
@@ -12891,6 +12859,31 @@
   "video_id": "n7idtzyff7o",
   "fotos": [
    "File:Ministério da Fazenda Aracaju Sergipe 20220424-6110.jpg"
+  ]
+ },
+ {
+  "data": "2026-11-28T15:11:40.526448+00:00",
+  "manchete": "Inquérito contra Jaques Wagner prorrogado",
+  "titulo": "STF prorroga inquérito contra senador Jaques Wagner por 60 dias",
+  "categoria": "JUSTIÇA",
+  "links": [
+   "https://revistaoeste.com/politica/jaques-wagner-fachin-prorroga-inquerito-caso-master/"
+  ],
+  "tokens": [
+   "60",
+   "caso",
+   "fachin",
+   "invest",
+   "jaques",
+   "master",
+   "wagner"
+  ],
+  "video_id": "x-Vm6tLM_BE",
+  "fotos": [
+   "File:Ministro Jaques Wagner comenta ações do governo sobre processo de impedimento.webm",
+   "File:Governador Jaques Wagner recebe Deputados Luis Bassuma, Fátima Nunes e Paulo Rangel - 3525619519.jpg",
+   "File:Novo diretor-geral da Polícia Federal ressalta trabalho em conjunto para combater crime organizado.webm",
+   "File:Governador Jaques Wagner recebe Deputados Luis Bassuma, Fátima Nunes e Paulo Rangel.jpg"
   ]
  }
 ]
