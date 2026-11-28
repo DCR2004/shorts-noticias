@@ -1,40 +1,5 @@
 [
  {
-  "data": "2026-11-10T18:42:28.796649+00:00",
-  "manchete": "Nikolas quer convocar ministro da Educação",
-  "titulo": "Nikolas Ferreira quer convocar ministro da Educação por conteúdo do Enem",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://www.poder360.com.br/poder-congresso/nikolas-quer-convocar-ministro-por-pautas-da-esquerda-no-enem/",
-   "https://www.cartacapital.com.br/cartaexpressa/nikolas-se-irrita-com-redacao-sobre-sus-no-enem-e-quer-convocar-o-ministro-da-educacao/",
-   "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/deborah-bizarria/2026/11/educacao-se-perde-nas-polemicas-do-enem.shtml"
-  ],
-  "tokens": [
-   "convoc",
-   "educac",
-   "enem",
-   "esquer",
-   "irrita",
-   "minist",
-   "nikola",
-   "pautas",
-   "perde",
-   "polemi",
-   "quer",
-   "redaca",
-   "sus"
-  ],
-  "video_id": "GVcB3PX8Zi4",
-  "fotos": [
-   "File:O Cristão e a Política Nikolas Ferreira.webm",
-   "File:Nikolas Ferreira, vereador.jpg",
-   "File:Aprovado na Câmara, marco civil da internet será votado no Senado.webm",
-   "File:Nikole Ferreira.jpg",
-   "File:Yudi Tamashiro na Câmara dos Deputados 1.jpg",
-   "File:Dr. Gonçalo na Câmara dos Deputados em 2020.jpg"
-  ]
- },
- {
   "data": "2026-11-10T19:09:34.485005+00:00",
   "manchete": "Dino rebate Marinho sobre atuação do STF",
   "titulo": "Flávio Dino rebate críticas de Luiz Marinho sobre atuação do STF na escala 6x1",
@@ -13075,6 +13040,40 @@
    "File:-AoVivo- Visita oficial do presidente Jair Bolsonaro ao Suriname.webm",
    "File:Jair Bolsonaro pela EC 77 - Médico Militar no SUS.jpg",
    "File:Jair Bolsonaro S2.jpg"
+  ]
+ },
+ {
+  "data": "2026-11-28T01:09:05.771859+00:00",
+  "manchete": "Projeto reduz quarentena em agências reguladoras",
+  "titulo": "Senado vota projeto que reduz quarentena para agências reguladoras",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://g1.globo.com/jornal-nacional/noticia/2026/11/27/mais-de-100-entidades-empresariais-rejeitam-projeto-de-lei-ja-aprovado-pela-camara-que-diminui-quarentena-para-indicados-as-agencias-reguladoras.ghtml",
+   "https://g1.globo.com/politica/noticia/2026/11/27/entidades-manifestam-preocupacao-com-projeto-que-flexibiliza-regras-para-indicacao-de-dirigentes-de-agencias-reguladoras.ghtml"
+  ],
+  "tokens": [
+   "100",
+   "agenci",
+   "aprova",
+   "camara",
+   "diminu",
+   "dirige",
+   "empres",
+   "entida",
+   "flexib",
+   "indica",
+   "lei",
+   "manife",
+   "preocu",
+   "projet",
+   "quaren",
+   "regras",
+   "regula",
+   "rejeit"
+  ],
+  "video_id": "IgekzxQybOc",
+  "fotos": [
+   "File:Andre Esteves Painel com André Jakurski e Rogério Xavier.webm"
   ]
  }
 ]
