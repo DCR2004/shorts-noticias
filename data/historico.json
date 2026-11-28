@@ -1,37 +1,5 @@
 [
  {
-  "data": "2026-11-12T19:40:02.668025+00:00",
-  "manchete": "Congresso aprova R$ 152 bi em créditos",
-  "titulo": "Congresso aprova 152 bilhões de reais em créditos para o Orçamento",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://www.infomoney.com.br/politica/congresso-da-aval-para-creditos-suplementares-e-especiais-veja-o-que-foi-aprovado/",
-   "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/congresso-aprova-24-projetos-com-credito-suplementar-para-ministerios",
-   "https://www.gazetadopovo.com.br/republica/congresso-aprova-r-1524-bilhoes-em-creditos-adicionais-no-orcamento-de-2026/"
-  ],
-  "tokens": [
-   "152",
-   "2026",
-   "24",
-   "4",
-   "adicio",
-   "aprova",
-   "aval",
-   "bilhoe",
-   "congre",
-   "credit",
-   "especi",
-   "minist",
-   "orcame",
-   "projet",
-   "suplem"
-  ],
-  "video_id": "9vwIpyTx4Ic",
-  "fotos": [
-   "File:Conheça o Palácio do Jaburu, residência oficial do vice-presidente do Brasil.webm"
-  ]
- },
- {
   "data": "2026-11-12T20:10:13.268368+00:00",
   "manchete": "Lula cobra desculpa da imprensa por triplex",
   "titulo": "Lula cobra pedido de desculpas da imprensa após decisão sobre triplex",
@@ -12858,6 +12826,30 @@
   "video_id": "IuJeQCRy82o",
   "fotos": [
    "File:Manifestação de profissionais da educação em 28 de janeiro.webm"
+  ]
+ },
+ {
+  "data": "2026-11-28T18:09:56.066045+00:00",
+  "manchete": "Lula deve anunciar Alckmin na Segurança",
+  "titulo": "Lula deve anunciar Alckmin para o Ministério da Segurança Pública",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://www.poder360.com.br/poder-governo/lula-deve-anunciar-alckmin-na-seguranca-na-proxima-semana/"
+  ],
+  "tokens": [
+   "alckmi",
+   "anunci",
+   "deve",
+   "lula",
+   "proxim",
+   "segura",
+   "semana"
+  ],
+  "video_id": "lplrKJ2RPms",
+  "fotos": [
+   "File:Vem Comigo - Visita Alckmin.webm",
+   "File:Geraldo Alckmin 2016 foto 2.jpg",
+   "File:Geraldo Alckmin 2011-1.jpg"
   ]
  }
 ]
