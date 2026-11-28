@@ -1,31 +1,5 @@
 [
  {
-  "data": "2026-11-12T19:10:04.024201+00:00",
-  "manchete": "Grupo discute propaganda eleitoral na internet",
-  "titulo": "Camara cria grupo para discutir propaganda eleitoral nas redes sociais",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://noticias.uol.com.br/ultimas-noticias/agencia-estado/2026/11/12/hugo-motta-anuncia-grupo-de-trabalho-para-discutir-propaganda-eleitoral-nas-redes-sociais.htm"
-  ],
-  "tokens": [
-   "anunci",
-   "discut",
-   "eleito",
-   "grupo",
-   "hugo",
-   "motta",
-   "propag",
-   "redes",
-   "sociai",
-   "trabal"
-  ],
-  "video_id": "k53Qp3r_AsU",
-  "fotos": [
-   "File:26.08.2026 - Quebra-Queixo com Davi Alcolumbre e Hugo Motta - 55489972566.jpg",
-   "File:26.08.2026 - Quebra-Queixo com Davi Alcolumbre e Hugo Motta - 55488991497.jpg"
-  ]
- },
- {
   "data": "2026-11-12T19:40:02.668025+00:00",
   "manchete": "Congresso aprova R$ 152 bi em créditos",
   "titulo": "Congresso aprova 152 bilhões de reais em créditos para o Orçamento",
@@ -12857,6 +12831,33 @@
    "File:África Agora- \"O Tribunal Supremo parece uma casa de gangsters\", diz Rafael Marques.webm",
    "File:Supremo Tribunal Federal por Henrique Goldenstein (01).jpg",
    "File:Supreme Federal Court - Statue.jpg"
+  ]
+ },
+ {
+  "data": "2026-11-28T17:39:15.101476+00:00",
+  "manchete": "Governo estuda ampliar Pé-de-Meia até 29 anos",
+  "titulo": "Governo estuda ampliar programa Pé-de-Meia para estudantes de até 29 anos",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://www1.folha.uol.com.br/blogs/brasilia-hoje/2026/11/ministro-da-educacao-diz-estudar-ampliacao-do-pe-de-meia-para-alunos-de-ate-29-anos-da-eja.shtml",
+   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/blogs/brasilia-hoje/2026/11/ministro-da-educacao-diz-estudar-ampliacao-do-pe-de-meia-para-alunos-de-ate-29-anos-da-eja.shtml",
+   "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/blogs/brasilia-hoje/2026/11/ministro-da-educacao-diz-estudar-ampliacao-do-pe-de-meia-para-alunos-de-ate-29-anos-da-eja.shtml",
+   "https://www.poder360.com.br/poder-governo/ministro-anuncia-estudo-para-ampliar-pe-de-meia-ate-29-anos/"
+  ],
+  "tokens": [
+   "29",
+   "alunos",
+   "amplia",
+   "ate",
+   "educac",
+   "eja",
+   "estuda",
+   "meia",
+   "minist"
+  ],
+  "video_id": "IuJeQCRy82o",
+  "fotos": [
+   "File:Manifestação de profissionais da educação em 28 de janeiro.webm"
   ]
  }
 ]
