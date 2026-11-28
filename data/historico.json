@@ -1,34 +1,5 @@
 [
  {
-  "data": "2026-11-11T19:11:45.536221+00:00",
-  "manchete": "Tarcísio nomeia Ricardo Salles",
-  "titulo": "Tarcísio oficializa Ricardo Salles como secretário de Justiça em São Paulo",
-  "categoria": "POLÍTICA",
-  "links": [
-   "https://revistaoeste.com/politica/tarcisio-nomeia-ricardo-salles-para-secretaria-de-justica/",
-   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/11/tarcisio-oficializa-ricardo-salles-como-secretario-de-justica.shtml",
-   "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/11/tarcisio-oficializa-ricardo-salles-como-secretario-de-justica.shtml"
-  ],
-  "tokens": [
-   "justic",
-   "nomeia",
-   "oficia",
-   "ricard",
-   "salles",
-   "secret",
-   "tarcis"
-  ],
-  "video_id": "KjCjXJJlu10",
-  "fotos": [
-   "File:Governo não vai aceitar obras em estradas com baixa qualidade.webm",
-   "File:Sessão solene de posse do novo governador do estado de São Paulo Tarcísio de Freitas, Local - Assembleia Legislativa de São Paulo 12.jpg",
-   "File:BRASIL EM PAUTA - Ricardo Salles, ministro do Meio Ambiente.webm",
-   "File:Sessão solene de posse do novo governador do estado de São Paulo Tarcísio de Freitas, Local - Assembleia Legislativa de São Paulo 06.jpg",
-   "File:Andrew Wheeler and Ricardo de Aquino Salles in January 2020 (3).jpg",
-   "File:Andrew Wheeler and Ricardo de Aquino Salles in January 2020 (2).jpg"
-  ]
- },
- {
   "data": "2026-11-11T19:41:41.852911+00:00",
   "manchete": "Lula se reúne com presidente da Venezuela na COP31",
   "titulo": "Lula se reúne com presidente interina da Venezuela na Turquia",
@@ -12966,6 +12937,44 @@
   "video_id": "sU8NB27ZNYc",
   "fotos": [
    "File:Novo presidente do Banco Central toma posse.webm"
+  ]
+ },
+ {
+  "data": "2026-11-28T12:40:29.869961+00:00",
+  "manchete": "Fundação FHC desmente Lula",
+  "titulo": "Fundacao FHC desmente Lula apos declaracoes sobre saude do ex-presidente",
+  "categoria": "POLÍTICA",
+  "links": [
+   "https://www.infomoney.com.br/politica/fundacao-criada-por-fhc-desmente-relato-de-lula-sobre-saude-do-ex-presidente/",
+   "https://revistaoeste.com/politica/fundacao-fhc-desmente-lula-sobre-visita-ao-ex-presidente/",
+   "https://www.cnnbrasil.com.br/politica/fundacao-fhc-lamenta-fala-de-lula-e-diz-que-relato-nao-corresponde-a-fatos/",
+   "https://g1.globo.com/politica/noticia/2026/11/28/fundacao-fhc-lamenta-fala-de-lula-que-chamou-ex-presidente-de-morto-vivo.ghtml",
+   "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/poder/2026/11/fundacao-fhc-lamenta-fala-de-lula-que-chamou-ex-presidente-de-morto-vivo.shtml",
+   "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/fundacao-fhc-lamenta-fala-de-lula-que-chamou-ex-presidente-de-morto-vivo.shtml"
+  ],
+  "tokens": [
+   "chamou",
+   "corres",
+   "criada",
+   "declar",
+   "desmen",
+   "fala",
+   "fatos",
+   "fhc",
+   "fundac",
+   "lament",
+   "lula",
+   "morto",
+   "nao",
+   "presid",
+   "relato",
+   "saude",
+   "visita"
+  ],
+  "video_id": "VqsiyEcwKAo",
+  "fotos": [
+   "File:Fernando Henrique Cardoso - París (2019).jpg",
+   "File:Secretária-Adjunta de Estado Kimberly Breier (46326720755).jpg"
   ]
  }
 ]
